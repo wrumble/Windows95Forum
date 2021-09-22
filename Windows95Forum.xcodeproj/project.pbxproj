@@ -1,0 +1,649 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		87F6E25E26FBA92100BB2F4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E25D26FBA92100BB2F4E /* AppDelegate.swift */; };
+		87F6E26026FBA92100BB2F4E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E25F26FBA92100BB2F4E /* SceneDelegate.swift */; };
+		87F6E26226FBA92100BB2F4E /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E26126FBA92100BB2F4E /* PostsViewController.swift */; };
+		87F6E26726FBA92500BB2F4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87F6E26626FBA92500BB2F4E /* Assets.xcassets */; };
+		87F6E26A26FBA92500BB2F4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87F6E26826FBA92500BB2F4E /* LaunchScreen.storyboard */; };
+		87F6E27526FBA92500BB2F4E /* Windows95ForumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E27426FBA92500BB2F4E /* Windows95ForumTests.swift */; };
+		87F6E27F26FBA92500BB2F4E /* Windows95ForumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E27E26FBA92500BB2F4E /* Windows95ForumUITests.swift */; };
+		87F6E28126FBA92500BB2F4E /* Windows95ForumUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E28026FBA92500BB2F4E /* Windows95ForumUITestsLaunchTests.swift */; };
+		87F6E28E26FBAFDD00BB2F4E /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87F6E28D26FBAFDD00BB2F4E /* Colors.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		87F6E27126FBA92500BB2F4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 87F6E25226FBA92100BB2F4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 87F6E25926FBA92100BB2F4E;
+			remoteInfo = Windows95Forum;
+		};
+		87F6E27B26FBA92500BB2F4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 87F6E25226FBA92100BB2F4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 87F6E25926FBA92100BB2F4E;
+			remoteInfo = Windows95Forum;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		87F6E25A26FBA92100BB2F4E /* Windows95Forum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Windows95Forum.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		87F6E25D26FBA92100BB2F4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		87F6E25F26FBA92100BB2F4E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		87F6E26126FBA92100BB2F4E /* PostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
+		87F6E26626FBA92500BB2F4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		87F6E26926FBA92500BB2F4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		87F6E26B26FBA92500BB2F4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87F6E27026FBA92500BB2F4E /* Windows95ForumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Windows95ForumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		87F6E27426FBA92500BB2F4E /* Windows95ForumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Windows95ForumTests.swift; sourceTree = "<group>"; };
+		87F6E27A26FBA92500BB2F4E /* Windows95ForumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Windows95ForumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		87F6E27E26FBA92500BB2F4E /* Windows95ForumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Windows95ForumUITests.swift; sourceTree = "<group>"; };
+		87F6E28026FBA92500BB2F4E /* Windows95ForumUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Windows95ForumUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		87F6E28D26FBAFDD00BB2F4E /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		87F6E29226FBB47000BB2F4E /* W95FA.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = W95FA.otf; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		87F6E25726FBA92100BB2F4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87F6E26D26FBA92500BB2F4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87F6E27726FBA92500BB2F4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		87F6E25126FBA92100BB2F4E = {
+			isa = PBXGroup;
+			children = (
+				87F6E25C26FBA92100BB2F4E /* Windows95Forum */,
+				87F6E27326FBA92500BB2F4E /* Windows95ForumTests */,
+				87F6E27D26FBA92500BB2F4E /* Windows95ForumUITests */,
+				87F6E25B26FBA92100BB2F4E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		87F6E25B26FBA92100BB2F4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				87F6E25A26FBA92100BB2F4E /* Windows95Forum.app */,
+				87F6E27026FBA92500BB2F4E /* Windows95ForumTests.xctest */,
+				87F6E27A26FBA92500BB2F4E /* Windows95ForumUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		87F6E25C26FBA92100BB2F4E /* Windows95Forum */ = {
+			isa = PBXGroup;
+			children = (
+				87F6E29026FBB1E900BB2F4E /* SupportingFiles */,
+				87F6E26126FBA92100BB2F4E /* PostsViewController.swift */,
+			);
+			path = Windows95Forum;
+			sourceTree = "<group>";
+		};
+		87F6E27326FBA92500BB2F4E /* Windows95ForumTests */ = {
+			isa = PBXGroup;
+			children = (
+				87F6E27426FBA92500BB2F4E /* Windows95ForumTests.swift */,
+			);
+			path = Windows95ForumTests;
+			sourceTree = "<group>";
+		};
+		87F6E27D26FBA92500BB2F4E /* Windows95ForumUITests */ = {
+			isa = PBXGroup;
+			children = (
+				87F6E27E26FBA92500BB2F4E /* Windows95ForumUITests.swift */,
+				87F6E28026FBA92500BB2F4E /* Windows95ForumUITestsLaunchTests.swift */,
+			);
+			path = Windows95ForumUITests;
+			sourceTree = "<group>";
+		};
+		87F6E29026FBB1E900BB2F4E /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				87F6E29126FBB46300BB2F4E /* Fonts */,
+				87F6E25D26FBA92100BB2F4E /* AppDelegate.swift */,
+				87F6E25F26FBA92100BB2F4E /* SceneDelegate.swift */,
+				87F6E26626FBA92500BB2F4E /* Assets.xcassets */,
+				87F6E26826FBA92500BB2F4E /* LaunchScreen.storyboard */,
+				87F6E28D26FBAFDD00BB2F4E /* Colors.xcassets */,
+				87F6E26B26FBA92500BB2F4E /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		87F6E29126FBB46300BB2F4E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				87F6E29226FBB47000BB2F4E /* W95FA.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		87F6E25926FBA92100BB2F4E /* Windows95Forum */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87F6E28426FBA92500BB2F4E /* Build configuration list for PBXNativeTarget "Windows95Forum" */;
+			buildPhases = (
+				87F6E25626FBA92100BB2F4E /* Sources */,
+				87F6E25726FBA92100BB2F4E /* Frameworks */,
+				87F6E25826FBA92100BB2F4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Windows95Forum;
+			productName = Windows95Forum;
+			productReference = 87F6E25A26FBA92100BB2F4E /* Windows95Forum.app */;
+			productType = "com.apple.product-type.application";
+		};
+		87F6E26F26FBA92500BB2F4E /* Windows95ForumTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87F6E28726FBA92500BB2F4E /* Build configuration list for PBXNativeTarget "Windows95ForumTests" */;
+			buildPhases = (
+				87F6E26C26FBA92500BB2F4E /* Sources */,
+				87F6E26D26FBA92500BB2F4E /* Frameworks */,
+				87F6E26E26FBA92500BB2F4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				87F6E27226FBA92500BB2F4E /* PBXTargetDependency */,
+			);
+			name = Windows95ForumTests;
+			productName = Windows95ForumTests;
+			productReference = 87F6E27026FBA92500BB2F4E /* Windows95ForumTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		87F6E27926FBA92500BB2F4E /* Windows95ForumUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87F6E28A26FBA92500BB2F4E /* Build configuration list for PBXNativeTarget "Windows95ForumUITests" */;
+			buildPhases = (
+				87F6E27626FBA92500BB2F4E /* Sources */,
+				87F6E27726FBA92500BB2F4E /* Frameworks */,
+				87F6E27826FBA92500BB2F4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				87F6E27C26FBA92500BB2F4E /* PBXTargetDependency */,
+			);
+			name = Windows95ForumUITests;
+			productName = Windows95ForumUITests;
+			productReference = 87F6E27A26FBA92500BB2F4E /* Windows95ForumUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		87F6E25226FBA92100BB2F4E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					87F6E25926FBA92100BB2F4E = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					87F6E26F26FBA92500BB2F4E = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 87F6E25926FBA92100BB2F4E;
+					};
+					87F6E27926FBA92500BB2F4E = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 87F6E25926FBA92100BB2F4E;
+					};
+				};
+			};
+			buildConfigurationList = 87F6E25526FBA92100BB2F4E /* Build configuration list for PBXProject "Windows95Forum" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 87F6E25126FBA92100BB2F4E;
+			productRefGroup = 87F6E25B26FBA92100BB2F4E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				87F6E25926FBA92100BB2F4E /* Windows95Forum */,
+				87F6E26F26FBA92500BB2F4E /* Windows95ForumTests */,
+				87F6E27926FBA92500BB2F4E /* Windows95ForumUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		87F6E25826FBA92100BB2F4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87F6E26A26FBA92500BB2F4E /* LaunchScreen.storyboard in Resources */,
+				87F6E28E26FBAFDD00BB2F4E /* Colors.xcassets in Resources */,
+				87F6E26726FBA92500BB2F4E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87F6E26E26FBA92500BB2F4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87F6E27826FBA92500BB2F4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		87F6E25626FBA92100BB2F4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87F6E26226FBA92100BB2F4E /* PostsViewController.swift in Sources */,
+				87F6E25E26FBA92100BB2F4E /* AppDelegate.swift in Sources */,
+				87F6E26026FBA92100BB2F4E /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87F6E26C26FBA92500BB2F4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87F6E27526FBA92500BB2F4E /* Windows95ForumTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87F6E27626FBA92500BB2F4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87F6E28126FBA92500BB2F4E /* Windows95ForumUITestsLaunchTests.swift in Sources */,
+				87F6E27F26FBA92500BB2F4E /* Windows95ForumUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		87F6E27226FBA92500BB2F4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 87F6E25926FBA92100BB2F4E /* Windows95Forum */;
+			targetProxy = 87F6E27126FBA92500BB2F4E /* PBXContainerItemProxy */;
+		};
+		87F6E27C26FBA92500BB2F4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 87F6E25926FBA92100BB2F4E /* Windows95Forum */;
+			targetProxy = 87F6E27B26FBA92500BB2F4E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		87F6E26826FBA92500BB2F4E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				87F6E26926FBA92500BB2F4E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		87F6E28226FBA92500BB2F4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		87F6E28326FBA92500BB2F4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		87F6E28526FBA92500BB2F4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F6896R5ECP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Windows95Forum/SupportingFiles/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rumblewayne.Windows95Forum;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TVOS_DEPLOYMENT_TARGET = 15.0;
+			};
+			name = Debug;
+		};
+		87F6E28626FBA92500BB2F4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F6896R5ECP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Windows95Forum/SupportingFiles/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rumblewayne.Windows95Forum;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TVOS_DEPLOYMENT_TARGET = 15.0;
+			};
+			name = Release;
+		};
+		87F6E28826FBA92500BB2F4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F6896R5ECP;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rumblewayne.Windows95ForumTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Windows95Forum.app/Windows95Forum";
+				TVOS_DEPLOYMENT_TARGET = 15.0;
+			};
+			name = Debug;
+		};
+		87F6E28926FBA92500BB2F4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F6896R5ECP;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rumblewayne.Windows95ForumTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Windows95Forum.app/Windows95Forum";
+				TVOS_DEPLOYMENT_TARGET = 15.0;
+			};
+			name = Release;
+		};
+		87F6E28B26FBA92500BB2F4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F6896R5ECP;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rumblewayne.Windows95ForumUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Windows95Forum;
+				TVOS_DEPLOYMENT_TARGET = 15.0;
+			};
+			name = Debug;
+		};
+		87F6E28C26FBA92500BB2F4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F6896R5ECP;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rumblewayne.Windows95ForumUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Windows95Forum;
+				TVOS_DEPLOYMENT_TARGET = 15.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		87F6E25526FBA92100BB2F4E /* Build configuration list for PBXProject "Windows95Forum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87F6E28226FBA92500BB2F4E /* Debug */,
+				87F6E28326FBA92500BB2F4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87F6E28426FBA92500BB2F4E /* Build configuration list for PBXNativeTarget "Windows95Forum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87F6E28526FBA92500BB2F4E /* Debug */,
+				87F6E28626FBA92500BB2F4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87F6E28726FBA92500BB2F4E /* Build configuration list for PBXNativeTarget "Windows95ForumTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87F6E28826FBA92500BB2F4E /* Debug */,
+				87F6E28926FBA92500BB2F4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87F6E28A26FBA92500BB2F4E /* Build configuration list for PBXNativeTarget "Windows95ForumUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87F6E28B26FBA92500BB2F4E /* Debug */,
+				87F6E28C26FBA92500BB2F4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 87F6E25226FBA92100BB2F4E /* Project object */;
+}
