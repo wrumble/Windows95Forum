@@ -5,6 +5,9 @@
       location = "container:Windows95Forum.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:Common/Common.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:CommentsService/CommentsService.xcodeproj">
    </FileRef>
    <FileRef
