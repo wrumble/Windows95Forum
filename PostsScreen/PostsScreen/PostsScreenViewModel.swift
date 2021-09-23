@@ -49,7 +49,6 @@ private extension PostsViewModel {
 
   private func onValue(users: [User], posts: [Post]) {
     forumPosts = ForumPostFactory.forumPosts(from: users, posts: posts)
-    print(forumPosts)
   }
 
   private func onComplete(result: Subscribers.Completion<APIError>) {

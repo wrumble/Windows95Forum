@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		876A3FF626FD36D1008780FC /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A3FF526FD36D1008780FC /* UIView+Extension.swift */; };
+		876A3FF926FD3B78008780FC /* WindowsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A3FF826FD3B78008780FC /* WindowsView.swift */; };
 		8784FF0626FD1DE7004BA2C2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8784FF0526FD1DE7004BA2C2 /* User.swift */; };
 		8784FF0826FD1E0D004BA2C2 /* User+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8784FF0726FD1E0D004BA2C2 /* User+Mock.swift */; };
 		8784FF0A26FD1E3C004BA2C2 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8784FF0926FD1E3C004BA2C2 /* Post.swift */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		876A3FF526FD36D1008780FC /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		876A3FF826FD3B78008780FC /* WindowsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowsView.swift; sourceTree = "<group>"; };
 		8784FF0526FD1DE7004BA2C2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		8784FF0726FD1E0D004BA2C2 /* User+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+Mock.swift"; sourceTree = "<group>"; };
 		8784FF0926FD1E3C004BA2C2 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
@@ -70,6 +74,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		876A3FF726FD3B5D008780FC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				876A3FF826FD3B78008780FC /* WindowsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		8784FF0426FD1DD9004BA2C2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +122,7 @@
 		87F6E36D26FD087300BB2F4E /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				876A3FF726FD3B5D008780FC /* Views */,
 				8784FF0F26FD1E79004BA2C2 /* Mocks */,
 				8784FF0426FD1DD9004BA2C2 /* Models */,
 				87F6E3E126FD184000BB2F4E /* Error */,
@@ -151,6 +164,7 @@
 				87F6E38826FD090400BB2F4E /* UIColor+Extension.swift */,
 				87F6E38A26FD099200BB2F4E /* UIFont+Extension.swift */,
 				87F6E38C26FD0BA500BB2F4E /* UITableView+Extension.swift */,
+				876A3FF526FD36D1008780FC /* UIView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -279,6 +293,8 @@
 				87F6E3E326FD184E00BB2F4E /* APIError.swift in Sources */,
 				87F6E3E726FD192100BB2F4E /* ReuseIdentifiable.swift in Sources */,
 				87F6E38D26FD0BA500BB2F4E /* UITableView+Extension.swift in Sources */,
+				876A3FF626FD36D1008780FC /* UIView+Extension.swift in Sources */,
+				876A3FF926FD3B78008780FC /* WindowsView.swift in Sources */,
 				8784FF0A26FD1E3C004BA2C2 /* Post.swift in Sources */,
 				8784FF0826FD1E0D004BA2C2 /* User+Mock.swift in Sources */,
 				8784FF0626FD1DE7004BA2C2 /* User.swift in Sources */,
