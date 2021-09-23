@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		87F6E2A226FBBA2B00BB2F4E /* WindowsNetwork.docc in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E2A126FBBA2B00BB2F4E /* WindowsNetwork.docc */; };
 		87F6E2A826FBBA2C00BB2F4E /* WindowsNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87F6E29D26FBBA2B00BB2F4E /* WindowsNetwork.framework */; };
-		87F6E2AD26FBBA2C00BB2F4E /* WindowsNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E2AC26FBBA2C00BB2F4E /* WindowsNetworkTests.swift */; };
+		87F6E2AD26FBBA2C00BB2F4E /* ForumClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E2AC26FBBA2C00BB2F4E /* ForumClientTests.swift */; };
 		87F6E2AE26FBBA2C00BB2F4E /* WindowsNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = 87F6E2A026FBBA2B00BB2F4E /* WindowsNetwork.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		87F6E2B926FBBB2400BB2F4E /* ForumClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E2B826FBBB2400BB2F4E /* ForumClient.swift */; };
 		87F6E2BB26FBBBF100BB2F4E /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E2BA26FBBBF100BB2F4E /* Endpoint.swift */; };
@@ -18,6 +18,12 @@
 		87F6E2C726FBBEBD00BB2F4E /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E2C626FBBEBD00BB2F4E /* Post.swift */; };
 		87F6E2C926FBBEFC00BB2F4E /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E2C826FBBEFC00BB2F4E /* Comment.swift */; };
 		87F6E2CD26FBBF9F00BB2F4E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E2CC26FBBF9F00BB2F4E /* User.swift */; };
+		87F6E2D726FCC0E600BB2F4E /* URLProtocol+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E2D626FCC0E600BB2F4E /* URLProtocol+Mock.swift */; };
+		87F6E2D926FCC10F00BB2F4E /* URLSession+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E2D826FCC10F00BB2F4E /* URLSession+Mock.swift */; };
+		87F6E2DD26FCC2BE00BB2F4E /* Posts+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E2DC26FCC2BE00BB2F4E /* Posts+Mock.swift */; };
+		87F6E2DF26FCC51700BB2F4E /* User+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E2DE26FCC51700BB2F4E /* User+Mock.swift */; };
+		87F6E2E126FCC82500BB2F4E /* EndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E2E026FCC82500BB2F4E /* EndpointTests.swift */; };
+		87F6E2E326FCC96700BB2F4E /* APIErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E2E226FCC96700BB2F4E /* APIErrorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +41,7 @@
 		87F6E2A026FBBA2B00BB2F4E /* WindowsNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WindowsNetwork.h; sourceTree = "<group>"; };
 		87F6E2A126FBBA2B00BB2F4E /* WindowsNetwork.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = WindowsNetwork.docc; sourceTree = "<group>"; };
 		87F6E2A726FBBA2C00BB2F4E /* WindowsNetworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WindowsNetworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		87F6E2AC26FBBA2C00BB2F4E /* WindowsNetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowsNetworkTests.swift; sourceTree = "<group>"; };
+		87F6E2AC26FBBA2C00BB2F4E /* ForumClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumClientTests.swift; sourceTree = "<group>"; };
 		87F6E2B826FBBB2400BB2F4E /* ForumClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumClient.swift; sourceTree = "<group>"; };
 		87F6E2BA26FBBBF100BB2F4E /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		87F6E2BF26FBBDFD00BB2F4E /* PreconditionFailure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreconditionFailure.swift; sourceTree = "<group>"; };
@@ -43,6 +49,12 @@
 		87F6E2C626FBBEBD00BB2F4E /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		87F6E2C826FBBEFC00BB2F4E /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		87F6E2CC26FBBF9F00BB2F4E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		87F6E2D626FCC0E600BB2F4E /* URLProtocol+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLProtocol+Mock.swift"; sourceTree = "<group>"; };
+		87F6E2D826FCC10F00BB2F4E /* URLSession+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Mock.swift"; sourceTree = "<group>"; };
+		87F6E2DC26FCC2BE00BB2F4E /* Posts+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Posts+Mock.swift"; sourceTree = "<group>"; };
+		87F6E2DE26FCC51700BB2F4E /* User+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+Mock.swift"; sourceTree = "<group>"; };
+		87F6E2E026FCC82500BB2F4E /* EndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointTests.swift; sourceTree = "<group>"; };
+		87F6E2E226FCC96700BB2F4E /* APIErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIErrorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +107,8 @@
 		87F6E2AB26FBBA2C00BB2F4E /* WindowsNetworkTests */ = {
 			isa = PBXGroup;
 			children = (
-				87F6E2AC26FBBA2C00BB2F4E /* WindowsNetworkTests.swift */,
+				87F6E2DA26FCC12700BB2F4E /* ForumClientTests */,
+				87F6E2D526FCC0D100BB2F4E /* Mocks */,
 			);
 			path = WindowsNetworkTests;
 			sourceTree = "<group>";
@@ -126,6 +139,35 @@
 				87F6E2C826FBBEFC00BB2F4E /* Comment.swift */,
 				87F6E2C626FBBEBD00BB2F4E /* Post.swift */,
 				87F6E2CC26FBBF9F00BB2F4E /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		87F6E2D526FCC0D100BB2F4E /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				87F6E2DB26FCC2B300BB2F4E /* Models */,
+				87F6E2D626FCC0E600BB2F4E /* URLProtocol+Mock.swift */,
+				87F6E2D826FCC10F00BB2F4E /* URLSession+Mock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		87F6E2DA26FCC12700BB2F4E /* ForumClientTests */ = {
+			isa = PBXGroup;
+			children = (
+				87F6E2AC26FBBA2C00BB2F4E /* ForumClientTests.swift */,
+				87F6E2E026FCC82500BB2F4E /* EndpointTests.swift */,
+				87F6E2E226FCC96700BB2F4E /* APIErrorTests.swift */,
+			);
+			path = ForumClientTests;
+			sourceTree = "<group>";
+		};
+		87F6E2DB26FCC2B300BB2F4E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				87F6E2DC26FCC2BE00BB2F4E /* Posts+Mock.swift */,
+				87F6E2DE26FCC51700BB2F4E /* User+Mock.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -254,7 +296,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87F6E2AD26FBBA2C00BB2F4E /* WindowsNetworkTests.swift in Sources */,
+				87F6E2AD26FBBA2C00BB2F4E /* ForumClientTests.swift in Sources */,
+				87F6E2DD26FCC2BE00BB2F4E /* Posts+Mock.swift in Sources */,
+				87F6E2DF26FCC51700BB2F4E /* User+Mock.swift in Sources */,
+				87F6E2E326FCC96700BB2F4E /* APIErrorTests.swift in Sources */,
+				87F6E2D726FCC0E600BB2F4E /* URLProtocol+Mock.swift in Sources */,
+				87F6E2E126FCC82500BB2F4E /* EndpointTests.swift in Sources */,
+				87F6E2D926FCC10F00BB2F4E /* URLSession+Mock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -16,9 +16,20 @@ class PostsViewController: UIViewController {
     super.viewDidLoad()
     view.backgroundColor = .gray
 
-    Publishers.Zip(getPosts(), getUsers())
-      .sink(receiveCompletion: onComplete,
-            receiveValue: onValue)
+    Publishers.Zip(getUsers(), getPosts())
+      .sink(
+        receiveCompletion: { [weak self] result in
+          guard let self = self else {
+            return
+          }
+          self.onComplete(result: result)
+        },
+        receiveValue: { [weak self] users, posts in
+          guard let self = self else {
+            return
+          }
+          self.onValue(users: users, posts: posts)
+        })
       .store(in: &publishers)
 
     getComments(for: 1)
@@ -48,19 +59,19 @@ class PostsViewController: UIViewController {
     return client.execute(.comments(postId: postId))
   }
 
-  private func onValue(posts: [Post], users: [User]) {
-    var forumPosts: [ForumPost] = []
-
-    posts.forEach { post in
-      users.forEach { user in
-        if user.id == post.userId {
-          let forumPost = ForumPost(username: user.username, title: post.title)
-          forumPosts.append(forumPost)
-        }
-      }
-    }
+  private func onValue(users: [User], posts: [Post]) {
+    let forumPosts = forumPosts(from: users, posts: posts)
 
     print(forumPosts)
+  }
+
+  func forumPosts(from users: [User], posts: [Post]) -> [ForumPost] {
+    return users.reduce(into: []) { forumPosts, user in
+      let usersPosts = posts
+        .filter { $0.userId == user.id }
+        .map { ForumPost(username: user.username, title: $0.title) }
+      forumPosts.append(contentsOf: usersPosts)
+    }
   }
 
   private func onComplete(result: Subscribers.Completion<APIError>) {
