@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		87F6E2A226FBBA2B00BB2F4E /* ForumClient.docc in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E2A126FBBA2B00BB2F4E /* ForumClient.docc */; };
 		87F6E2A826FBBA2C00BB2F4E /* ForumClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87F6E29D26FBBA2B00BB2F4E /* ForumClient.framework */; };
 		87F6E2AD26FBBA2C00BB2F4E /* ForumClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E2AC26FBBA2C00BB2F4E /* ForumClientTests.swift */; };
 		87F6E2AE26FBBA2C00BB2F4E /* ForumClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 87F6E2A026FBBA2B00BB2F4E /* ForumClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -24,6 +23,7 @@
 		87F6E2DF26FCC51700BB2F4E /* User+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E2DE26FCC51700BB2F4E /* User+Mock.swift */; };
 		87F6E2E126FCC82500BB2F4E /* EndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E2E026FCC82500BB2F4E /* EndpointTests.swift */; };
 		87F6E2E326FCC96700BB2F4E /* APIErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E2E226FCC96700BB2F4E /* APIErrorTests.swift */; };
+		87F6E36026FD033A00BB2F4E /* ForumClient+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E35326FCD61E00BB2F4E /* ForumClient+Mock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,6 @@
 /* Begin PBXFileReference section */
 		87F6E29D26FBBA2B00BB2F4E /* ForumClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ForumClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87F6E2A026FBBA2B00BB2F4E /* ForumClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ForumClient.h; sourceTree = "<group>"; };
-		87F6E2A126FBBA2B00BB2F4E /* ForumClient.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = ForumClient.docc; sourceTree = "<group>"; };
 		87F6E2A726FBBA2C00BB2F4E /* ForumClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForumClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		87F6E2AC26FBBA2C00BB2F4E /* ForumClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumClientTests.swift; sourceTree = "<group>"; };
 		87F6E2B826FBBB2400BB2F4E /* ForumClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumClient.swift; sourceTree = "<group>"; };
@@ -55,6 +54,7 @@
 		87F6E2DE26FCC51700BB2F4E /* User+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+Mock.swift"; sourceTree = "<group>"; };
 		87F6E2E026FCC82500BB2F4E /* EndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointTests.swift; sourceTree = "<group>"; };
 		87F6E2E226FCC96700BB2F4E /* APIErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIErrorTests.swift; sourceTree = "<group>"; };
+		87F6E35326FCD61E00BB2F4E /* ForumClient+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ForumClient+Mock.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,7 +117,6 @@
 			isa = PBXGroup;
 			children = (
 				87F6E2A026FBBA2B00BB2F4E /* ForumClient.h */,
-				87F6E2A126FBBA2B00BB2F4E /* ForumClient.docc */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -149,6 +148,7 @@
 				87F6E2DB26FCC2B300BB2F4E /* Models */,
 				87F6E2D626FCC0E600BB2F4E /* URLProtocol+Mock.swift */,
 				87F6E2D826FCC10F00BB2F4E /* URLSession+Mock.swift */,
+				87F6E35326FCD61E00BB2F4E /* ForumClient+Mock.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -284,10 +284,10 @@
 				87F6E2B926FBBB2400BB2F4E /* ForumClient.swift in Sources */,
 				87F6E2BB26FBBBF100BB2F4E /* Endpoint.swift in Sources */,
 				87F6E2C026FBBDFD00BB2F4E /* PreconditionFailure.swift in Sources */,
-				87F6E2A226FBBA2B00BB2F4E /* ForumClient.docc in Sources */,
 				87F6E2C226FBBE1C00BB2F4E /* APIError.swift in Sources */,
 				87F6E2C926FBBEFC00BB2F4E /* Comment.swift in Sources */,
 				87F6E2C726FBBEBD00BB2F4E /* Post.swift in Sources */,
+				87F6E36026FD033A00BB2F4E /* ForumClient+Mock.swift in Sources */,
 				87F6E2CD26FBBF9F00BB2F4E /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
