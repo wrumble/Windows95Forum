@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		87F6E2A226FBBA2B00BB2F4E /* ForumClient.docc in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E2A126FBBA2B00BB2F4E /* ForumClient.docc */; };
 		87F6E2A826FBBA2C00BB2F4E /* ForumClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87F6E29D26FBBA2B00BB2F4E /* ForumClient.framework */; };
 		87F6E2AD26FBBA2C00BB2F4E /* ForumClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E2AC26FBBA2C00BB2F4E /* ForumClientTests.swift */; };
 		87F6E2AE26FBBA2C00BB2F4E /* ForumClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 87F6E2A026FBBA2B00BB2F4E /* ForumClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -39,7 +38,6 @@
 /* Begin PBXFileReference section */
 		87F6E29D26FBBA2B00BB2F4E /* ForumClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ForumClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87F6E2A026FBBA2B00BB2F4E /* ForumClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ForumClient.h; sourceTree = "<group>"; };
-		87F6E2A126FBBA2B00BB2F4E /* ForumClient.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = ForumClient.docc; sourceTree = "<group>"; };
 		87F6E2A726FBBA2C00BB2F4E /* ForumClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForumClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		87F6E2AC26FBBA2C00BB2F4E /* ForumClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumClientTests.swift; sourceTree = "<group>"; };
 		87F6E2B826FBBB2400BB2F4E /* ForumClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumClient.swift; sourceTree = "<group>"; };
@@ -117,7 +115,6 @@
 			isa = PBXGroup;
 			children = (
 				87F6E2A026FBBA2B00BB2F4E /* ForumClient.h */,
-				87F6E2A126FBBA2B00BB2F4E /* ForumClient.docc */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -284,7 +281,6 @@
 				87F6E2B926FBBB2400BB2F4E /* ForumClient.swift in Sources */,
 				87F6E2BB26FBBBF100BB2F4E /* Endpoint.swift in Sources */,
 				87F6E2C026FBBDFD00BB2F4E /* PreconditionFailure.swift in Sources */,
-				87F6E2A226FBBA2B00BB2F4E /* ForumClient.docc in Sources */,
 				87F6E2C226FBBE1C00BB2F4E /* APIError.swift in Sources */,
 				87F6E2C926FBBEFC00BB2F4E /* Comment.swift in Sources */,
 				87F6E2C726FBBEBD00BB2F4E /* Post.swift in Sources */,
