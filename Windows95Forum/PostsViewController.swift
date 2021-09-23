@@ -1,7 +1,7 @@
 import UIKit
 import Combine
 
-import WindowsNetwork
+import ForumClient
 
 struct ForumPost {
   let username: String

@@ -16,8 +16,8 @@
 		87F6E27F26FBA92500BB2F4E /* Windows95ForumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E27E26FBA92500BB2F4E /* Windows95ForumUITests.swift */; };
 		87F6E28126FBA92500BB2F4E /* Windows95ForumUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E28026FBA92500BB2F4E /* Windows95ForumUITestsLaunchTests.swift */; };
 		87F6E28E26FBAFDD00BB2F4E /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87F6E28D26FBAFDD00BB2F4E /* Colors.xcassets */; };
-		87F6E2D226FBC0DD00BB2F4E /* WindowsNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87F6E2D126FBC0DD00BB2F4E /* WindowsNetwork.framework */; };
-		87F6E2D326FBC0DD00BB2F4E /* WindowsNetwork.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 87F6E2D126FBC0DD00BB2F4E /* WindowsNetwork.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		87F6E2D226FBC0DD00BB2F4E /* ForumClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87F6E2D126FBC0DD00BB2F4E /* ForumClient.framework */; };
+		87F6E2D326FBC0DD00BB2F4E /* ForumClient.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 87F6E2D126FBC0DD00BB2F4E /* ForumClient.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +44,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				87F6E2D326FBC0DD00BB2F4E /* WindowsNetwork.framework in Embed Frameworks */,
+				87F6E2D326FBC0DD00BB2F4E /* ForumClient.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,7 +66,7 @@
 		87F6E28026FBA92500BB2F4E /* Windows95ForumUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Windows95ForumUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		87F6E28D26FBAFDD00BB2F4E /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		87F6E29226FBB47000BB2F4E /* W95FA.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = W95FA.otf; sourceTree = "<group>"; };
-		87F6E2D126FBC0DD00BB2F4E /* WindowsNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WindowsNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87F6E2D126FBC0DD00BB2F4E /* ForumClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ForumClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87F6E2D226FBC0DD00BB2F4E /* WindowsNetwork.framework in Frameworks */,
+				87F6E2D226FBC0DD00BB2F4E /* ForumClient.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,7 +167,7 @@
 		87F6E2D026FBC0DD00BB2F4E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				87F6E2D126FBC0DD00BB2F4E /* WindowsNetwork.framework */,
+				87F6E2D126FBC0DD00BB2F4E /* ForumClient.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

@@ -5,6 +5,6 @@
       location = "container:Windows95Forum.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:WindowsNetwork/WindowsNetwork.xcodeproj">
+      location = "group:/Users/waynerumble/Desktop/Windows95Forum/ForumClient/ForumClient.xcodeproj">
    </FileRef>
 </Workspace>

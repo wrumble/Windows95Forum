@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		87F6E2A226FBBA2B00BB2F4E /* WindowsNetwork.docc in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E2A126FBBA2B00BB2F4E /* WindowsNetwork.docc */; };
-		87F6E2A826FBBA2C00BB2F4E /* WindowsNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87F6E29D26FBBA2B00BB2F4E /* WindowsNetwork.framework */; };
+		87F6E2A226FBBA2B00BB2F4E /* ForumClient.docc in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E2A126FBBA2B00BB2F4E /* ForumClient.docc */; };
+		87F6E2A826FBBA2C00BB2F4E /* ForumClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87F6E29D26FBBA2B00BB2F4E /* ForumClient.framework */; };
 		87F6E2AD26FBBA2C00BB2F4E /* ForumClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E2AC26FBBA2C00BB2F4E /* ForumClientTests.swift */; };
-		87F6E2AE26FBBA2C00BB2F4E /* WindowsNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = 87F6E2A026FBBA2B00BB2F4E /* WindowsNetwork.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		87F6E2AE26FBBA2C00BB2F4E /* ForumClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 87F6E2A026FBBA2B00BB2F4E /* ForumClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		87F6E2B926FBBB2400BB2F4E /* ForumClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E2B826FBBB2400BB2F4E /* ForumClient.swift */; };
 		87F6E2BB26FBBBF100BB2F4E /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E2BA26FBBBF100BB2F4E /* Endpoint.swift */; };
 		87F6E2C026FBBDFD00BB2F4E /* PreconditionFailure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E2BF26FBBDFD00BB2F4E /* PreconditionFailure.swift */; };
@@ -32,15 +32,15 @@
 			containerPortal = 87F6E29426FBBA2B00BB2F4E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 87F6E29C26FBBA2B00BB2F4E;
-			remoteInfo = WindowsNetwork;
+			remoteInfo = ForumClient;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		87F6E29D26FBBA2B00BB2F4E /* WindowsNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WindowsNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		87F6E2A026FBBA2B00BB2F4E /* WindowsNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WindowsNetwork.h; sourceTree = "<group>"; };
-		87F6E2A126FBBA2B00BB2F4E /* WindowsNetwork.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = WindowsNetwork.docc; sourceTree = "<group>"; };
-		87F6E2A726FBBA2C00BB2F4E /* WindowsNetworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WindowsNetworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		87F6E29D26FBBA2B00BB2F4E /* ForumClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ForumClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87F6E2A026FBBA2B00BB2F4E /* ForumClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ForumClient.h; sourceTree = "<group>"; };
+		87F6E2A126FBBA2B00BB2F4E /* ForumClient.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = ForumClient.docc; sourceTree = "<group>"; };
+		87F6E2A726FBBA2C00BB2F4E /* ForumClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForumClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		87F6E2AC26FBBA2C00BB2F4E /* ForumClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumClientTests.swift; sourceTree = "<group>"; };
 		87F6E2B826FBBB2400BB2F4E /* ForumClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumClient.swift; sourceTree = "<group>"; };
 		87F6E2BA26FBBBF100BB2F4E /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
@@ -69,7 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87F6E2A826FBBA2C00BB2F4E /* WindowsNetwork.framework in Frameworks */,
+				87F6E2A826FBBA2C00BB2F4E /* ForumClient.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,8 +79,8 @@
 		87F6E29326FBBA2B00BB2F4E = {
 			isa = PBXGroup;
 			children = (
-				87F6E29F26FBBA2B00BB2F4E /* WindowsNetwork */,
-				87F6E2AB26FBBA2C00BB2F4E /* WindowsNetworkTests */,
+				87F6E29F26FBBA2B00BB2F4E /* ForumClient */,
+				87F6E2AB26FBBA2C00BB2F4E /* ForumClientTests */,
 				87F6E29E26FBBA2B00BB2F4E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,36 +88,36 @@
 		87F6E29E26FBBA2B00BB2F4E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				87F6E29D26FBBA2B00BB2F4E /* WindowsNetwork.framework */,
-				87F6E2A726FBBA2C00BB2F4E /* WindowsNetworkTests.xctest */,
+				87F6E29D26FBBA2B00BB2F4E /* ForumClient.framework */,
+				87F6E2A726FBBA2C00BB2F4E /* ForumClientTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		87F6E29F26FBBA2B00BB2F4E /* WindowsNetwork */ = {
+		87F6E29F26FBBA2B00BB2F4E /* ForumClient */ = {
 			isa = PBXGroup;
 			children = (
 				87F6E2BC26FBBD8200BB2F4E /* ForumClient */,
 				87F6E2C326FBBE3B00BB2F4E /* Models */,
 				87F6E2B726FBBA5F00BB2F4E /* SupportingFiles */,
 			);
-			path = WindowsNetwork;
+			path = ForumClient;
 			sourceTree = "<group>";
 		};
-		87F6E2AB26FBBA2C00BB2F4E /* WindowsNetworkTests */ = {
+		87F6E2AB26FBBA2C00BB2F4E /* ForumClientTests */ = {
 			isa = PBXGroup;
 			children = (
 				87F6E2DA26FCC12700BB2F4E /* ForumClientTests */,
 				87F6E2D526FCC0D100BB2F4E /* Mocks */,
 			);
-			path = WindowsNetworkTests;
+			path = ForumClientTests;
 			sourceTree = "<group>";
 		};
 		87F6E2B726FBBA5F00BB2F4E /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
-				87F6E2A026FBBA2B00BB2F4E /* WindowsNetwork.h */,
-				87F6E2A126FBBA2B00BB2F4E /* WindowsNetwork.docc */,
+				87F6E2A026FBBA2B00BB2F4E /* ForumClient.h */,
+				87F6E2A126FBBA2B00BB2F4E /* ForumClient.docc */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -179,16 +179,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87F6E2AE26FBBA2C00BB2F4E /* WindowsNetwork.h in Headers */,
+				87F6E2AE26FBBA2C00BB2F4E /* ForumClient.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		87F6E29C26FBBA2B00BB2F4E /* WindowsNetwork */ = {
+		87F6E29C26FBBA2B00BB2F4E /* ForumClient */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 87F6E2B126FBBA2C00BB2F4E /* Build configuration list for PBXNativeTarget "WindowsNetwork" */;
+			buildConfigurationList = 87F6E2B126FBBA2C00BB2F4E /* Build configuration list for PBXNativeTarget "ForumClient" */;
 			buildPhases = (
 				87F6E29826FBBA2B00BB2F4E /* Headers */,
 				87F6E29926FBBA2B00BB2F4E /* Sources */,
@@ -199,14 +199,14 @@
 			);
 			dependencies = (
 			);
-			name = WindowsNetwork;
-			productName = WindowsNetwork;
-			productReference = 87F6E29D26FBBA2B00BB2F4E /* WindowsNetwork.framework */;
+			name = ForumClient;
+			productName = ForumClient;
+			productReference = 87F6E29D26FBBA2B00BB2F4E /* ForumClient.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		87F6E2A626FBBA2C00BB2F4E /* WindowsNetworkTests */ = {
+		87F6E2A626FBBA2C00BB2F4E /* ForumClientTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 87F6E2B426FBBA2C00BB2F4E /* Build configuration list for PBXNativeTarget "WindowsNetworkTests" */;
+			buildConfigurationList = 87F6E2B426FBBA2C00BB2F4E /* Build configuration list for PBXNativeTarget "ForumClientTests" */;
 			buildPhases = (
 				87F6E2A326FBBA2C00BB2F4E /* Sources */,
 				87F6E2A426FBBA2C00BB2F4E /* Frameworks */,
@@ -217,9 +217,9 @@
 			dependencies = (
 				87F6E2AA26FBBA2C00BB2F4E /* PBXTargetDependency */,
 			);
-			name = WindowsNetworkTests;
-			productName = WindowsNetworkTests;
-			productReference = 87F6E2A726FBBA2C00BB2F4E /* WindowsNetworkTests.xctest */;
+			name = ForumClientTests;
+			productName = ForumClientTests;
+			productReference = 87F6E2A726FBBA2C00BB2F4E /* ForumClientTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -240,7 +240,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 87F6E29726FBBA2B00BB2F4E /* Build configuration list for PBXProject "WindowsNetwork" */;
+			buildConfigurationList = 87F6E29726FBBA2B00BB2F4E /* Build configuration list for PBXProject "ForumClient" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -253,8 +253,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				87F6E29C26FBBA2B00BB2F4E /* WindowsNetwork */,
-				87F6E2A626FBBA2C00BB2F4E /* WindowsNetworkTests */,
+				87F6E29C26FBBA2B00BB2F4E /* ForumClient */,
+				87F6E2A626FBBA2C00BB2F4E /* ForumClientTests */,
 			);
 		};
 /* End PBXProject section */
@@ -284,7 +284,7 @@
 				87F6E2B926FBBB2400BB2F4E /* ForumClient.swift in Sources */,
 				87F6E2BB26FBBBF100BB2F4E /* Endpoint.swift in Sources */,
 				87F6E2C026FBBDFD00BB2F4E /* PreconditionFailure.swift in Sources */,
-				87F6E2A226FBBA2B00BB2F4E /* WindowsNetwork.docc in Sources */,
+				87F6E2A226FBBA2B00BB2F4E /* ForumClient.docc in Sources */,
 				87F6E2C226FBBE1C00BB2F4E /* APIError.swift in Sources */,
 				87F6E2C926FBBEFC00BB2F4E /* Comment.swift in Sources */,
 				87F6E2C726FBBEBD00BB2F4E /* Post.swift in Sources */,
@@ -311,7 +311,7 @@
 /* Begin PBXTargetDependency section */
 		87F6E2AA26FBBA2C00BB2F4E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 87F6E29C26FBBA2B00BB2F4E /* WindowsNetwork */;
+			target = 87F6E29C26FBBA2B00BB2F4E /* ForumClient */;
 			targetProxy = 87F6E2A926FBBA2C00BB2F4E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -458,7 +458,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.rumblewayne.WindowsNetwork;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rumblewayne.ForumClient;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -486,7 +486,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.rumblewayne.WindowsNetwork;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rumblewayne.ForumClient;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -509,7 +509,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.rumblewayne.WindowsNetworkTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rumblewayne.ForumClientTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -531,7 +531,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.rumblewayne.WindowsNetworkTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rumblewayne.ForumClientTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -542,7 +542,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		87F6E29726FBBA2B00BB2F4E /* Build configuration list for PBXProject "WindowsNetwork" */ = {
+		87F6E29726FBBA2B00BB2F4E /* Build configuration list for PBXProject "ForumClient" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				87F6E2AF26FBBA2C00BB2F4E /* Debug */,
@@ -551,7 +551,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		87F6E2B126FBBA2C00BB2F4E /* Build configuration list for PBXNativeTarget "WindowsNetwork" */ = {
+		87F6E2B126FBBA2C00BB2F4E /* Build configuration list for PBXNativeTarget "ForumClient" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				87F6E2B226FBBA2C00BB2F4E /* Debug */,
@@ -560,7 +560,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		87F6E2B426FBBA2C00BB2F4E /* Build configuration list for PBXNativeTarget "WindowsNetworkTests" */ = {
+		87F6E2B426FBBA2C00BB2F4E /* Build configuration list for PBXNativeTarget "ForumClientTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				87F6E2B526FBBA2C00BB2F4E /* Debug */,
