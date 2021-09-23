@@ -1,14 +1,14 @@
 //
-//  CommonTests.swift
-//  CommonTests
+//  PostsScreenTests.swift
+//  PostsScreenTests
 //
 //  Created by Wayne Rumble on 23/09/2021.
 //
 
 import XCTest
-@testable import Common
+@testable import PostsScreen
 
-class CommonTests: XCTestCase {
+class PostsScreenTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

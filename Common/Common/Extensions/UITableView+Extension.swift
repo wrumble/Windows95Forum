@@ -1,4 +1,4 @@
-import GlovoUtilities
+import UIKit
 
 public typealias ReusableTableViewCell = UITableViewCell & ReuseIdentifiable
 

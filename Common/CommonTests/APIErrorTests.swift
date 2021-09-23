@@ -1,7 +1,7 @@
 import Foundation
 import XCTest
 
-@testable import ForumClient
+@testable import Common
 
 private struct Constants {
   static let message = "It's broke ¯_(ツ)_¯"

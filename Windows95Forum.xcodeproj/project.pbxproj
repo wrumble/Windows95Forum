@@ -9,15 +9,14 @@
 /* Begin PBXBuildFile section */
 		87F6E25E26FBA92100BB2F4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E25D26FBA92100BB2F4E /* AppDelegate.swift */; };
 		87F6E26026FBA92100BB2F4E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E25F26FBA92100BB2F4E /* SceneDelegate.swift */; };
-		87F6E26226FBA92100BB2F4E /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E26126FBA92100BB2F4E /* PostsViewController.swift */; };
 		87F6E26726FBA92500BB2F4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87F6E26626FBA92500BB2F4E /* Assets.xcassets */; };
 		87F6E26A26FBA92500BB2F4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87F6E26826FBA92500BB2F4E /* LaunchScreen.storyboard */; };
 		87F6E27526FBA92500BB2F4E /* Windows95ForumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E27426FBA92500BB2F4E /* Windows95ForumTests.swift */; };
 		87F6E27F26FBA92500BB2F4E /* Windows95ForumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E27E26FBA92500BB2F4E /* Windows95ForumUITests.swift */; };
 		87F6E28126FBA92500BB2F4E /* Windows95ForumUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E28026FBA92500BB2F4E /* Windows95ForumUITestsLaunchTests.swift */; };
 		87F6E28E26FBAFDD00BB2F4E /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87F6E28D26FBAFDD00BB2F4E /* Colors.xcassets */; };
-		87F6E2D226FBC0DD00BB2F4E /* ForumClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87F6E2D126FBC0DD00BB2F4E /* ForumClient.framework */; };
-		87F6E2D326FBC0DD00BB2F4E /* ForumClient.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 87F6E2D126FBC0DD00BB2F4E /* ForumClient.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		87F6E3D626FD17AD00BB2F4E /* PostsScreen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87F6E3D526FD17AD00BB2F4E /* PostsScreen.framework */; };
+		87F6E3D726FD17AD00BB2F4E /* PostsScreen.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 87F6E3D526FD17AD00BB2F4E /* PostsScreen.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,13 +37,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		87F6E2D426FBC0DE00BB2F4E /* Embed Frameworks */ = {
+		87F6E3D826FD17AD00BB2F4E /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				87F6E2D326FBC0DD00BB2F4E /* ForumClient.framework in Embed Frameworks */,
+				87F6E3D726FD17AD00BB2F4E /* PostsScreen.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -55,7 +54,6 @@
 		87F6E25A26FBA92100BB2F4E /* Windows95Forum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Windows95Forum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87F6E25D26FBA92100BB2F4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87F6E25F26FBA92100BB2F4E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		87F6E26126FBA92100BB2F4E /* PostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
 		87F6E26626FBA92500BB2F4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87F6E26926FBA92500BB2F4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		87F6E26B26FBA92500BB2F4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -67,6 +65,7 @@
 		87F6E28D26FBAFDD00BB2F4E /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		87F6E29226FBB47000BB2F4E /* W95FA.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = W95FA.otf; sourceTree = "<group>"; };
 		87F6E2D126FBC0DD00BB2F4E /* ForumClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ForumClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87F6E3D526FD17AD00BB2F4E /* PostsScreen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PostsScreen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87F6E2D226FBC0DD00BB2F4E /* ForumClient.framework in Frameworks */,
+				87F6E3D626FD17AD00BB2F4E /* PostsScreen.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,7 +119,6 @@
 			isa = PBXGroup;
 			children = (
 				87F6E29026FBB1E900BB2F4E /* SupportingFiles */,
-				87F6E26126FBA92100BB2F4E /* PostsViewController.swift */,
 			);
 			path = Windows95Forum;
 			sourceTree = "<group>";
@@ -167,6 +165,7 @@
 		87F6E2D026FBC0DD00BB2F4E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				87F6E3D526FD17AD00BB2F4E /* PostsScreen.framework */,
 				87F6E2D126FBC0DD00BB2F4E /* ForumClient.framework */,
 			);
 			name = Frameworks;
@@ -182,7 +181,7 @@
 				87F6E25626FBA92100BB2F4E /* Sources */,
 				87F6E25726FBA92100BB2F4E /* Frameworks */,
 				87F6E25826FBA92100BB2F4E /* Resources */,
-				87F6E2D426FBC0DE00BB2F4E /* Embed Frameworks */,
+				87F6E3D826FD17AD00BB2F4E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -304,7 +303,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87F6E26226FBA92100BB2F4E /* PostsViewController.swift in Sources */,
 				87F6E25E26FBA92100BB2F4E /* AppDelegate.swift in Sources */,
 				87F6E26026FBA92100BB2F4E /* SceneDelegate.swift in Sources */,
 			);

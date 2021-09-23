@@ -1,22 +1,27 @@
 import UIKit
 import Combine
 
-import ForumClient
+import Common
+import PostsService
+import UsersService
 
 struct ForumPost {
   let username: String
   let title: String
 }
 
-class PostsViewController: UIViewController {
+public class PostsViewController: UIViewController {
 
   private var publishers = [AnyCancellable]()
 
-  override func viewDidLoad() {
+  private let postService = PostsService()
+  private let userService = UsersService()
+
+  public override func viewDidLoad() {
     super.viewDidLoad()
     view.backgroundColor = .gray
 
-    Publishers.Zip(getUsers(), getPosts())
+    Publishers.Zip(userService.getUsers(), postService.getPosts())
       .sink(
         receiveCompletion: { [weak self] result in
           guard let self = self else {
@@ -31,32 +36,6 @@ class PostsViewController: UIViewController {
           self.onValue(users: users, posts: posts)
         })
       .store(in: &publishers)
-
-    getComments(for: 1)
-      .sink(
-        receiveCompletion: onComplete,
-        receiveValue: { [weak self] comments in
-          guard let self = self else {
-            return
-          }
-          print("Comments: \(comments)\n\n\n")
-        })
-      .store(in: &publishers)
-  }
-
-  public func getPosts() -> AnyPublisher<[Post], APIError> {
-    let client = ForumClient()
-    return client.execute(.posts)
-  }
-
-  public func getUsers() -> AnyPublisher<[User], APIError> {
-    let client = ForumClient()
-    return client.execute(.users)
-  }
-
-  public func getComments(for postId: Int) -> AnyPublisher<[Comment], APIError>  {
-    let client = ForumClient()
-    return client.execute(.comments(postId: postId))
   }
 
   private func onValue(users: [User], posts: [Post]) {

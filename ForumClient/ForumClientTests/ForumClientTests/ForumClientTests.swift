@@ -2,10 +2,12 @@ import Foundation
 import XCTest
 import Combine
 
+import Common
+
 @testable import ForumClient
 
 private struct Constants {
-  static let initialPostData = [Post(userId: 1, id: 1, title: "title")]
+  static let initialPostData = [Post.mock()]
 }
 
 class ForumClientTests: XCTestCase {
