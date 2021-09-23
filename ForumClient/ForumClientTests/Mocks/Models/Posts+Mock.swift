@@ -1,4 +1,4 @@
-@testable import WindowsNetwork
+@testable import ForumClient
 
 extension Post {
   static func mock(

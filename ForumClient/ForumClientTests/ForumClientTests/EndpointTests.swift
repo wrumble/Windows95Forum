@@ -1,7 +1,7 @@
 import Foundation
 import XCTest
 
-@testable import WindowsNetwork
+@testable import ForumClient
 
 private struct Constants {
   static let postsPath = "posts"

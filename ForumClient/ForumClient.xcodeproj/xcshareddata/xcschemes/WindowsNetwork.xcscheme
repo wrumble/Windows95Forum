@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "87F6E29C26FBBA2B00BB2F4E"
-               BuildableName = "WindowsNetwork.framework"
-               BlueprintName = "WindowsNetwork"
-               ReferencedContainer = "container:WindowsNetwork.xcodeproj">
+               BuildableName = "ForumClient.framework"
+               BlueprintName = "ForumClient"
+               ReferencedContainer = "container:ForumClient.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,9 +34,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "87F6E2A626FBBA2C00BB2F4E"
-               BuildableName = "WindowsNetworkTests.xctest"
-               BlueprintName = "WindowsNetworkTests"
-               ReferencedContainer = "container:WindowsNetwork.xcodeproj">
+               BuildableName = "ForumClientTests.xctest"
+               BlueprintName = "ForumClientTests"
+               ReferencedContainer = "container:ForumClient.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "87F6E29C26FBBA2B00BB2F4E"
-            BuildableName = "WindowsNetwork.framework"
-            BlueprintName = "WindowsNetwork"
-            ReferencedContainer = "container:WindowsNetwork.xcodeproj">
+            BuildableName = "ForumClient.framework"
+            BlueprintName = "ForumClient"
+            ReferencedContainer = "container:ForumClient.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
