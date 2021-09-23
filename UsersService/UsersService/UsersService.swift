@@ -7,7 +7,7 @@ public protocol UsersServiceProtocol {
   func getUsers() -> AnyPublisher<[User], APIError>
 }
 
-public class UsersService: UsersServiceProtocol {
+public final class UsersService: UsersServiceProtocol {
   private let client: ForumClientProtocol
 
   public required init(client: ForumClientProtocol = ForumClient()) {

@@ -9,10 +9,6 @@
 /* Begin PBXBuildFile section */
 		8784FEFB26FD1BD4004BA2C2 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8784FEFA26FD1BD4004BA2C2 /* Common.framework */; };
 		8784FEFC26FD1BD4004BA2C2 /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8784FEFA26FD1BD4004BA2C2 /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		8784FF0026FD1C47004BA2C2 /* PostsService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8784FEFE26FD1C47004BA2C2 /* PostsService.framework */; };
-		8784FF0126FD1C47004BA2C2 /* PostsService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8784FEFE26FD1C47004BA2C2 /* PostsService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		8784FF0226FD1C47004BA2C2 /* UsersService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8784FEFF26FD1C47004BA2C2 /* UsersService.framework */; };
-		8784FF0326FD1C47004BA2C2 /* UsersService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8784FEFF26FD1C47004BA2C2 /* UsersService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		87F6E2A826FBBA2C00BB2F4E /* ForumClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87F6E29D26FBBA2B00BB2F4E /* ForumClient.framework */; };
 		87F6E2AD26FBBA2C00BB2F4E /* ForumClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E2AC26FBBA2C00BB2F4E /* ForumClientTests.swift */; };
 		87F6E2AE26FBBA2C00BB2F4E /* ForumClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 87F6E2A026FBBA2B00BB2F4E /* ForumClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -42,9 +38,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				8784FF0126FD1C47004BA2C2 /* PostsService.framework in Embed Frameworks */,
 				8784FEFC26FD1BD4004BA2C2 /* Common.framework in Embed Frameworks */,
-				8784FF0326FD1C47004BA2C2 /* UsersService.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -73,9 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8784FF0026FD1C47004BA2C2 /* PostsService.framework in Frameworks */,
 				8784FEFB26FD1BD4004BA2C2 /* Common.framework in Frameworks */,
-				8784FF0226FD1C47004BA2C2 /* UsersService.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

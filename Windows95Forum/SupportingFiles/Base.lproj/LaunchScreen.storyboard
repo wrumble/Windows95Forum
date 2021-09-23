@@ -28,7 +28,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ubv-uP-vBt">
-                                <rect key="frame" x="10" y="269.33333333333331" width="394" height="28.666666666666686"/>
+                                <rect key="frame" x="10" y="269.33333333333331" width="394" height="28.333333333333314"/>
                                 <fontDescription key="fontDescription" name="W95FARegular" family="W95FA" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>

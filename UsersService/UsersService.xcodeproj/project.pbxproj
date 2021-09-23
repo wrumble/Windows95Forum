@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		876A3FDF26FD20FE008780FC /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 876A3FDE26FD20FE008780FC /* Common.framework */; };
 		876A3FE026FD20FE008780FC /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 876A3FDE26FD20FE008780FC /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		876A3FEF26FD2DE7008780FC /* ForumClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 876A3FEE26FD2DE7008780FC /* ForumClient.framework */; };
+		876A3FF026FD2DE7008780FC /* ForumClient.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 876A3FEE26FD2DE7008780FC /* ForumClient.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		87F6E31A26FCD28000BB2F4E /* UsersService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87F6E31126FCD28000BB2F4E /* UsersService.framework */; };
 		87F6E31F26FCD28000BB2F4E /* UsersServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E31E26FCD28000BB2F4E /* UsersServiceTests.swift */; };
 		87F6E32026FCD28000BB2F4E /* UsersService.h in Headers */ = {isa = PBXBuildFile; fileRef = 87F6E31426FCD28000BB2F4E /* UsersService.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -33,6 +35,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				876A3FE026FD20FE008780FC /* Common.framework in Embed Frameworks */,
+				876A3FF026FD2DE7008780FC /* ForumClient.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -41,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		876A3FDE26FD20FE008780FC /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		876A3FEE26FD2DE7008780FC /* ForumClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ForumClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87F6E31126FCD28000BB2F4E /* UsersService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UsersService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87F6E31426FCD28000BB2F4E /* UsersService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UsersService.h; sourceTree = "<group>"; };
 		87F6E31926FCD28000BB2F4E /* UsersServiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UsersServiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,6 +58,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				876A3FDF26FD20FE008780FC /* Common.framework in Frameworks */,
+				876A3FEF26FD2DE7008780FC /* ForumClient.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +76,7 @@
 		876A3FDD26FD20FE008780FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				876A3FEE26FD2DE7008780FC /* ForumClient.framework */,
 				876A3FDE26FD20FE008780FC /* Common.framework */,
 			);
 			name = Frameworks;

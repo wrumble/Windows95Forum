@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		876A3FED26FD2CED008780FC /* W95FA.otf in Resources */ = {isa = PBXBuildFile; fileRef = 87F6E29226FBB47000BB2F4E /* W95FA.otf */; };
 		87F6E25E26FBA92100BB2F4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E25D26FBA92100BB2F4E /* AppDelegate.swift */; };
 		87F6E26026FBA92100BB2F4E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E25F26FBA92100BB2F4E /* SceneDelegate.swift */; };
 		87F6E26726FBA92500BB2F4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87F6E26626FBA92500BB2F4E /* Assets.xcassets */; };
@@ -276,6 +277,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				876A3FED26FD2CED008780FC /* W95FA.otf in Resources */,
 				87F6E26A26FBA92500BB2F4E /* LaunchScreen.storyboard in Resources */,
 				87F6E28E26FBAFDD00BB2F4E /* Colors.xcassets in Resources */,
 				87F6E26726FBA92500BB2F4E /* Assets.xcassets in Resources */,

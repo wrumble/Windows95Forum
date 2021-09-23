@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		876A3FE726FD21EC008780FC /* PostsScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A3FE626FD21EC008780FC /* PostsScreenViewModel.swift */; };
+		876A3FE926FD23BC008780FC /* ForumPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A3FE826FD23BC008780FC /* ForumPost.swift */; };
+		876A3FEB26FD2551008780FC /* ForumPostFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A3FEA26FD2551008780FC /* ForumPostFactory.swift */; };
 		87F6E3A126FD0D9E00BB2F4E /* PostsScreen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87F6E39826FD0D9E00BB2F4E /* PostsScreen.framework */; };
 		87F6E3A626FD0D9E00BB2F4E /* PostsScreenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E3A526FD0D9E00BB2F4E /* PostsScreenTests.swift */; };
 		87F6E3A726FD0D9E00BB2F4E /* PostsScreen.h in Headers */ = {isa = PBXBuildFile; fileRef = 87F6E39B26FD0D9E00BB2F4E /* PostsScreen.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -43,6 +46,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		876A3FE626FD21EC008780FC /* PostsScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsScreenViewModel.swift; sourceTree = "<group>"; };
+		876A3FE826FD23BC008780FC /* ForumPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumPost.swift; sourceTree = "<group>"; };
+		876A3FEA26FD2551008780FC /* ForumPostFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumPostFactory.swift; sourceTree = "<group>"; };
 		87F6E39826FD0D9E00BB2F4E /* PostsScreen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PostsScreen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87F6E39B26FD0D9E00BB2F4E /* PostsScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostsScreen.h; sourceTree = "<group>"; };
 		87F6E3A026FD0D9E00BB2F4E /* PostsScreenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PostsScreenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,6 +79,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		876A3FF426FD2E89008780FC /* ForumPost */ = {
+			isa = PBXGroup;
+			children = (
+				876A3FE826FD23BC008780FC /* ForumPost.swift */,
+				876A3FEA26FD2551008780FC /* ForumPostFactory.swift */,
+			);
+			path = ForumPost;
+			sourceTree = "<group>";
+		};
 		87F6E38E26FD0D9E00BB2F4E = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +111,8 @@
 			isa = PBXGroup;
 			children = (
 				87F6E3B126FD0DD100BB2F4E /* PostsViewController.swift */,
+				876A3FE626FD21EC008780FC /* PostsScreenViewModel.swift */,
+				876A3FF426FD2E89008780FC /* ForumPost */,
 				87F6E3B026FD0DA500BB2F4E /* SupportingFiles */,
 			);
 			path = PostsScreen;
@@ -236,7 +253,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				876A3FEB26FD2551008780FC /* ForumPostFactory.swift in Sources */,
+				876A3FE726FD21EC008780FC /* PostsScreenViewModel.swift in Sources */,
 				87F6E3B226FD0DD100BB2F4E /* PostsViewController.swift in Sources */,
+				876A3FE926FD23BC008780FC /* ForumPost.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

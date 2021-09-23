@@ -13,7 +13,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
     let window = UIWindow(windowScene: windowScene)
-    let postsViewController = PostsViewController()
+    let postsViewModel = PostsViewModel()
+    let postsViewController = PostsViewController(viewModel: postsViewModel)
     let navigationController = UINavigationController(rootViewController: postsViewController)
 
     window.rootViewController = navigationController

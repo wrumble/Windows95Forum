@@ -13,7 +13,7 @@ public protocol ForumClientProtocol {
   func execute<T: Codable>(_ endpoint: Endpoint) -> AnyPublisher<[T], APIError>
 }
 
-public class ForumClient: ForumClientProtocol {
+public final class ForumClient: ForumClientProtocol {
 
   private let session: URLSession
 
