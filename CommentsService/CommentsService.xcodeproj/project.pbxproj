@@ -29,6 +29,7 @@
 		87F6E33C26FCD2B700BB2F4E /* CommentsServiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommentsServiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		87F6E34126FCD2B700BB2F4E /* CommentsServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsServiceTests.swift; sourceTree = "<group>"; };
 		87F6E35126FCD3B100BB2F4E /* CommentsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsService.swift; sourceTree = "<group>"; };
+		87F6E35A26FD02E700BB2F4E /* ForumClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ForumClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +57,7 @@
 				87F6E33626FCD2B700BB2F4E /* CommentsService */,
 				87F6E34026FCD2B700BB2F4E /* CommentsServiceTests */,
 				87F6E33526FCD2B700BB2F4E /* Products */,
+				87F6E35926FD02E700BB2F4E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,6 +93,14 @@
 				87F6E33726FCD2B700BB2F4E /* CommentsService.h */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		87F6E35926FD02E700BB2F4E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				87F6E35A26FD02E700BB2F4E /* ForumClient.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

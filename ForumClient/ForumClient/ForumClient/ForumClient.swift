@@ -13,7 +13,6 @@ public protocol ForumClientProtocol {
 
 public class ForumClient: ForumClientProtocol {
 
-
   private let session: URLSession
 
   public init(session: URLSession = URLSession.shared) {

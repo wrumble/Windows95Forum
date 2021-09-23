@@ -1,4 +1,4 @@
-public enum Endpoint {
+public enum Endpoint: Equatable {
   case posts
   case users
   case comments(postId: Int)

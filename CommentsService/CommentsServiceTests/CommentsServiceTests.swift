@@ -1,33 +1,33 @@
-//
-//  CommentsServiceTests.swift
-//  CommentsServiceTests
-//
-//  Created by Wayne Rumble on 23/09/2021.
-//
-
 import XCTest
+
+import ForumClient
+
 @testable import CommentsService
+
+private struct Constants {
+  static let postId = 1
+  static let executeCallCount = 1
+}
 
 class CommentsServiceTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
+  private let clientMock = ForumClientMock()
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
+  override func setUp() {
+    let service = CommentsService(client: clientMock)
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
+    _ = service.getComments(postId: Constants.postId)
+  }
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
+  override func tearDown() {
+    clientMock.reset()
+  }
 
+  func test_CommentsService_CallsClientExecute_Once() throws {
+    XCTAssertEqual(clientMock.executeCallCount, Constants.executeCallCount)
+  }
+
+  func test_CommentsService_CallsClientExecute_WithPostsEndpoint() throws {
+    XCTAssertEqual(clientMock.executeEndpointCalled, Endpoint.comments(postId: Constants.postId))
+  }
 }

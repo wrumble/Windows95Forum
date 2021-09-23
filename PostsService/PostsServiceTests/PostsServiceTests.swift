@@ -1,33 +1,32 @@
-//
-//  PostsServiceTests.swift
-//  PostsServiceTests
-//
-//  Created by Wayne Rumble on 23/09/2021.
-//
-
 import XCTest
+
+import ForumClient
+
 @testable import PostsService
+
+private struct Constants {
+  static let executeCallCount = 1
+}
 
 class PostsServiceTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
+  private let clientMock = ForumClientMock()
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
+  override func setUp() {
+    let service = PostsService(client: clientMock)
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
+    _ = service.getPosts()
+  }
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
+  override func tearDown() {
+    clientMock.reset()
+  }
 
+  func test_PostsService_CallsClientExecute_Once() throws {
+    XCTAssertEqual(clientMock.executeCallCount, Constants.executeCallCount)
+  }
+
+  func test_PostsService_CallsClientExecute_WithPostsEndpoint() throws {
+    XCTAssertEqual(clientMock.executeEndpointCalled, Endpoint.posts)
+  }
 }
