@@ -2,6 +2,12 @@ import UIKit
 
 import Common
 
+private struct Constants {
+  static let windowsViewLeadingMargin: CGFloat = 4
+  static let windowsViewTrailingMargin: CGFloat = -2
+  static let windowsViewBottomMargin: CGFloat = -2
+}
+
 public class PostsViewController: UIViewController {
 
   private let windowsView = WindowsView(titleText: "Posts")
@@ -41,8 +47,14 @@ extension PostsViewController: Subviewable {
     windowsView.translatesAutoresizingMaskIntoConstraints = false
 
     windowsView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
-    windowsView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor).isActive = true
-    windowsView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor).isActive = true
-    windowsView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
+    windowsView.leadingAnchor.constraint(
+      equalTo: view.safeAreaLayoutGuide.leadingAnchor,
+      constant: Constants.windowsViewLeadingMargin).isActive = true
+    windowsView.trailingAnchor.constraint(
+      equalTo: view.safeAreaLayoutGuide.trailingAnchor,
+      constant: Constants.windowsViewTrailingMargin).isActive = true
+    windowsView.bottomAnchor.constraint(
+      equalTo: view.safeAreaLayoutGuide.bottomAnchor,
+      constant: Constants.windowsViewBottomMargin).isActive = true
   }
 }

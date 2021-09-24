@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		876A3FF626FD36D1008780FC /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A3FF526FD36D1008780FC /* UIView+Extension.swift */; };
 		876A3FF926FD3B78008780FC /* WindowsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A3FF826FD3B78008780FC /* WindowsView.swift */; };
+		876A3FFB26FD4DBB008780FC /* WindowsXButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A3FFA26FD4DBB008780FC /* WindowsXButton.swift */; };
+		876A3FFD26FD4F81008780FC /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A3FFC26FD4F81008780FC /* UIImage+Extension.swift */; };
 		8784FF0626FD1DE7004BA2C2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8784FF0526FD1DE7004BA2C2 /* User.swift */; };
 		8784FF0826FD1E0D004BA2C2 /* User+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8784FF0726FD1E0D004BA2C2 /* User+Mock.swift */; };
 		8784FF0A26FD1E3C004BA2C2 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8784FF0926FD1E3C004BA2C2 /* Post.swift */; };
@@ -38,6 +40,8 @@
 /* Begin PBXFileReference section */
 		876A3FF526FD36D1008780FC /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		876A3FF826FD3B78008780FC /* WindowsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowsView.swift; sourceTree = "<group>"; };
+		876A3FFA26FD4DBB008780FC /* WindowsXButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowsXButton.swift; sourceTree = "<group>"; };
+		876A3FFC26FD4F81008780FC /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		8784FF0526FD1DE7004BA2C2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		8784FF0726FD1E0D004BA2C2 /* User+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+Mock.swift"; sourceTree = "<group>"; };
 		8784FF0926FD1E3C004BA2C2 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
@@ -78,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				876A3FF826FD3B78008780FC /* WindowsView.swift */,
+				876A3FFA26FD4DBB008780FC /* WindowsXButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -165,6 +170,7 @@
 				87F6E38A26FD099200BB2F4E /* UIFont+Extension.swift */,
 				87F6E38C26FD0BA500BB2F4E /* UITableView+Extension.swift */,
 				876A3FF526FD36D1008780FC /* UIView+Extension.swift */,
+				876A3FFC26FD4F81008780FC /* UIImage+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -297,7 +303,9 @@
 				876A3FF926FD3B78008780FC /* WindowsView.swift in Sources */,
 				8784FF0A26FD1E3C004BA2C2 /* Post.swift in Sources */,
 				8784FF0826FD1E0D004BA2C2 /* User+Mock.swift in Sources */,
+				876A3FFB26FD4DBB008780FC /* WindowsXButton.swift in Sources */,
 				8784FF0626FD1DE7004BA2C2 /* User.swift in Sources */,
+				876A3FFD26FD4F81008780FC /* UIImage+Extension.swift in Sources */,
 				8784FF0E26FD1E70004BA2C2 /* Comment.swift in Sources */,
 				8784FF0C26FD1E4F004BA2C2 /* Post+Mock.swift in Sources */,
 			);

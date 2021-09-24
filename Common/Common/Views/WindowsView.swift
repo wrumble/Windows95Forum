@@ -2,15 +2,18 @@ import UIKit
 
 private struct Constants {
   static let titleLabelLeadingMargin: CGFloat = 4
-  static let topBarLeadingMargin: CGFloat = 1
-  static let topBarTrailingMargin: CGFloat = -3
-  static let topBarTopMargin: CGFloat = 2
-  static let topBarHeight: CGFloat = 40
+  static let topBarLeadingMargin: CGFloat = 3
+  static let topBarTrailingMargin: CGFloat = -5
+  static let topBarTopMargin: CGFloat = 3
+  static let topBarHeight: CGFloat = 30
+  static let windowsXButtonTrailingMargin: CGFloat = -4
+  static let windowsXLength: CGFloat = 20
 }
 
 public final class WindowsView: UIView {
   private let titleText: String
 
+  private let windowsXButton = WindowsXButton()
   private let titleLabel = UILabel()
   private let topBar = UIView()
   private let contentView = UIView()
@@ -82,6 +85,7 @@ extension WindowsView: Subviewable {
     addSubview(shadeView)
     addSubview(topBar)
     addSubview(titleLabel)
+    addSubview(windowsXButton)
   }
 
   public func setUI() {
@@ -98,26 +102,34 @@ extension WindowsView: Subviewable {
     titleLabel.text = titleText
     titleLabel.font = .topBarTitle
     titleLabel.textColor = .windowsFontWhite
+    titleLabel.numberOfLines = 1
+
+    windowsXButton.addTarget(self, action: #selector(windowsXButtonTapped), for: .touchUpInside)
   }
 
   public func setLayout() {
     setTopBarLayout()
     setTitleLabelLayout()
+    setWindowsXButtonLayout()
   }
 }
 
 private extension WindowsView {
+  @objc func windowsXButtonTapped() {
+
+  }
+
   func setTopBarLayout() {
     topBar.translatesAutoresizingMaskIntoConstraints = false
 
     topBar.leadingAnchor.constraint(
-      equalTo: contentView.leadingAnchor,
+      equalTo: leadingAnchor,
       constant: Constants.topBarLeadingMargin).isActive = true
     topBar.trailingAnchor.constraint(
-      equalTo: contentView.trailingAnchor,
+      equalTo: trailingAnchor,
       constant: Constants.topBarTrailingMargin).isActive = true
     topBar.topAnchor.constraint(
-      equalTo: contentView.topAnchor,
+      equalTo: topAnchor,
       constant: Constants.topBarTopMargin).isActive = true
     topBar.setHeight(to: Constants.topBarHeight)
   }
@@ -128,8 +140,25 @@ private extension WindowsView {
     titleLabel.leadingAnchor.constraint(
       equalTo: topBar.leadingAnchor,
       constant: Constants.titleLabelLeadingMargin).isActive = true
-    titleLabel.trailingAnchor.constraint(equalTo: topBar.trailingAnchor).isActive = true
-    titleLabel.topAnchor.constraint(equalTo: topBar.topAnchor).isActive = true
-    titleLabel.bottomAnchor.constraint(equalTo: topBar.bottomAnchor).isActive = true
+    titleLabel.trailingAnchor.constraint(
+      equalTo: windowsXButton.leadingAnchor).isActive = true
+    titleLabel.topAnchor.constraint(
+      equalTo: topBar.topAnchor).isActive = true
+    titleLabel.bottomAnchor.constraint(
+      equalTo: topBar.bottomAnchor).isActive = true
+  }
+
+  func setWindowsXButtonLayout() {
+    windowsXButton.translatesAutoresizingMaskIntoConstraints = false
+
+    windowsXButton.leadingAnchor.constraint(
+      equalTo: titleLabel.trailingAnchor).isActive = true
+    windowsXButton.trailingAnchor.constraint(
+      equalTo: topBar.trailingAnchor,
+      constant: Constants.windowsXButtonTrailingMargin).isActive = true
+    windowsXButton.centerYAnchor.constraint(
+      equalTo: topBar.centerYAnchor).isActive = true
+    windowsXButton.setWidth(to: Constants.windowsXLength)
+    windowsXButton.setHeight(to: Constants.windowsXLength)
   }
 }

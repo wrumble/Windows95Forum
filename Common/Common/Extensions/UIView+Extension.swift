@@ -14,14 +14,14 @@ extension UIView {
   }
 
   public func setWidth(to width: CGFloat) {
-    let heightConstraint = NSLayoutConstraint(item: self,
+    let widthConstraint = NSLayoutConstraint(item: self,
                                               attribute: .width,
                                               relatedBy: .equal,
                                               toItem: self,
                                               attribute: .width,
                                               multiplier: 0,
                                               constant: 0)
-    heightConstraint.constant = width
-    heightConstraint.isActive = true
+    widthConstraint.constant = width
+    widthConstraint.isActive = true
   }
 }
