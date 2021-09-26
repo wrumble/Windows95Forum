@@ -4,7 +4,7 @@ import Combine
 private struct Constants {
   static let titleLabelLeadingMargin: CGFloat = 4
   static let topBarLeadingMargin: CGFloat = 3
-  static let topBarTrailingMargin: CGFloat = -5
+  static let topBarTrailingMargin: CGFloat = -4
   static let topBarTopMargin: CGFloat = 3
   static let topBarHeight: CGFloat = 30
   static let windowsXButtonTrailingMargin: CGFloat = -4
@@ -42,7 +42,7 @@ public final class WindowsView: UIView {
   public override func draw(_ rect: CGRect) {
     super.draw(rect)
 
-    applyWindows95Style(rect: rect, contentView: contentView, shadeView: shadeView)
+    applyExternalWindows95Style(rect: rect, contentView: contentView, shadeView: shadeView)
   }
 }
 
@@ -79,6 +79,8 @@ private extension WindowsView {
   }
 }
 
+// Mark: Subviewable
+
 extension WindowsView: Subviewable {
   public func setHierarchy() {
     addSubview(contentView)
@@ -113,6 +115,8 @@ extension WindowsView: Subviewable {
     setWindowsXButtonLayout()
   }
 }
+
+// Mark: Private
 
 private extension WindowsView {
   @objc func windowsXButtonTapped() {

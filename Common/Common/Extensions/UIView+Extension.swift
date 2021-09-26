@@ -25,7 +25,7 @@ extension UIView {
     widthConstraint.isActive = true
   }
 
-  public func applyWindows95Style(rect: CGRect, contentView: UIView, shadeView: UIView) {
+  public func applyExternalWindows95Style(rect: CGRect, contentView: UIView, shadeView: UIView) {
     let outerBottom = UIBezierPath()
     let innerBottom = UIBezierPath()
     let innerTop = UIBezierPath()
@@ -69,5 +69,37 @@ extension UIView {
 
     contentView.frame = contentFrame
     shadeView.frame = contentFrame
+  }
+
+  public func applyInternalWindows95Style() {
+    let outerBottom = UIBezierPath()
+    let innerBottom = UIBezierPath()
+    let innerTop = UIBezierPath()
+    let outerTop = UIBezierPath()
+    let lineWidth: CGFloat = 1
+
+    outerBottom.lineWidth = lineWidth
+    outerBottom.move(to: CGPoint(x: 0, y: bounds.height - safeAreaInsets.bottom - lineWidth * 1.5))
+    outerBottom.addLine(to: CGPoint(x: bounds.width, y: bounds.height - safeAreaInsets.bottom - lineWidth * 1.5))
+    UIColor(white: 0, alpha: 0.3).set()
+    outerBottom.stroke()
+
+    innerBottom.lineWidth = lineWidth
+    innerBottom.move(to: CGPoint(x: 0, y: bounds.height - safeAreaInsets.bottom - lineWidth * 0.5))
+    innerBottom.addLine(to: CGPoint(x: bounds.width, y: bounds.height - safeAreaInsets.bottom - lineWidth * 0.5))
+    UIColor(white: 1, alpha: 0.5).set()
+    innerBottom.stroke()
+
+    outerTop.lineWidth = lineWidth
+    outerTop.move(to: CGPoint(x: 0, y: lineWidth * 0.5 + safeAreaInsets.top))
+    outerTop.addLine(to: CGPoint(x: bounds.width, y: lineWidth * 0.5 + safeAreaInsets.top))
+    UIColor(white: 0, alpha: 0.3).set()
+    outerTop.stroke()
+
+    innerTop.lineWidth = lineWidth
+    innerTop.move(to: CGPoint(x: 0, y: lineWidth * 1.5 + safeAreaInsets.top))
+    innerTop.addLine(to: CGPoint(x: bounds.width, y: lineWidth * 1.5 + safeAreaInsets.top))
+    UIColor(white: 1, alpha: 0.5).set()
+    innerTop.stroke()
   }
 }

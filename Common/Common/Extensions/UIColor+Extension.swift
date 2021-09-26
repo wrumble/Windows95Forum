@@ -6,4 +6,5 @@ extension UIColor {
   public static let windowsFontWhite = UIColor(named: "windowsFontWhite")
   public static let windowsGrey = UIColor(named: "windowsGrey")
   public static let windowsBlue = UIColor(named: "windowsBlue")
+  public static let windowsWhite = UIColor(named: "windowsWhite")
 }

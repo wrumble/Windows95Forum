@@ -7,12 +7,18 @@ private struct Constants {
   static let windowsViewLeadingMargin: CGFloat = 4
   static let windowsViewTrailingMargin: CGFloat = -2
   static let windowsViewBottomMargin: CGFloat = -2
+  static let tableViewTopMargin: CGFloat = 50
+  static let tableViewLeadingMargin: CGFloat = 8
+  static let tableViewTrailingMargin: CGFloat = -8
+  static let tableViewBottomMargin: CGFloat = -8
 }
 
 public class PostsViewController: UIViewController {
 
   private let windowsView: WindowsView
   private let viewModel: PostsViewModelProtocol
+
+  private let tableView = WindowsTableView()
 
   private var publishers = [AnyCancellable]()
 
@@ -43,6 +49,7 @@ public class PostsViewController: UIViewController {
 }
 
 // Mark: Private
+
 private extension PostsViewController {
   func bindViewModel() {
     viewModel.errorReceived
@@ -64,9 +71,12 @@ private extension PostsViewController {
   }
 }
 
+// Mark: Subviewable
+
 extension PostsViewController: Subviewable {
   public func setHierarchy() {
     view.addSubview(windowsView)
+    view.addSubview(tableView)
   }
 
   public func setUI() {
@@ -74,6 +84,16 @@ extension PostsViewController: Subviewable {
   }
 
   public func setLayout() {
+    setWindowsViewLayout()
+    setTableViewLayout()
+  }
+}
+
+// Mark: Private
+
+extension PostsViewController {
+
+  func setWindowsViewLayout() {
     windowsView.translatesAutoresizingMaskIntoConstraints = false
 
     windowsView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
@@ -87,4 +107,50 @@ extension PostsViewController: Subviewable {
       equalTo: view.safeAreaLayoutGuide.bottomAnchor,
       constant: Constants.windowsViewBottomMargin).isActive = true
   }
+
+  func setTableViewLayout() {
+    tableView.translatesAutoresizingMaskIntoConstraints = false
+
+    tableView.topAnchor.constraint(
+      equalTo: windowsView.topAnchor,
+      constant: Constants.tableViewTopMargin).isActive = true
+    tableView.leadingAnchor.constraint(
+      equalTo: windowsView.leadingAnchor,
+      constant: Constants.tableViewLeadingMargin).isActive = true
+    tableView.trailingAnchor.constraint(
+      equalTo: windowsView.trailingAnchor,
+      constant: Constants.tableViewTrailingMargin).isActive = true
+    tableView.bottomAnchor.constraint(
+      equalTo: windowsView.bottomAnchor,
+      constant: Constants.tableViewBottomMargin).isActive = true
+  }
+}
+
+class WindowsTableView: UITableView {
+
+  override init(frame: CGRect, style: UITableView.Style) {
+    super.init(frame: frame, style: style)
+
+    setup()
+  }
+
+  required init?(coder aDecoder: NSCoder) {
+    fatalError("init(coder:) has not been implemented")
+  }
+  
+  public override func draw(_ rect: CGRect) {
+    super.draw(rect)
+
+    applyInternalWindows95Style()
+  }
+}
+
+extension WindowsTableView: Subviewable {
+  func setHierarchy() { }
+
+  func setUI() {
+    backgroundColor = .windowsWhite
+  }
+
+  func setLayout() { }
 }

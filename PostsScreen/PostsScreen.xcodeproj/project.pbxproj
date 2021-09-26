@@ -114,9 +114,9 @@
 			children = (
 				87F6E3B126FD0DD100BB2F4E /* PostsViewController.swift */,
 				876A3FE626FD21EC008780FC /* PostsScreenViewModel.swift */,
+				876A40052700FF2F008780FC /* ViewType.swift */,
 				876A3FF426FD2E89008780FC /* ForumPost */,
 				87F6E3B026FD0DA500BB2F4E /* SupportingFiles */,
-				876A40052700FF2F008780FC /* ViewType.swift */,
 			);
 			path = PostsScreen;
 			sourceTree = "<group>";

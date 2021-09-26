@@ -19,9 +19,11 @@ public class WindowsXButton: UIButton {
   public override func draw(_ rect: CGRect) {
     super.draw(rect)
 
-    applyWindows95Style(rect: rect, contentView: contentView, shadeView: shadeView)
+    applyExternalWindows95Style(rect: rect, contentView: contentView, shadeView: shadeView)
   }
 }
+
+// Mark: Subviewable
 
 extension WindowsXButton: Subviewable {
   public func setHierarchy() { }
