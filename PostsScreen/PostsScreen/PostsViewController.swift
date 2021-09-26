@@ -7,7 +7,8 @@ private struct Constants {
   static let windowsViewLeadingMargin: CGFloat = 4
   static let windowsViewTrailingMargin: CGFloat = -2
   static let windowsViewBottomMargin: CGFloat = -2
-  static let tableViewTopMargin: CGFloat = 50
+  static let tableViewTopMargin: CGFloat = WindowsViewConstants.topBarTopMargin +
+                                           WindowsViewConstants.topBarHeight + 20
   static let tableViewLeadingMargin: CGFloat = 8
   static let tableViewTrailingMargin: CGFloat = -8
   static let tableViewBottomMargin: CGFloat = -8
@@ -62,6 +63,17 @@ private extension PostsViewController {
           self.showAlert(for: error)
         })
       .store(in: &publishers)
+
+    viewModel.reloadTableView
+      .receive(on: DispatchQueue.main)
+      .sink(
+        receiveValue: { [weak self] _ in
+          guard let self = self else {
+            return
+          }
+          self.tableView.reloadData()
+        })
+      .store(in: &publishers)
   }
 
   func showAlert(for error: APIError) {
@@ -81,11 +93,41 @@ extension PostsViewController: Subviewable {
 
   public func setUI() {
     view.backgroundColor = .windowsBackground
+
+    tableView.delegate = self
+    tableView.dataSource = self
+    
+    ForumCellFactory.registerCells(tableView: tableView)
   }
 
   public func setLayout() {
     setWindowsViewLayout()
     setTableViewLayout()
+  }
+}
+
+// MARK: TableView Delegate
+
+extension PostsViewController: UITableViewDelegate {
+
+  public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    viewModel.didSelectRow.send(indexPath)
+  }
+}
+
+// MARK: TableView Datasource
+
+extension PostsViewController: UITableViewDataSource{
+  public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    guard let cell = viewModel.cellForRow(at: indexPath, tableView: tableView) else {
+      return UITableViewCell()
+    }
+    return cell
+  }
+
+
+  public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    return viewModel.numberOfRowsForData()
   }
 }
 

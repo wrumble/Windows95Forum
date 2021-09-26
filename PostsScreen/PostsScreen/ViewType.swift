@@ -1,4 +1,4 @@
-enum ViewType {
+public enum ViewType {
   case posts
   case comments
   case error

@@ -1,14 +1,17 @@
 import UIKit
 import Combine
 
+public struct WindowsViewConstants {
+  public static let topBarTopMargin: CGFloat = 3
+  public static let topBarHeight: CGFloat = 30
+}
+
 private struct Constants {
   static let titleLabelLeadingMargin: CGFloat = 4
   static let topBarLeadingMargin: CGFloat = 3
   static let topBarTrailingMargin: CGFloat = -4
-  static let topBarTopMargin: CGFloat = 3
-  static let topBarHeight: CGFloat = 30
   static let windowsXButtonTrailingMargin: CGFloat = -4
-  static let windowsXLength: CGFloat = 20
+  static let windowsXButtonLength: CGFloat = 20
 }
 
 public final class WindowsView: UIView {
@@ -134,8 +137,8 @@ private extension WindowsView {
       constant: Constants.topBarTrailingMargin).isActive = true
     topBar.topAnchor.constraint(
       equalTo: topAnchor,
-      constant: Constants.topBarTopMargin).isActive = true
-    topBar.setHeight(to: Constants.topBarHeight)
+      constant: WindowsViewConstants.topBarTopMargin).isActive = true
+    topBar.setHeight(to: WindowsViewConstants.topBarHeight)
   }
 
   func setTitleLabelLayout() {
@@ -162,7 +165,7 @@ private extension WindowsView {
       constant: Constants.windowsXButtonTrailingMargin).isActive = true
     windowsXButton.centerYAnchor.constraint(
       equalTo: topBar.centerYAnchor).isActive = true
-    windowsXButton.setWidth(to: Constants.windowsXLength)
-    windowsXButton.setHeight(to: Constants.windowsXLength)
+    windowsXButton.setWidth(to: Constants.windowsXButtonLength)
+    windowsXButton.setHeight(to: Constants.windowsXButtonLength)
   }
 }

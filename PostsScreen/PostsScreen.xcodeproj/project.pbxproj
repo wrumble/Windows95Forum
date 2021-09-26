@@ -11,6 +11,9 @@
 		876A3FE926FD23BC008780FC /* ForumPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A3FE826FD23BC008780FC /* ForumPost.swift */; };
 		876A3FEB26FD2551008780FC /* ForumPostFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A3FEA26FD2551008780FC /* ForumPostFactory.swift */; };
 		876A40062700FF2F008780FC /* ViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A40052700FF2F008780FC /* ViewType.swift */; };
+		876A400C27011B00008780FC /* ForumCellFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A400B27011B00008780FC /* ForumCellFactory.swift */; };
+		876A40122701295E008780FC /* CommentsService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 876A40112701295E008780FC /* CommentsService.framework */; };
+		876A40132701295E008780FC /* CommentsService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 876A40112701295E008780FC /* CommentsService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		87F6E3A126FD0D9E00BB2F4E /* PostsScreen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87F6E39826FD0D9E00BB2F4E /* PostsScreen.framework */; };
 		87F6E3A626FD0D9E00BB2F4E /* PostsScreenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E3A526FD0D9E00BB2F4E /* PostsScreenTests.swift */; };
 		87F6E3A726FD0D9E00BB2F4E /* PostsScreen.h in Headers */ = {isa = PBXBuildFile; fileRef = 87F6E39B26FD0D9E00BB2F4E /* PostsScreen.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -39,6 +42,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				87F6E3DC26FD17EC00BB2F4E /* PostsService.framework in Embed Frameworks */,
+				876A40132701295E008780FC /* CommentsService.framework in Embed Frameworks */,
 				87F6E3E026FD17FF00BB2F4E /* UsersService.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -51,6 +55,8 @@
 		876A3FE826FD23BC008780FC /* ForumPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumPost.swift; sourceTree = "<group>"; };
 		876A3FEA26FD2551008780FC /* ForumPostFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumPostFactory.swift; sourceTree = "<group>"; };
 		876A40052700FF2F008780FC /* ViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewType.swift; sourceTree = "<group>"; };
+		876A400B27011B00008780FC /* ForumCellFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumCellFactory.swift; sourceTree = "<group>"; };
+		876A40112701295E008780FC /* CommentsService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CommentsService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87F6E39826FD0D9E00BB2F4E /* PostsScreen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PostsScreen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87F6E39B26FD0D9E00BB2F4E /* PostsScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostsScreen.h; sourceTree = "<group>"; };
 		87F6E3A026FD0D9E00BB2F4E /* PostsScreenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PostsScreenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +72,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				87F6E3DB26FD17EC00BB2F4E /* PostsService.framework in Frameworks */,
+				876A40122701295E008780FC /* CommentsService.framework in Frameworks */,
 				87F6E3DF26FD17FF00BB2F4E /* UsersService.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -93,6 +100,7 @@
 		87F6E38E26FD0D9E00BB2F4E = {
 			isa = PBXGroup;
 			children = (
+				876A400B27011B00008780FC /* ForumCellFactory.swift */,
 				87F6E39A26FD0D9E00BB2F4E /* PostsScreen */,
 				87F6E3A426FD0D9E00BB2F4E /* PostsScreenTests */,
 				87F6E39926FD0D9E00BB2F4E /* Products */,
@@ -140,6 +148,7 @@
 		87F6E3D926FD17EC00BB2F4E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				876A40112701295E008780FC /* CommentsService.framework */,
 				87F6E3DE26FD17FF00BB2F4E /* UsersService.framework */,
 				87F6E3DA26FD17EC00BB2F4E /* PostsService.framework */,
 			);
@@ -260,6 +269,7 @@
 				876A3FE726FD21EC008780FC /* PostsScreenViewModel.swift in Sources */,
 				876A40062700FF2F008780FC /* ViewType.swift in Sources */,
 				87F6E3B226FD0DD100BB2F4E /* PostsViewController.swift in Sources */,
+				876A400C27011B00008780FC /* ForumCellFactory.swift in Sources */,
 				876A3FE926FD23BC008780FC /* ForumPost.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

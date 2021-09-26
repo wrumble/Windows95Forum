@@ -3,12 +3,19 @@ import Combine
 import Common
 import PostsService
 import UsersService
+import CommentsService
+import UIKit
 
 public protocol PostsViewModelProtocol {
   var xButtonTapped: PassthroughSubject<Void, Never> { get }
   var titleText: PassthroughSubject<String, Never> { get }
   var hideXButton: PassthroughSubject<Bool, Never> { get }
+  var reloadTableView: PassthroughSubject<Void, Never> { get }
   var errorReceived: PassthroughSubject<APIError, Never> { get }
+  var didSelectRow: PassthroughSubject<IndexPath, Never> { get }
+
+  func numberOfRowsForData() -> Int
+  func cellForRow(at indexPath: IndexPath, tableView: UITableView) -> ReusableTableViewCell?
 }
 
 public final class PostsViewModel: PostsViewModelProtocol {
@@ -16,23 +23,48 @@ public final class PostsViewModel: PostsViewModelProtocol {
   public var xButtonTapped = PassthroughSubject<Void, Never>()
   public var titleText = PassthroughSubject<String, Never>()
   public var hideXButton = PassthroughSubject<Bool, Never>()
+  public var reloadTableView = PassthroughSubject<Void, Never>()
   public var errorReceived = PassthroughSubject<APIError, Never>()
+  public var didSelectRow = PassthroughSubject<IndexPath, Never>()
 
   private let postsService: PostsServiceProtocol
   private let usersService: UsersServiceProtocol
+  private let commentsService: CommentsServiceProtocol
+  private let forumCellFactory: ForumCellFactoryProtocol
+
   private let viewType = PassthroughSubject<ViewType, Never>()
 
+  private var currentViewType: ViewType = .posts
   private var forumPosts: [ForumPost] = []
+  private var forumComments: [ForumComment] = []
+
   private var publishers = [AnyCancellable]()
 
   public init(
     postsService: PostsServiceProtocol = PostsService(),
-    usersService: UsersServiceProtocol = UsersService()) {
+    usersService: UsersServiceProtocol = UsersService(),
+    commentsService: CommentsServiceProtocol = CommentsService(),
+    forumCellFactory: ForumCellFactoryProtocol = ForumCellFactory()) {
       self.postsService = postsService
       self.usersService = usersService
+      self.commentsService = commentsService
+      self.forumCellFactory = forumCellFactory
 
       setupObservers()
       getForumPosts()
+  }
+
+  public func numberOfRowsForData() -> Int {
+    return currentViewType == .posts ? forumPosts.count : forumComments.count
+  }
+
+  public func cellForRow(at indexPath: IndexPath, tableView: UITableView) -> ReusableTableViewCell? {
+    let data: [ForumData] = currentViewType == .posts ? forumPosts : forumComments
+    return forumCellFactory.cellForRow(
+      at: indexPath,
+      data: data,
+      viewType: currentViewType,
+      tableView: tableView)
   }
 }
 
@@ -46,8 +78,10 @@ private extension PostsViewModel {
           guard let self = self else {
             return
           }
+          self.currentViewType = viewType
           self.titleText.send(viewType.title)
           self.hideXButton.send(viewType.shouldHideXButton)
+          self.reloadTableView.send()
         })
       .store(in: &publishers)
 
@@ -58,6 +92,16 @@ private extension PostsViewModel {
             return
           }
           self.getForumPosts()
+        })
+      .store(in: &publishers)
+
+    didSelectRow
+      .sink(
+        receiveValue: { [weak self] indexPath in
+          guard let self = self else {
+            return
+          }
+          self.onDidTapRow(indexPath: indexPath)
         })
       .store(in: &publishers)
   }
@@ -75,14 +119,47 @@ private extension PostsViewModel {
           guard let self = self else {
             return
           }
-          self.onPostsValues(users: users, posts: posts)
+          self.onReceived(users: users, posts: posts)
         })
       .store(in: &publishers)
   }
 
-  func onPostsValues(users: [User], posts: [Post]) {
+  func onReceived(users: [User], posts: [Post]) {
     forumPosts = ForumPostFactory.forumPosts(from: users, posts: posts)
     viewType.send(.posts)
+  }
+
+  func getForumComments(with postId: Int) {
+    commentsService.getComments(postId: postId)
+      .sink(
+        receiveCompletion: { [weak self] result in
+          guard let self = self else {
+            return
+          }
+          self.onComplete(result: result)
+        },
+        receiveValue: { [weak self] comments in
+          guard let self = self else {
+            return
+          }
+          self.onReceived(comments: comments)
+        })
+      .store(in: &publishers)
+  }
+
+  func onDidTapRow(indexPath: IndexPath) {
+    switch currentViewType {
+    case .posts:
+      let postId = self.forumPosts[indexPath.row].id
+      self.getForumComments(with: postId)
+    default:
+      break
+    }
+  }
+
+  func onReceived(comments: [Comment]) {
+    forumComments = ForumPostFactory.forumComments(from: comments)
+    viewType.send(.comments)
   }
 
   func onComplete(result: Subscribers.Completion<APIError>) {
