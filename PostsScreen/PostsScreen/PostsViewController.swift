@@ -10,13 +10,18 @@ private struct Constants {
 
 public class PostsViewController: UIViewController {
 
-  private let windowsView = WindowsView(titleText: "Posts")
+  private let windowsView: WindowsView
 
   private let viewModel: PostsViewModelProtocol
 
   public init(viewModel: PostsViewModelProtocol) {
 
     self.viewModel = viewModel
+    let windowsViewModel = WindowsViewModel(
+      xButtonTapped: viewModel.xButtonTapped,
+      titleText: viewModel.titleText,
+      hideXButton: viewModel.hideXButton)
+    self.windowsView = WindowsView(viewModel: windowsViewModel)
 
     super.init(nibName: nil, bundle: nil)
 

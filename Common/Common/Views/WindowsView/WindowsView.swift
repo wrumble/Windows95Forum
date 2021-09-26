@@ -1,4 +1,5 @@
 import UIKit
+import Combine
 
 private struct Constants {
   static let titleLabelLeadingMargin: CGFloat = 4
@@ -11,7 +12,10 @@ private struct Constants {
 }
 
 public final class WindowsView: UIView {
-  private let titleText: String
+
+  private let viewModel: WindowsViewModelProtocol
+
+  let testButton = UIButton()
 
   private let windowsXButton = WindowsXButton()
   private let titleLabel = UILabel()
@@ -19,11 +23,16 @@ public final class WindowsView: UIView {
   private let contentView = UIView()
   private let shadeView = UIView()
 
-  public required init(titleText: String) {
-    self.titleText = titleText
+  private var publishers = [AnyCancellable]()
+  private var xButtonTapped = PassthroughSubject<Void, Never>()
+
+  public required init(viewModel: WindowsViewModelProtocol) {
+    self.viewModel = viewModel
+
     super.init(frame: .zero)
 
     setup()
+    bindViewModel()
   }
 
   required init?(coder aDecoder: NSCoder) {
@@ -79,6 +88,39 @@ public final class WindowsView: UIView {
   }
 }
 
+private extension WindowsView {
+  func bindViewModel() {
+    xButtonTapped
+      .sink(receiveValue: { [weak self] _ in
+        guard let self = self else {
+          return
+        }
+        self.viewModel.xButtonTapped.send()
+      })
+      .store(in: &publishers)
+
+    viewModel.titleText
+      .receive(on: DispatchQueue.main)
+      .sink(receiveValue: { [weak self] text in
+        guard let self = self else {
+          return
+        }
+        self.titleLabel.text = text
+      })
+      .store(in: &publishers)
+
+    viewModel.hideXButton
+      .receive(on: DispatchQueue.main)
+      .sink(receiveValue: { [weak self] shouldHideButton in
+        guard let self = self else {
+          return
+        }
+        self.windowsXButton.isHidden = shouldHideButton
+      })
+      .store(in: &publishers)
+  }
+}
+
 extension WindowsView: Subviewable {
   public func setHierarchy() {
     addSubview(contentView)
@@ -99,12 +141,12 @@ extension WindowsView: Subviewable {
 
     topBar.backgroundColor = .windowsBlue
 
-    titleLabel.text = titleText
     titleLabel.font = .topBarTitle
     titleLabel.textColor = .windowsFontWhite
     titleLabel.numberOfLines = 1
 
     windowsXButton.addTarget(self, action: #selector(windowsXButtonTapped), for: .touchUpInside)
+
   }
 
   public func setLayout() {
@@ -116,7 +158,7 @@ extension WindowsView: Subviewable {
 
 private extension WindowsView {
   @objc func windowsXButtonTapped() {
-
+    xButtonTapped.send()
   }
 
   func setTopBarLayout() {
