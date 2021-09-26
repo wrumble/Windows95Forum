@@ -4,13 +4,11 @@ import Common
 import PostsService
 import UsersService
 
-public typealias ErrorDetails = (title: String, message: String)
-
 public protocol PostsViewModelProtocol {
   var xButtonTapped: PassthroughSubject<Void, Never> { get }
   var titleText: PassthroughSubject<String, Never> { get }
   var hideXButton: PassthroughSubject<Bool, Never> { get }
-  var errorReceived: PassthroughSubject<ErrorDetails, Never> { get }
+  var errorReceived: PassthroughSubject<APIError, Never> { get }
 }
 
 public final class PostsViewModel: PostsViewModelProtocol {
@@ -18,7 +16,7 @@ public final class PostsViewModel: PostsViewModelProtocol {
   public var xButtonTapped = PassthroughSubject<Void, Never>()
   public var titleText = PassthroughSubject<String, Never>()
   public var hideXButton = PassthroughSubject<Bool, Never>()
-  public var errorReceived = PassthroughSubject<ErrorDetails, Never>()
+  public var errorReceived = PassthroughSubject<APIError, Never>()
 
   private let postsService: PostsServiceProtocol
   private let usersService: UsersServiceProtocol
@@ -38,7 +36,7 @@ public final class PostsViewModel: PostsViewModelProtocol {
   }
 }
 
-// Mark: Private
+// MARK: Private
 
 private extension PostsViewModel {
   func setupObservers() {
@@ -91,8 +89,7 @@ private extension PostsViewModel {
     switch result {
     case .failure(let error):
       viewType.send(.error)
-      let errorDetails = ErrorDetails(title: error.title, message: error.message)
-      errorReceived.send(errorDetails)
+      errorReceived.send(error)
     default:
       break
     }

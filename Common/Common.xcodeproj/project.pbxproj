@@ -12,6 +12,7 @@
 		876A3FFB26FD4DBB008780FC /* WindowsXButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A3FFA26FD4DBB008780FC /* WindowsXButton.swift */; };
 		876A3FFD26FD4F81008780FC /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A3FFC26FD4F81008780FC /* UIImage+Extension.swift */; };
 		876A3FFF26FD62C9008780FC /* WindowsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A3FFE26FD62C9008780FC /* WindowsViewModel.swift */; };
+		876A4008270114C9008780FC /* WindowsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A4007270114C9008780FC /* WindowsTableView.swift */; };
 		8784FF0626FD1DE7004BA2C2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8784FF0526FD1DE7004BA2C2 /* User.swift */; };
 		8784FF0826FD1E0D004BA2C2 /* User+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8784FF0726FD1E0D004BA2C2 /* User+Mock.swift */; };
 		8784FF0A26FD1E3C004BA2C2 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8784FF0926FD1E3C004BA2C2 /* Post.swift */; };
@@ -44,6 +45,7 @@
 		876A3FFA26FD4DBB008780FC /* WindowsXButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowsXButton.swift; sourceTree = "<group>"; };
 		876A3FFC26FD4F81008780FC /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		876A3FFE26FD62C9008780FC /* WindowsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowsViewModel.swift; sourceTree = "<group>"; };
+		876A4007270114C9008780FC /* WindowsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowsTableView.swift; sourceTree = "<group>"; };
 		8784FF0526FD1DE7004BA2C2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		8784FF0726FD1E0D004BA2C2 /* User+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+Mock.swift"; sourceTree = "<group>"; };
 		8784FF0926FD1E3C004BA2C2 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 			children = (
 				876A40042700EE58008780FC /* WindowsView */,
 				876A3FFA26FD4DBB008780FC /* WindowsXButton.swift */,
+				876A4007270114C9008780FC /* WindowsTableView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				876A4008270114C9008780FC /* WindowsTableView.swift in Sources */,
 				87F6E38B26FD099200BB2F4E /* UIFont+Extension.swift in Sources */,
 				87F6E38526FD08C300BB2F4E /* Subviewable.swift in Sources */,
 				87F6E38926FD090400BB2F4E /* UIColor+Extension.swift in Sources */,

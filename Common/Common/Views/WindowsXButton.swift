@@ -23,7 +23,7 @@ public class WindowsXButton: UIButton {
   }
 }
 
-// Mark: Subviewable
+// MARK: Subviewable
 
 extension WindowsXButton: Subviewable {
   public func setHierarchy() { }

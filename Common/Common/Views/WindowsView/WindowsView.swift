@@ -79,7 +79,7 @@ private extension WindowsView {
   }
 }
 
-// Mark: Subviewable
+// MARK: Subviewable
 
 extension WindowsView: Subviewable {
   public func setHierarchy() {
@@ -116,7 +116,7 @@ extension WindowsView: Subviewable {
   }
 }
 
-// Mark: Private
+// MARK: Private
 
 private extension WindowsView {
   @objc func windowsXButtonTapped() {

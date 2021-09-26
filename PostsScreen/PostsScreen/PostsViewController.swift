@@ -48,30 +48,30 @@ public class PostsViewController: UIViewController {
 
 }
 
-// Mark: Private
+// MARK: Private
 
 private extension PostsViewController {
   func bindViewModel() {
     viewModel.errorReceived
       .receive(on: DispatchQueue.main)
       .sink(
-        receiveValue: { [weak self] title, message in
+        receiveValue: { [weak self] error in
           guard let self = self else {
             return
           }
-          self.showAlert(title, message)
+          self.showAlert(for: error)
         })
       .store(in: &publishers)
   }
 
-  func showAlert(_ title: String, _ message: String) {
-    let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+  func showAlert(for error: APIError) {
+    let alert = UIAlertController(title: error.title, message: error.message, preferredStyle: .alert)
     alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
     self.present(alert, animated: true, completion: nil)
   }
 }
 
-// Mark: Subviewable
+// MARK: Subviewable
 
 extension PostsViewController: Subviewable {
   public func setHierarchy() {
@@ -89,7 +89,7 @@ extension PostsViewController: Subviewable {
   }
 }
 
-// Mark: Private
+// MARK: Private
 
 extension PostsViewController {
 
@@ -124,33 +124,4 @@ extension PostsViewController {
       equalTo: windowsView.bottomAnchor,
       constant: Constants.tableViewBottomMargin).isActive = true
   }
-}
-
-class WindowsTableView: UITableView {
-
-  override init(frame: CGRect, style: UITableView.Style) {
-    super.init(frame: frame, style: style)
-
-    setup()
-  }
-
-  required init?(coder aDecoder: NSCoder) {
-    fatalError("init(coder:) has not been implemented")
-  }
-  
-  public override func draw(_ rect: CGRect) {
-    super.draw(rect)
-
-    applyInternalWindows95Style()
-  }
-}
-
-extension WindowsTableView: Subviewable {
-  func setHierarchy() { }
-
-  func setUI() {
-    backgroundColor = .windowsWhite
-  }
-
-  func setLayout() { }
 }
