@@ -4,10 +4,13 @@ import Common
 import PostsService
 import UsersService
 
+public typealias ErrorDetails = (title: String, message: String)
+
 public protocol PostsViewModelProtocol {
   var xButtonTapped: PassthroughSubject<Void, Never> { get }
   var titleText: PassthroughSubject<String, Never> { get }
   var hideXButton: PassthroughSubject<Bool, Never> { get }
+  var errorReceived: PassthroughSubject<ErrorDetails, Never> { get }
 }
 
 public final class PostsViewModel: PostsViewModelProtocol {
@@ -15,6 +18,7 @@ public final class PostsViewModel: PostsViewModelProtocol {
   public var xButtonTapped = PassthroughSubject<Void, Never>()
   public var titleText = PassthroughSubject<String, Never>()
   public var hideXButton = PassthroughSubject<Bool, Never>()
+  public var errorReceived = PassthroughSubject<ErrorDetails, Never>()
 
   private let postsService: PostsServiceProtocol
   private let usersService: UsersServiceProtocol
@@ -73,22 +77,22 @@ private extension PostsViewModel {
           guard let self = self else {
             return
           }
-          self.onValue(users: users, posts: posts)
+          self.onPostsValues(users: users, posts: posts)
         })
       .store(in: &publishers)
   }
 
-  private func onValue(users: [User], posts: [Post]) {
+  func onPostsValues(users: [User], posts: [Post]) {
     forumPosts = ForumPostFactory.forumPosts(from: users, posts: posts)
     viewType.send(.posts)
   }
 
-  private func onComplete(result: Subscribers.Completion<APIError>) {
+  func onComplete(result: Subscribers.Completion<APIError>) {
     switch result {
     case .failure(let error):
-      // TODO: post alert
       viewType.send(.error)
-      print(error.message)
+      let errorDetails = ErrorDetails(title: error.title, message: error.message)
+      errorReceived.send(errorDetails)
     default:
       break
     }

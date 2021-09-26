@@ -2,12 +2,21 @@ public enum APIError: Error {
   case server(String)
   case parsing(String)
 
+  public var title: String {
+    switch self {
+    case .server:
+      return "Server error:"
+    case .parsing:
+      return "Parsing error:"
+    }
+  }
+
   public var message: String {
     switch self {
     case .server(let message):
-      return "Server error: \(message)"
+      return message
     case .parsing(let message):
-      return "Parsing error: \(message)"
+      return message
     }
   }
 }

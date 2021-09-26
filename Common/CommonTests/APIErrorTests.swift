@@ -5,21 +5,29 @@ import XCTest
 
 private struct Constants {
   static let message = "It's broke ¯_(ツ)_¯"
-  static let serverError = "Server error: \(message)"
-  static let parsingError = "Parsing error: \(message)"
+  static let serverErrorTitle = "Server error:"
+  static let parsingErrorTitle = "Parsing error:"
 }
 
 class APIErrorTests: XCTestCase {
 
+  func test_ServerError_HasCorrectTitle() throws {
+    XCTAssertEqual(APIError.server.title, Constants.serverErrorTitle)
+  }
+
   func test_ServerError_HasCorrectMessage() throws {
     let serverError: APIError = .server(Constants.message)
 
-    XCTAssertEqual(serverError.message, Constants.serverError)
+    XCTAssertEqual(serverError.message, Constants.message)
+  }
+
+  func test_ParsingError_HasCorrectTitle() throws {
+    XCTAssertEqual(APIError.parsing.title, Constants.parsingErrorTitle)
   }
 
   func test_ParsingError_HasCorrectMessage() throws {
     let parsingError: APIError = .parsing(Constants.message)
 
-    XCTAssertEqual(parsingError.message, Constants.parsingError)
+    XCTAssertEqual(parsingError.message, Constants.message)
   }
 }
