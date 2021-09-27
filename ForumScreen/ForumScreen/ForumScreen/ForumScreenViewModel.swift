@@ -6,7 +6,7 @@ import UsersService
 import CommentsService
 import UIKit
 
-public protocol PostsViewModelProtocol {
+public protocol ForumScreenViewModelProtocol {
   var xButtonTapped: PassthroughSubject<Void, Never> { get }
   var titleText: PassthroughSubject<String, Never> { get }
   var hideXButton: PassthroughSubject<Bool, Never> { get }
@@ -18,7 +18,7 @@ public protocol PostsViewModelProtocol {
   func cellForRow(at indexPath: IndexPath, tableView: UITableView) -> ReusableTableViewCell?
 }
 
-public final class PostsViewModel: PostsViewModelProtocol {
+public final class ForumScreenViewModel: ForumScreenViewModelProtocol {
 
   public var xButtonTapped = PassthroughSubject<Void, Never>()
   public var titleText = PassthroughSubject<String, Never>()
@@ -67,7 +67,7 @@ public final class PostsViewModel: PostsViewModelProtocol {
 
 // MARK: Private
 
-private extension PostsViewModel {
+private extension ForumScreenViewModel {
   func setupObservers() {
     viewType
       .sink(

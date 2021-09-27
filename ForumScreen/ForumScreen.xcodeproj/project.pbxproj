@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		876A3FE726FD21EC008780FC /* PostsScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A3FE626FD21EC008780FC /* PostsScreenViewModel.swift */; };
+		876A3FE726FD21EC008780FC /* ForumScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A3FE626FD21EC008780FC /* ForumScreenViewModel.swift */; };
 		876A3FE926FD23BC008780FC /* ForumPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A3FE826FD23BC008780FC /* ForumPost.swift */; };
 		876A3FEB26FD2551008780FC /* ForumPostFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A3FEA26FD2551008780FC /* ForumPostFactory.swift */; };
 		876A40062700FF2F008780FC /* ViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A40052700FF2F008780FC /* ViewType.swift */; };
@@ -17,16 +17,17 @@
 		876A4030270244E2008780FC /* ForumCommentFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A402F270244E2008780FC /* ForumCommentFactory.swift */; };
 		876A403227024662008780FC /* ForumComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A403127024662008780FC /* ForumComment.swift */; };
 		876A4035270246B2008780FC /* ForumData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A4034270246B2008780FC /* ForumData.swift */; };
-		876A4037270249E3008780FC /* ForumPostFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A4036270249E3008780FC /* ForumPostFactoryTests.swift */; };
-		876A403927024CF5008780FC /* ForumCommentFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A403827024CF5008780FC /* ForumCommentFactoryTests.swift */; };
-		876A403D27024E1C008780FC /* ViewTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A403C27024E1C008780FC /* ViewTypeTests.swift */; };
-		876A4040270251D1008780FC /* PostsService+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A403F270251D1008780FC /* PostsService+Mock.swift */; };
-		876A404227025364008780FC /* UserService+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A404127025363008780FC /* UserService+Mock.swift */; };
-		876A4044270253A2008780FC /* CommentsService+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A4043270253A2008780FC /* CommentsService+Mock.swift */; };
-		87F6E3A126FD0D9E00BB2F4E /* PostsScreen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87F6E39826FD0D9E00BB2F4E /* PostsScreen.framework */; };
-		87F6E3A626FD0D9E00BB2F4E /* PostsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E3A526FD0D9E00BB2F4E /* PostsViewModelTests.swift */; };
-		87F6E3A726FD0D9E00BB2F4E /* PostsScreen.h in Headers */ = {isa = PBXBuildFile; fileRef = 87F6E39B26FD0D9E00BB2F4E /* PostsScreen.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		87F6E3B226FD0DD100BB2F4E /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E3B126FD0DD100BB2F4E /* PostsViewController.swift */; };
+		876A404627026746008780FC /* ForumCommentFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A404527026746008780FC /* ForumCommentFactoryTests.swift */; };
+		876A404827026754008780FC /* ViewTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A404727026754008780FC /* ViewTypeTests.swift */; };
+		876A404B27026760008780FC /* ForumPostFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A404927026760008780FC /* ForumPostFactoryTests.swift */; };
+		876A404C27026760008780FC /* ForumCommentFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A404A27026760008780FC /* ForumCommentFactoryTests.swift */; };
+		876A40502702676F008780FC /* PostsService+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A404D2702676F008780FC /* PostsService+Mock.swift */; };
+		876A40512702676F008780FC /* UserService+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A404E2702676F008780FC /* UserService+Mock.swift */; };
+		876A40522702676F008780FC /* CommentsService+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A404F2702676F008780FC /* CommentsService+Mock.swift */; };
+		876A405727026A9E008780FC /* ForumCellFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A405627026A9E008780FC /* ForumCellFactoryTests.swift */; };
+		87F6E3A126FD0D9E00BB2F4E /* ForumScreen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87F6E39826FD0D9E00BB2F4E /* ForumScreen.framework */; };
+		87F6E3A726FD0D9E00BB2F4E /* ForumScreen.h in Headers */ = {isa = PBXBuildFile; fileRef = 87F6E39B26FD0D9E00BB2F4E /* ForumScreen.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		87F6E3B226FD0DD100BB2F4E /* ForumScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E3B126FD0DD100BB2F4E /* ForumScreenViewController.swift */; };
 		87F6E3DB26FD17EC00BB2F4E /* PostsService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87F6E3DA26FD17EC00BB2F4E /* PostsService.framework */; };
 		87F6E3DC26FD17EC00BB2F4E /* PostsService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 87F6E3DA26FD17EC00BB2F4E /* PostsService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		87F6E3DF26FD17FF00BB2F4E /* UsersService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87F6E3DE26FD17FF00BB2F4E /* UsersService.framework */; };
@@ -39,7 +40,7 @@
 			containerPortal = 87F6E38F26FD0D9E00BB2F4E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 87F6E39726FD0D9E00BB2F4E;
-			remoteInfo = PostsScreen;
+			remoteInfo = ForumScreen;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -60,7 +61,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		876A3FE626FD21EC008780FC /* PostsScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsScreenViewModel.swift; sourceTree = "<group>"; };
+		876A3FE626FD21EC008780FC /* ForumScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumScreenViewModel.swift; sourceTree = "<group>"; };
 		876A3FE826FD23BC008780FC /* ForumPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumPost.swift; sourceTree = "<group>"; };
 		876A3FEA26FD2551008780FC /* ForumPostFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumPostFactory.swift; sourceTree = "<group>"; };
 		876A40052700FF2F008780FC /* ViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewType.swift; sourceTree = "<group>"; };
@@ -69,17 +70,18 @@
 		876A402F270244E2008780FC /* ForumCommentFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumCommentFactory.swift; sourceTree = "<group>"; };
 		876A403127024662008780FC /* ForumComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumComment.swift; sourceTree = "<group>"; };
 		876A4034270246B2008780FC /* ForumData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumData.swift; sourceTree = "<group>"; };
-		876A4036270249E3008780FC /* ForumPostFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumPostFactoryTests.swift; sourceTree = "<group>"; };
-		876A403827024CF5008780FC /* ForumCommentFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumCommentFactoryTests.swift; sourceTree = "<group>"; };
-		876A403C27024E1C008780FC /* ViewTypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTypeTests.swift; sourceTree = "<group>"; };
-		876A403F270251D1008780FC /* PostsService+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PostsService+Mock.swift"; sourceTree = "<group>"; };
-		876A404127025363008780FC /* UserService+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserService+Mock.swift"; sourceTree = "<group>"; };
-		876A4043270253A2008780FC /* CommentsService+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CommentsService+Mock.swift"; sourceTree = "<group>"; };
-		87F6E39826FD0D9E00BB2F4E /* PostsScreen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PostsScreen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		87F6E39B26FD0D9E00BB2F4E /* PostsScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostsScreen.h; sourceTree = "<group>"; };
-		87F6E3A026FD0D9E00BB2F4E /* PostsScreenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PostsScreenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		87F6E3A526FD0D9E00BB2F4E /* PostsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewModelTests.swift; sourceTree = "<group>"; };
-		87F6E3B126FD0DD100BB2F4E /* PostsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
+		876A404527026746008780FC /* ForumCommentFactoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForumCommentFactoryTests.swift; sourceTree = "<group>"; };
+		876A404727026754008780FC /* ViewTypeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewTypeTests.swift; sourceTree = "<group>"; };
+		876A404927026760008780FC /* ForumPostFactoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForumPostFactoryTests.swift; sourceTree = "<group>"; };
+		876A404A27026760008780FC /* ForumCommentFactoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForumCommentFactoryTests.swift; sourceTree = "<group>"; };
+		876A404D2702676F008780FC /* PostsService+Mock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PostsService+Mock.swift"; sourceTree = "<group>"; };
+		876A404E2702676F008780FC /* UserService+Mock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserService+Mock.swift"; sourceTree = "<group>"; };
+		876A404F2702676F008780FC /* CommentsService+Mock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CommentsService+Mock.swift"; sourceTree = "<group>"; };
+		876A405627026A9E008780FC /* ForumCellFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumCellFactoryTests.swift; sourceTree = "<group>"; };
+		87F6E39826FD0D9E00BB2F4E /* ForumScreen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ForumScreen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87F6E39B26FD0D9E00BB2F4E /* ForumScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ForumScreen.h; sourceTree = "<group>"; };
+		87F6E3A026FD0D9E00BB2F4E /* ForumScreenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForumScreenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		87F6E3B126FD0DD100BB2F4E /* ForumScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForumScreenViewController.swift; sourceTree = "<group>"; };
 		87F6E3DA26FD17EC00BB2F4E /* PostsService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PostsService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87F6E3DE26FD17FF00BB2F4E /* UsersService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UsersService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -99,7 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87F6E3A126FD0D9E00BB2F4E /* PostsScreen.framework in Frameworks */,
+				87F6E3A126FD0D9E00BB2F4E /* ForumScreen.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,18 +137,43 @@
 		876A403E270251C5008780FC /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
-				876A403F270251D1008780FC /* PostsService+Mock.swift */,
-				876A404127025363008780FC /* UserService+Mock.swift */,
-				876A4043270253A2008780FC /* CommentsService+Mock.swift */,
+				876A404F2702676F008780FC /* CommentsService+Mock.swift */,
+				876A404D2702676F008780FC /* PostsService+Mock.swift */,
+				876A404E2702676F008780FC /* UserService+Mock.swift */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		876A405327026A74008780FC /* ForumCellFactory */ = {
+			isa = PBXGroup;
+			children = (
+				876A400B27011B00008780FC /* ForumCellFactory.swift */,
+			);
+			path = ForumCellFactory;
+			sourceTree = "<group>";
+		};
+		876A405427026A7F008780FC /* ViewType */ = {
+			isa = PBXGroup;
+			children = (
+				876A40052700FF2F008780FC /* ViewType.swift */,
+			);
+			path = ViewType;
+			sourceTree = "<group>";
+		};
+		876A405527026A89008780FC /* ForumScreen */ = {
+			isa = PBXGroup;
+			children = (
+				87F6E3B126FD0DD100BB2F4E /* ForumScreenViewController.swift */,
+				876A3FE626FD21EC008780FC /* ForumScreenViewModel.swift */,
+			);
+			path = ForumScreen;
 			sourceTree = "<group>";
 		};
 		87F6E38E26FD0D9E00BB2F4E = {
 			isa = PBXGroup;
 			children = (
-				87F6E39A26FD0D9E00BB2F4E /* PostsScreen */,
-				87F6E3A426FD0D9E00BB2F4E /* PostsScreenTests */,
+				87F6E39A26FD0D9E00BB2F4E /* ForumScreen */,
+				87F6E3A426FD0D9E00BB2F4E /* ForumScreenTests */,
 				87F6E39926FD0D9E00BB2F4E /* Products */,
 				87F6E3D926FD17EC00BB2F4E /* Frameworks */,
 			);
@@ -155,43 +182,43 @@
 		87F6E39926FD0D9E00BB2F4E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				87F6E39826FD0D9E00BB2F4E /* PostsScreen.framework */,
-				87F6E3A026FD0D9E00BB2F4E /* PostsScreenTests.xctest */,
+				87F6E39826FD0D9E00BB2F4E /* ForumScreen.framework */,
+				87F6E3A026FD0D9E00BB2F4E /* ForumScreenTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		87F6E39A26FD0D9E00BB2F4E /* PostsScreen */ = {
+		87F6E39A26FD0D9E00BB2F4E /* ForumScreen */ = {
 			isa = PBXGroup;
 			children = (
-				876A400B27011B00008780FC /* ForumCellFactory.swift */,
-				87F6E3B126FD0DD100BB2F4E /* PostsViewController.swift */,
-				876A3FE626FD21EC008780FC /* PostsScreenViewModel.swift */,
-				876A40052700FF2F008780FC /* ViewType.swift */,
+				876A405327026A74008780FC /* ForumCellFactory */,
+				876A405527026A89008780FC /* ForumScreen */,
+				876A405427026A7F008780FC /* ViewType */,
 				876A402E270244CC008780FC /* ForumComment */,
 				876A4033270246A4008780FC /* ForumData */,
 				876A3FF426FD2E89008780FC /* ForumPost */,
 				87F6E3B026FD0DA500BB2F4E /* SupportingFiles */,
 			);
-			path = PostsScreen;
+			path = ForumScreen;
 			sourceTree = "<group>";
 		};
-		87F6E3A426FD0D9E00BB2F4E /* PostsScreenTests */ = {
+		87F6E3A426FD0D9E00BB2F4E /* ForumScreenTests */ = {
 			isa = PBXGroup;
 			children = (
 				876A403E270251C5008780FC /* Mocks */,
-				87F6E3A526FD0D9E00BB2F4E /* PostsViewModelTests.swift */,
-				876A4036270249E3008780FC /* ForumPostFactoryTests.swift */,
-				876A403827024CF5008780FC /* ForumCommentFactoryTests.swift */,
-				876A403C27024E1C008780FC /* ViewTypeTests.swift */,
+				876A405627026A9E008780FC /* ForumCellFactoryTests.swift */,
+				876A404A27026760008780FC /* ForumCommentFactoryTests.swift */,
+				876A404527026746008780FC /* ForumCommentFactoryTests.swift */,
+				876A404927026760008780FC /* ForumPostFactoryTests.swift */,
+				876A404727026754008780FC /* ViewTypeTests.swift */,
 			);
-			path = PostsScreenTests;
+			path = ForumScreenTests;
 			sourceTree = "<group>";
 		};
 		87F6E3B026FD0DA500BB2F4E /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
-				87F6E39B26FD0D9E00BB2F4E /* PostsScreen.h */,
+				87F6E39B26FD0D9E00BB2F4E /* ForumScreen.h */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -213,16 +240,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87F6E3A726FD0D9E00BB2F4E /* PostsScreen.h in Headers */,
+				87F6E3A726FD0D9E00BB2F4E /* ForumScreen.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		87F6E39726FD0D9E00BB2F4E /* PostsScreen */ = {
+		87F6E39726FD0D9E00BB2F4E /* ForumScreen */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 87F6E3AA26FD0D9E00BB2F4E /* Build configuration list for PBXNativeTarget "PostsScreen" */;
+			buildConfigurationList = 87F6E3AA26FD0D9E00BB2F4E /* Build configuration list for PBXNativeTarget "ForumScreen" */;
 			buildPhases = (
 				87F6E39326FD0D9E00BB2F4E /* Headers */,
 				87F6E39426FD0D9E00BB2F4E /* Sources */,
@@ -234,14 +261,14 @@
 			);
 			dependencies = (
 			);
-			name = PostsScreen;
-			productName = PostsScreen;
-			productReference = 87F6E39826FD0D9E00BB2F4E /* PostsScreen.framework */;
+			name = ForumScreen;
+			productName = ForumScreen;
+			productReference = 87F6E39826FD0D9E00BB2F4E /* ForumScreen.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		87F6E39F26FD0D9E00BB2F4E /* PostsScreenTests */ = {
+		87F6E39F26FD0D9E00BB2F4E /* ForumScreenTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 87F6E3AD26FD0D9E00BB2F4E /* Build configuration list for PBXNativeTarget "PostsScreenTests" */;
+			buildConfigurationList = 87F6E3AD26FD0D9E00BB2F4E /* Build configuration list for PBXNativeTarget "ForumScreenTests" */;
 			buildPhases = (
 				87F6E39C26FD0D9E00BB2F4E /* Sources */,
 				87F6E39D26FD0D9E00BB2F4E /* Frameworks */,
@@ -252,9 +279,9 @@
 			dependencies = (
 				87F6E3A326FD0D9E00BB2F4E /* PBXTargetDependency */,
 			);
-			name = PostsScreenTests;
-			productName = PostsScreenTests;
-			productReference = 87F6E3A026FD0D9E00BB2F4E /* PostsScreenTests.xctest */;
+			name = ForumScreenTests;
+			productName = ForumScreenTests;
+			productReference = 87F6E3A026FD0D9E00BB2F4E /* ForumScreenTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -275,7 +302,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 87F6E39226FD0D9E00BB2F4E /* Build configuration list for PBXProject "PostsScreen" */;
+			buildConfigurationList = 87F6E39226FD0D9E00BB2F4E /* Build configuration list for PBXProject "ForumScreen" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -288,8 +315,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				87F6E39726FD0D9E00BB2F4E /* PostsScreen */,
-				87F6E39F26FD0D9E00BB2F4E /* PostsScreenTests */,
+				87F6E39726FD0D9E00BB2F4E /* ForumScreen */,
+				87F6E39F26FD0D9E00BB2F4E /* ForumScreenTests */,
 			);
 		};
 /* End PBXProject section */
@@ -318,11 +345,11 @@
 			files = (
 				876A3FEB26FD2551008780FC /* ForumPostFactory.swift in Sources */,
 				876A403227024662008780FC /* ForumComment.swift in Sources */,
-				876A3FE726FD21EC008780FC /* PostsScreenViewModel.swift in Sources */,
+				876A3FE726FD21EC008780FC /* ForumScreenViewModel.swift in Sources */,
 				876A4035270246B2008780FC /* ForumData.swift in Sources */,
 				876A40062700FF2F008780FC /* ViewType.swift in Sources */,
 				876A4030270244E2008780FC /* ForumCommentFactory.swift in Sources */,
-				87F6E3B226FD0DD100BB2F4E /* PostsViewController.swift in Sources */,
+				87F6E3B226FD0DD100BB2F4E /* ForumScreenViewController.swift in Sources */,
 				876A400C27011B00008780FC /* ForumCellFactory.swift in Sources */,
 				876A3FE926FD23BC008780FC /* ForumPost.swift in Sources */,
 			);
@@ -332,13 +359,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				876A403927024CF5008780FC /* ForumCommentFactoryTests.swift in Sources */,
-				876A4037270249E3008780FC /* ForumPostFactoryTests.swift in Sources */,
-				876A403D27024E1C008780FC /* ViewTypeTests.swift in Sources */,
-				876A4040270251D1008780FC /* PostsService+Mock.swift in Sources */,
-				876A404227025364008780FC /* UserService+Mock.swift in Sources */,
-				87F6E3A626FD0D9E00BB2F4E /* PostsViewModelTests.swift in Sources */,
-				876A4044270253A2008780FC /* CommentsService+Mock.swift in Sources */,
+				876A404B27026760008780FC /* ForumPostFactoryTests.swift in Sources */,
+				876A40502702676F008780FC /* PostsService+Mock.swift in Sources */,
+				876A405727026A9E008780FC /* ForumCellFactoryTests.swift in Sources */,
+				876A404627026746008780FC /* ForumCommentFactoryTests.swift in Sources */,
+				876A404C27026760008780FC /* ForumCommentFactoryTests.swift in Sources */,
+				876A40512702676F008780FC /* UserService+Mock.swift in Sources */,
+				876A404827026754008780FC /* ViewTypeTests.swift in Sources */,
+				876A40522702676F008780FC /* CommentsService+Mock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,7 +375,7 @@
 /* Begin PBXTargetDependency section */
 		87F6E3A326FD0D9E00BB2F4E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 87F6E39726FD0D9E00BB2F4E /* PostsScreen */;
+			target = 87F6E39726FD0D9E00BB2F4E /* ForumScreen */;
 			targetProxy = 87F6E3A226FD0D9E00BB2F4E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -494,8 +522,8 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.rumblewayne.PostsScreen;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rumblewayne.ForumScreen;
+				PRODUCT_NAME = ForumScreen;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -522,8 +550,8 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.rumblewayne.PostsScreen;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rumblewayne.ForumScreen;
+				PRODUCT_NAME = ForumScreen;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -545,7 +573,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.rumblewayne.PostsScreenTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rumblewayne.ForumScreenTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -567,7 +595,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.rumblewayne.PostsScreenTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rumblewayne.ForumScreenTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -578,7 +606,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		87F6E39226FD0D9E00BB2F4E /* Build configuration list for PBXProject "PostsScreen" */ = {
+		87F6E39226FD0D9E00BB2F4E /* Build configuration list for PBXProject "ForumScreen" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				87F6E3A826FD0D9E00BB2F4E /* Debug */,
@@ -587,7 +615,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		87F6E3AA26FD0D9E00BB2F4E /* Build configuration list for PBXNativeTarget "PostsScreen" */ = {
+		87F6E3AA26FD0D9E00BB2F4E /* Build configuration list for PBXNativeTarget "ForumScreen" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				87F6E3AB26FD0D9E00BB2F4E /* Debug */,
@@ -596,7 +624,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		87F6E3AD26FD0D9E00BB2F4E /* Build configuration list for PBXNativeTarget "PostsScreenTests" */ = {
+		87F6E3AD26FD0D9E00BB2F4E /* Build configuration list for PBXNativeTarget "ForumScreenTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				87F6E3AE26FD0D9E00BB2F4E /* Debug */,

@@ -1,6 +1,6 @@
 import UIKit
 
-import PostsScreen
+import ForumScreen
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -13,8 +13,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
     let window = UIWindow(windowScene: windowScene)
-    let postsViewModel = PostsViewModel()
-    let postsViewController = PostsViewController(viewModel: postsViewModel)
+    let postsViewModel = ForumScreenViewModel()
+    let postsViewController = ForumScreenViewController(viewModel: postsViewModel)
     let navigationController = UINavigationController(rootViewController: postsViewController)
 
     window.rootViewController = navigationController

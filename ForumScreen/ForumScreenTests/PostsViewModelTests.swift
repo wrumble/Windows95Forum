@@ -2,7 +2,7 @@ import XCTest
 
 import Common
 
-@testable import PostsScreen
+@testable import ForumScreen
 
 private struct Constants {
   static let postCellUsername = "username"

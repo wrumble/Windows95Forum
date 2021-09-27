@@ -14,16 +14,16 @@ private struct Constants {
   static let tableViewBottomMargin: CGFloat = -8
 }
 
-public class PostsViewController: UIViewController {
+public class ForumScreenViewController: UIViewController {
 
   private let windowsView: WindowsView
-  private let viewModel: PostsViewModelProtocol
+  private let viewModel: ForumScreenViewModelProtocol
 
   private let tableView = WindowsTableView()
 
   private var publishers = [AnyCancellable]()
 
-  public init(viewModel: PostsViewModelProtocol) {
+  public init(viewModel: ForumScreenViewModelProtocol) {
 
     self.viewModel = viewModel
 
@@ -52,7 +52,7 @@ public class PostsViewController: UIViewController {
 
 // MARK: Private
 
-private extension PostsViewController {
+private extension ForumScreenViewController {
   func bindViewModel() {
     viewModel.errorReceived
       .receive(on: DispatchQueue.main)
@@ -86,7 +86,7 @@ private extension PostsViewController {
 
 // MARK: Subviewable
 
-extension PostsViewController: Subviewable {
+extension ForumScreenViewController: Subviewable {
   public func setHierarchy() {
     view.addSubview(windowsView)
     view.addSubview(tableView)
@@ -109,7 +109,7 @@ extension PostsViewController: Subviewable {
 
 // MARK: TableView Delegate
 
-extension PostsViewController: UITableViewDelegate {
+extension ForumScreenViewController: UITableViewDelegate {
 
   public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     viewModel.didSelectRow.send(indexPath)
@@ -118,7 +118,7 @@ extension PostsViewController: UITableViewDelegate {
 
 // MARK: TableView Datasource
 
-extension PostsViewController: UITableViewDataSource {
+extension ForumScreenViewController: UITableViewDataSource {
   public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     guard let cell = viewModel.cellForRow(at: indexPath, tableView: tableView) else {
       return UITableViewCell()
@@ -134,7 +134,7 @@ extension PostsViewController: UITableViewDataSource {
 
 // MARK: Private
 
-extension PostsViewController {
+extension ForumScreenViewController {
 
   func setWindowsViewLayout() {
     windowsView.translatesAutoresizingMaskIntoConstraints = false

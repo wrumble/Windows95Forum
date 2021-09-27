@@ -30,7 +30,7 @@
       codeCoverageEnabled = "YES">
       <Testables>
          <TestableReference
-            skipped = "NO">
+            skipped = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "87F6E26F26FBA92500BB2F4E"
@@ -40,13 +40,73 @@
             </BuildableReference>
          </TestableReference>
          <TestableReference
-            skipped = "NO">
+            skipped = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "87F6E27926FBA92500BB2F4E"
                BuildableName = "Windows95ForumUITests.xctest"
                BlueprintName = "Windows95ForumUITests"
                ReferencedContainer = "container:Windows95Forum.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "87F6E33B26FCD2B700BB2F4E"
+               BuildableName = "CommentsServiceTests.xctest"
+               BlueprintName = "CommentsServiceTests"
+               ReferencedContainer = "container:CommentsService/CommentsService.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "87F6E37226FD087400BB2F4E"
+               BuildableName = "CommonTests.xctest"
+               BlueprintName = "CommonTests"
+               ReferencedContainer = "container:Common/Common.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "87F6E2A626FBBA2C00BB2F4E"
+               BuildableName = "ForumClientTests.xctest"
+               BlueprintName = "ForumClientTests"
+               ReferencedContainer = "container:ForumClient/ForumClient.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "87F6E39F26FD0D9E00BB2F4E"
+               BuildableName = "ForumScreenTests.xctest"
+               BlueprintName = "ForumScreenTests"
+               ReferencedContainer = "container:ForumScreen/ForumScreen.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "87F6E2F526FCD23F00BB2F4E"
+               BuildableName = "PostsServiceTests.xctest"
+               BlueprintName = "PostsServiceTests"
+               ReferencedContainer = "container:PostsService/PostsService.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "87F6E31826FCD28000BB2F4E"
+               BuildableName = "UsersServiceTests.xctest"
+               BlueprintName = "UsersServiceTests"
+               ReferencedContainer = "container:UsersService/UsersService.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>

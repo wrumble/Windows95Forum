@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "87F6E39726FD0D9E00BB2F4E"
-               BuildableName = "PostsScreen.framework"
-               BlueprintName = "PostsScreen"
-               ReferencedContainer = "container:PostsScreen.xcodeproj">
+               BuildableName = "ForumScreen.framework"
+               BlueprintName = "ForumScreen"
+               ReferencedContainer = "container:ForumScreen.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,9 +34,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "87F6E39F26FD0D9E00BB2F4E"
-               BuildableName = "PostsScreenTests.xctest"
-               BlueprintName = "PostsScreenTests"
-               ReferencedContainer = "container:PostsScreen.xcodeproj">
+               BuildableName = "ForumScreenTests.xctest"
+               BlueprintName = "ForumScreenTests"
+               ReferencedContainer = "container:ForumScreen.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "87F6E39726FD0D9E00BB2F4E"
-            BuildableName = "PostsScreen.framework"
-            BlueprintName = "PostsScreen"
-            ReferencedContainer = "container:PostsScreen.xcodeproj">
+            BuildableName = "ForumScreen.framework"
+            BlueprintName = "ForumScreen"
+            ReferencedContainer = "container:ForumScreen.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

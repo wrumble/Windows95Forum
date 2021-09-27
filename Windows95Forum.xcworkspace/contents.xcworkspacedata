@@ -14,7 +14,7 @@
       location = "group:/Users/waynerumble/Desktop/Windows95Forum/ForumClient/ForumClient.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:PostsScreen/PostsScreen.xcodeproj">
+      location = "group:ForumScreen/ForumScreen.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:PostsService/PostsService.xcodeproj">

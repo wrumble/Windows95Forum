@@ -1,6 +1,6 @@
 import XCTest
 
-@testable import PostsScreen
+@testable import ForumScreen
 
 private struct Constants {
   static let id: Int = 1
