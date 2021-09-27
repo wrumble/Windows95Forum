@@ -14,9 +14,10 @@ Or you can select each scheme and run their individual tests that way
 Why not! Honestly i have no idea why i did this i just quite fancied the idea of this being the last windows 95 forum left on the planet.
 Plus i wanted to play with how it looked to see how hard it was!
 
-## The app is simple an uses the most basic of MVVM architectures, it doesnt even need a router as its only one screen.
+## Architecture
+The app is simple an uses the most basic of MVVM architectures, it doesnt even need a router as its only one screen.
 
-I did contemplate the idea of a second screen to show the comments but felt the amount of duplication was too high and unnecessary.
+I did contemplate the idea of a second screen to show the comments but felt the amount of duplication was too high and unnecessary, so just reloading a tableView was fine.
 
 ## What im not sure about
 
