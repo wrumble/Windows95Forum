@@ -7,13 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		876A3FF626FD36D1008780FC /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A3FF526FD36D1008780FC /* UIView+Extension.swift */; };
+		876A3FF926FD3B78008780FC /* WindowsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A3FF826FD3B78008780FC /* WindowsView.swift */; };
+		876A3FFB26FD4DBB008780FC /* WindowsXButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A3FFA26FD4DBB008780FC /* WindowsXButton.swift */; };
+		876A3FFD26FD4F81008780FC /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A3FFC26FD4F81008780FC /* UIImage+Extension.swift */; };
+		876A3FFF26FD62C9008780FC /* WindowsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A3FFE26FD62C9008780FC /* WindowsViewModel.swift */; };
+		876A4008270114C9008780FC /* WindowsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A4007270114C9008780FC /* WindowsTableView.swift */; };
+		876A400A270119B7008780FC /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A4009270119B7008780FC /* PostCell.swift */; };
+		876A4010270121ED008780FC /* PostCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A400F270121ED008780FC /* PostCellData.swift */; };
+		876A401527012E03008780FC /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A401427012E03008780FC /* CommentCell.swift */; };
+		876A401727012EF1008780FC /* CommentCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A401627012EF1008780FC /* CommentCellData.swift */; };
+		876A403B27024DA8008780FC /* Comment+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A403A27024DA8008780FC /* Comment+Mock.swift */; };
+		8784FF0626FD1DE7004BA2C2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8784FF0526FD1DE7004BA2C2 /* User.swift */; };
+		8784FF0826FD1E0D004BA2C2 /* User+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8784FF0726FD1E0D004BA2C2 /* User+Mock.swift */; };
+		8784FF0A26FD1E3C004BA2C2 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8784FF0926FD1E3C004BA2C2 /* Post.swift */; };
+		8784FF0C26FD1E4F004BA2C2 /* Post+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8784FF0B26FD1E4F004BA2C2 /* Post+Mock.swift */; };
+		8784FF0E26FD1E70004BA2C2 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8784FF0D26FD1E70004BA2C2 /* Comment.swift */; };
 		87F6E37426FD087400BB2F4E /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87F6E36B26FD087300BB2F4E /* Common.framework */; };
-		87F6E37926FD087400BB2F4E /* CommonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E37826FD087400BB2F4E /* CommonTests.swift */; };
 		87F6E37A26FD087400BB2F4E /* Common.h in Headers */ = {isa = PBXBuildFile; fileRef = 87F6E36E26FD087300BB2F4E /* Common.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		87F6E38526FD08C300BB2F4E /* Subviewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E38426FD08C300BB2F4E /* Subviewable.swift */; };
 		87F6E38926FD090400BB2F4E /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E38826FD090400BB2F4E /* UIColor+Extension.swift */; };
 		87F6E38B26FD099200BB2F4E /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E38A26FD099200BB2F4E /* UIFont+Extension.swift */; };
 		87F6E38D26FD0BA500BB2F4E /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E38C26FD0BA500BB2F4E /* UITableView+Extension.swift */; };
+		87F6E3E326FD184E00BB2F4E /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E3E226FD184E00BB2F4E /* APIError.swift */; };
+		87F6E3E526FD187600BB2F4E /* APIErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E3E426FD187600BB2F4E /* APIErrorTests.swift */; };
+		87F6E3E726FD192100BB2F4E /* ReuseIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E3E626FD192100BB2F4E /* ReuseIdentifiable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,14 +45,32 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		876A3FF526FD36D1008780FC /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		876A3FF826FD3B78008780FC /* WindowsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowsView.swift; sourceTree = "<group>"; };
+		876A3FFA26FD4DBB008780FC /* WindowsXButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowsXButton.swift; sourceTree = "<group>"; };
+		876A3FFC26FD4F81008780FC /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		876A3FFE26FD62C9008780FC /* WindowsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowsViewModel.swift; sourceTree = "<group>"; };
+		876A4007270114C9008780FC /* WindowsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowsTableView.swift; sourceTree = "<group>"; };
+		876A4009270119B7008780FC /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		876A400F270121ED008780FC /* PostCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCellData.swift; sourceTree = "<group>"; };
+		876A401427012E03008780FC /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		876A401627012EF1008780FC /* CommentCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCellData.swift; sourceTree = "<group>"; };
+		876A403A27024DA8008780FC /* Comment+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Comment+Mock.swift"; sourceTree = "<group>"; };
+		8784FF0526FD1DE7004BA2C2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8784FF0726FD1E0D004BA2C2 /* User+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+Mock.swift"; sourceTree = "<group>"; };
+		8784FF0926FD1E3C004BA2C2 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		8784FF0B26FD1E4F004BA2C2 /* Post+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Post+Mock.swift"; sourceTree = "<group>"; };
+		8784FF0D26FD1E70004BA2C2 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		87F6E36B26FD087300BB2F4E /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87F6E36E26FD087300BB2F4E /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		87F6E37326FD087400BB2F4E /* CommonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		87F6E37826FD087400BB2F4E /* CommonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTests.swift; sourceTree = "<group>"; };
 		87F6E38426FD08C300BB2F4E /* Subviewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subviewable.swift; sourceTree = "<group>"; };
 		87F6E38826FD090400BB2F4E /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		87F6E38A26FD099200BB2F4E /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
 		87F6E38C26FD0BA500BB2F4E /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		87F6E3E226FD184E00BB2F4E /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		87F6E3E426FD187600BB2F4E /* APIErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIErrorTests.swift; sourceTree = "<group>"; };
+		87F6E3E626FD192100BB2F4E /* ReuseIdentifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReuseIdentifiable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +92,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		876A3FF726FD3B5D008780FC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				876A40042700EE58008780FC /* WindowsView */,
+				876A3FFA26FD4DBB008780FC /* WindowsXButton.swift */,
+				876A4007270114C9008780FC /* WindowsTableView.swift */,
+				876A400D27011B8A008780FC /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		876A40042700EE58008780FC /* WindowsView */ = {
+			isa = PBXGroup;
+			children = (
+				876A3FF826FD3B78008780FC /* WindowsView.swift */,
+				876A3FFE26FD62C9008780FC /* WindowsViewModel.swift */,
+			);
+			path = WindowsView;
+			sourceTree = "<group>";
+		};
+		876A400D27011B8A008780FC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				876A400E270121D8008780FC /* PostCell */,
+				876A401827013211008780FC /* CommentCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		876A400E270121D8008780FC /* PostCell */ = {
+			isa = PBXGroup;
+			children = (
+				876A4009270119B7008780FC /* PostCell.swift */,
+				876A400F270121ED008780FC /* PostCellData.swift */,
+			);
+			path = PostCell;
+			sourceTree = "<group>";
+		};
+		876A401827013211008780FC /* CommentCell */ = {
+			isa = PBXGroup;
+			children = (
+				876A401427012E03008780FC /* CommentCell.swift */,
+				876A401627012EF1008780FC /* CommentCellData.swift */,
+			);
+			path = CommentCell;
+			sourceTree = "<group>";
+		};
+		8784FF0426FD1DD9004BA2C2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8784FF0526FD1DE7004BA2C2 /* User.swift */,
+				8784FF0926FD1E3C004BA2C2 /* Post.swift */,
+				8784FF0D26FD1E70004BA2C2 /* Comment.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8784FF0F26FD1E79004BA2C2 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				8784FF0726FD1E0D004BA2C2 /* User+Mock.swift */,
+				8784FF0B26FD1E4F004BA2C2 /* Post+Mock.swift */,
+				876A403A27024DA8008780FC /* Comment+Mock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		87F6E36126FD087300BB2F4E = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +180,10 @@
 		87F6E36D26FD087300BB2F4E /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				876A3FF726FD3B5D008780FC /* Views */,
+				8784FF0F26FD1E79004BA2C2 /* Mocks */,
+				8784FF0426FD1DD9004BA2C2 /* Models */,
+				87F6E3E126FD184000BB2F4E /* Error */,
 				87F6E38726FD08F300BB2F4E /* Extensions */,
 				87F6E38626FD08EB00BB2F4E /* Protocols */,
 				87F6E38326FD089D00BB2F4E /* SupportingFiles */,
@@ -87,7 +194,7 @@
 		87F6E37726FD087400BB2F4E /* CommonTests */ = {
 			isa = PBXGroup;
 			children = (
-				87F6E37826FD087400BB2F4E /* CommonTests.swift */,
+				87F6E3E426FD187600BB2F4E /* APIErrorTests.swift */,
 			);
 			path = CommonTests;
 			sourceTree = "<group>";
@@ -104,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				87F6E38426FD08C300BB2F4E /* Subviewable.swift */,
+				87F6E3E626FD192100BB2F4E /* ReuseIdentifiable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -114,8 +222,18 @@
 				87F6E38826FD090400BB2F4E /* UIColor+Extension.swift */,
 				87F6E38A26FD099200BB2F4E /* UIFont+Extension.swift */,
 				87F6E38C26FD0BA500BB2F4E /* UITableView+Extension.swift */,
+				876A3FF526FD36D1008780FC /* UIView+Extension.swift */,
+				876A3FFC26FD4F81008780FC /* UIImage+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		87F6E3E126FD184000BB2F4E /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				87F6E3E226FD184E00BB2F4E /* APIError.swift */,
+			);
+			path = Error;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,10 +346,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				876A4008270114C9008780FC /* WindowsTableView.swift in Sources */,
 				87F6E38B26FD099200BB2F4E /* UIFont+Extension.swift in Sources */,
+				876A4010270121ED008780FC /* PostCellData.swift in Sources */,
+				876A401727012EF1008780FC /* CommentCellData.swift in Sources */,
 				87F6E38526FD08C300BB2F4E /* Subviewable.swift in Sources */,
+				876A403B27024DA8008780FC /* Comment+Mock.swift in Sources */,
 				87F6E38926FD090400BB2F4E /* UIColor+Extension.swift in Sources */,
+				87F6E3E326FD184E00BB2F4E /* APIError.swift in Sources */,
+				876A400A270119B7008780FC /* PostCell.swift in Sources */,
+				87F6E3E726FD192100BB2F4E /* ReuseIdentifiable.swift in Sources */,
 				87F6E38D26FD0BA500BB2F4E /* UITableView+Extension.swift in Sources */,
+				876A3FF626FD36D1008780FC /* UIView+Extension.swift in Sources */,
+				876A3FF926FD3B78008780FC /* WindowsView.swift in Sources */,
+				876A3FFF26FD62C9008780FC /* WindowsViewModel.swift in Sources */,
+				8784FF0A26FD1E3C004BA2C2 /* Post.swift in Sources */,
+				8784FF0826FD1E0D004BA2C2 /* User+Mock.swift in Sources */,
+				876A3FFB26FD4DBB008780FC /* WindowsXButton.swift in Sources */,
+				876A401527012E03008780FC /* CommentCell.swift in Sources */,
+				8784FF0626FD1DE7004BA2C2 /* User.swift in Sources */,
+				876A3FFD26FD4F81008780FC /* UIImage+Extension.swift in Sources */,
+				8784FF0E26FD1E70004BA2C2 /* Comment.swift in Sources */,
+				8784FF0C26FD1E4F004BA2C2 /* Post+Mock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,7 +375,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87F6E37926FD087400BB2F4E /* CommonTests.swift in Sources */,
+				87F6E3E526FD187600BB2F4E /* APIErrorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

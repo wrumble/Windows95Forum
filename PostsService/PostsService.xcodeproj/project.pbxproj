@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		876A3FDA26FD20F7008780FC /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 876A3FD926FD20F7008780FC /* Common.framework */; };
+		876A3FDB26FD20F7008780FC /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 876A3FD926FD20F7008780FC /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		876A3FF226FD2DF7008780FC /* ForumClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 876A3FF126FD2DF7008780FC /* ForumClient.framework */; };
+		876A3FF326FD2DF7008780FC /* ForumClient.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 876A3FF126FD2DF7008780FC /* ForumClient.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		87F6E2F726FCD23F00BB2F4E /* PostsService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87F6E2EE26FCD23E00BB2F4E /* PostsService.framework */; };
 		87F6E2FC26FCD23F00BB2F4E /* PostsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E2FB26FCD23F00BB2F4E /* PostsServiceTests.swift */; };
 		87F6E2FD26FCD23F00BB2F4E /* PostsService.h in Headers */ = {isa = PBXBuildFile; fileRef = 87F6E2F126FCD23E00BB2F4E /* PostsService.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,7 +27,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		876A3FDC26FD20F7008780FC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				876A3FDB26FD20F7008780FC /* Common.framework in Embed Frameworks */,
+				876A3FF326FD2DF7008780FC /* ForumClient.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		876A3FD926FD20F7008780FC /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		876A3FF126FD2DF7008780FC /* ForumClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ForumClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87F6E2EE26FCD23E00BB2F4E /* PostsService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PostsService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87F6E2F126FCD23E00BB2F4E /* PostsService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostsService.h; sourceTree = "<group>"; };
 		87F6E2F626FCD23F00BB2F4E /* PostsServiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PostsServiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				876A3FDA26FD20F7008780FC /* Common.framework in Frameworks */,
+				876A3FF226FD2DF7008780FC /* ForumClient.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,12 +73,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		876A3FD826FD20F7008780FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				876A3FF126FD2DF7008780FC /* ForumClient.framework */,
+				876A3FD926FD20F7008780FC /* Common.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		87F6E2E426FCD23E00BB2F4E = {
 			isa = PBXGroup;
 			children = (
 				87F6E2F026FCD23E00BB2F4E /* PostsService */,
 				87F6E2FA26FCD23F00BB2F4E /* PostsServiceTests */,
 				87F6E2EF26FCD23E00BB2F4E /* Products */,
+				876A3FD826FD20F7008780FC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,6 +148,7 @@
 				87F6E2EA26FCD23E00BB2F4E /* Sources */,
 				87F6E2EB26FCD23E00BB2F4E /* Frameworks */,
 				87F6E2EC26FCD23E00BB2F4E /* Resources */,
+				876A3FDC26FD20F7008780FC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

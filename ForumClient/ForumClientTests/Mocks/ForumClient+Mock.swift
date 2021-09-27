@@ -1,5 +1,7 @@
 import Combine
 
+import Common
+
 public class ForumClientMock: ForumClientProtocol {
 
   public var executeCallCount = 0

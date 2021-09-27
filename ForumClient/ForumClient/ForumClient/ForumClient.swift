@@ -1,5 +1,7 @@
 import Combine
 
+import Common
+
 private struct Constants {
   static let host = "jsonplaceholder.typicode.com"
   static let scheme = "https"
@@ -11,7 +13,7 @@ public protocol ForumClientProtocol {
   func execute<T: Codable>(_ endpoint: Endpoint) -> AnyPublisher<[T], APIError>
 }
 
-public class ForumClient: ForumClientProtocol {
+public final class ForumClient: ForumClientProtocol {
 
   private let session: URLSession
 

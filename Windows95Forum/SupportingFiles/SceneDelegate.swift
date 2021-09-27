@@ -1,11 +1,6 @@
-//
-//  SceneDelegate.swift
-//  Windows95Forum
-//
-//  Created by Wayne Rumble on 22/09/2021.
-//
-
 import UIKit
+
+import ForumScreen
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -18,7 +13,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
     let window = UIWindow(windowScene: windowScene)
-    let postsViewController = PostsViewController()
+    let postsViewModel = ForumScreenViewModel()
+    let postsViewController = ForumScreenViewController(viewModel: postsViewModel)
     let navigationController = UINavigationController(rootViewController: postsViewController)
 
     window.rootViewController = navigationController

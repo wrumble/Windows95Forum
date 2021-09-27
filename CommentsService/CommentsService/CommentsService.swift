@@ -1,12 +1,13 @@
 import Combine
 
+import Common
 import ForumClient
 
 public protocol CommentsServiceProtocol {
   func getComments(postId: Int) -> AnyPublisher<[Comment], APIError>
 }
 
-public class CommentsService: CommentsServiceProtocol {
+public final class CommentsService: CommentsServiceProtocol {
   private let client: ForumClientProtocol
 
   public required init(client: ForumClientProtocol = ForumClient()) {

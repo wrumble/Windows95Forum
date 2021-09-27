@@ -7,22 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8784FEFB26FD1BD4004BA2C2 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8784FEFA26FD1BD4004BA2C2 /* Common.framework */; };
+		8784FEFC26FD1BD4004BA2C2 /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8784FEFA26FD1BD4004BA2C2 /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		87F6E2A826FBBA2C00BB2F4E /* ForumClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87F6E29D26FBBA2B00BB2F4E /* ForumClient.framework */; };
 		87F6E2AD26FBBA2C00BB2F4E /* ForumClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E2AC26FBBA2C00BB2F4E /* ForumClientTests.swift */; };
 		87F6E2AE26FBBA2C00BB2F4E /* ForumClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 87F6E2A026FBBA2B00BB2F4E /* ForumClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		87F6E2B926FBBB2400BB2F4E /* ForumClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E2B826FBBB2400BB2F4E /* ForumClient.swift */; };
 		87F6E2BB26FBBBF100BB2F4E /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E2BA26FBBBF100BB2F4E /* Endpoint.swift */; };
 		87F6E2C026FBBDFD00BB2F4E /* PreconditionFailure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E2BF26FBBDFD00BB2F4E /* PreconditionFailure.swift */; };
-		87F6E2C226FBBE1C00BB2F4E /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E2C126FBBE1C00BB2F4E /* APIError.swift */; };
-		87F6E2C726FBBEBD00BB2F4E /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E2C626FBBEBD00BB2F4E /* Post.swift */; };
-		87F6E2C926FBBEFC00BB2F4E /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E2C826FBBEFC00BB2F4E /* Comment.swift */; };
-		87F6E2CD26FBBF9F00BB2F4E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E2CC26FBBF9F00BB2F4E /* User.swift */; };
 		87F6E2D726FCC0E600BB2F4E /* URLProtocol+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E2D626FCC0E600BB2F4E /* URLProtocol+Mock.swift */; };
 		87F6E2D926FCC10F00BB2F4E /* URLSession+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E2D826FCC10F00BB2F4E /* URLSession+Mock.swift */; };
-		87F6E2DD26FCC2BE00BB2F4E /* Posts+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E2DC26FCC2BE00BB2F4E /* Posts+Mock.swift */; };
-		87F6E2DF26FCC51700BB2F4E /* User+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E2DE26FCC51700BB2F4E /* User+Mock.swift */; };
 		87F6E2E126FCC82500BB2F4E /* EndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E2E026FCC82500BB2F4E /* EndpointTests.swift */; };
-		87F6E2E326FCC96700BB2F4E /* APIErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E2E226FCC96700BB2F4E /* APIErrorTests.swift */; };
 		87F6E36026FD033A00BB2F4E /* ForumClient+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E35326FCD61E00BB2F4E /* ForumClient+Mock.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,7 +31,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		8784FEFD26FD1BD4004BA2C2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8784FEFC26FD1BD4004BA2C2 /* Common.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		8784FEFA26FD1BD4004BA2C2 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8784FEFE26FD1C47004BA2C2 /* PostsService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PostsService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8784FEFF26FD1C47004BA2C2 /* UsersService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UsersService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87F6E29D26FBBA2B00BB2F4E /* ForumClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ForumClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87F6E2A026FBBA2B00BB2F4E /* ForumClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ForumClient.h; sourceTree = "<group>"; };
 		87F6E2A726FBBA2C00BB2F4E /* ForumClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForumClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,16 +56,9 @@
 		87F6E2B826FBBB2400BB2F4E /* ForumClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumClient.swift; sourceTree = "<group>"; };
 		87F6E2BA26FBBBF100BB2F4E /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		87F6E2BF26FBBDFD00BB2F4E /* PreconditionFailure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreconditionFailure.swift; sourceTree = "<group>"; };
-		87F6E2C126FBBE1C00BB2F4E /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
-		87F6E2C626FBBEBD00BB2F4E /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
-		87F6E2C826FBBEFC00BB2F4E /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
-		87F6E2CC26FBBF9F00BB2F4E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		87F6E2D626FCC0E600BB2F4E /* URLProtocol+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLProtocol+Mock.swift"; sourceTree = "<group>"; };
 		87F6E2D826FCC10F00BB2F4E /* URLSession+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Mock.swift"; sourceTree = "<group>"; };
-		87F6E2DC26FCC2BE00BB2F4E /* Posts+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Posts+Mock.swift"; sourceTree = "<group>"; };
-		87F6E2DE26FCC51700BB2F4E /* User+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+Mock.swift"; sourceTree = "<group>"; };
 		87F6E2E026FCC82500BB2F4E /* EndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointTests.swift; sourceTree = "<group>"; };
-		87F6E2E226FCC96700BB2F4E /* APIErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIErrorTests.swift; sourceTree = "<group>"; };
 		87F6E35326FCD61E00BB2F4E /* ForumClient+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ForumClient+Mock.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8784FEFB26FD1BD4004BA2C2 /* Common.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,12 +82,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8784FEF926FD1BD4004BA2C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8784FEFE26FD1C47004BA2C2 /* PostsService.framework */,
+				8784FEFF26FD1C47004BA2C2 /* UsersService.framework */,
+				8784FEFA26FD1BD4004BA2C2 /* Common.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		87F6E29326FBBA2B00BB2F4E = {
 			isa = PBXGroup;
 			children = (
 				87F6E29F26FBBA2B00BB2F4E /* ForumClient */,
 				87F6E2AB26FBBA2C00BB2F4E /* ForumClientTests */,
 				87F6E29E26FBBA2B00BB2F4E /* Products */,
+				8784FEF926FD1BD4004BA2C2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,7 +115,6 @@
 			isa = PBXGroup;
 			children = (
 				87F6E2BC26FBBD8200BB2F4E /* ForumClient */,
-				87F6E2C326FBBE3B00BB2F4E /* Models */,
 				87F6E2B726FBBA5F00BB2F4E /* SupportingFiles */,
 			);
 			path = ForumClient;
@@ -127,25 +143,13 @@
 				87F6E2B826FBBB2400BB2F4E /* ForumClient.swift */,
 				87F6E2BA26FBBBF100BB2F4E /* Endpoint.swift */,
 				87F6E2BF26FBBDFD00BB2F4E /* PreconditionFailure.swift */,
-				87F6E2C126FBBE1C00BB2F4E /* APIError.swift */,
 			);
 			path = ForumClient;
-			sourceTree = "<group>";
-		};
-		87F6E2C326FBBE3B00BB2F4E /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				87F6E2C826FBBEFC00BB2F4E /* Comment.swift */,
-				87F6E2C626FBBEBD00BB2F4E /* Post.swift */,
-				87F6E2CC26FBBF9F00BB2F4E /* User.swift */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		87F6E2D526FCC0D100BB2F4E /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
-				87F6E2DB26FCC2B300BB2F4E /* Models */,
 				87F6E2D626FCC0E600BB2F4E /* URLProtocol+Mock.swift */,
 				87F6E2D826FCC10F00BB2F4E /* URLSession+Mock.swift */,
 				87F6E35326FCD61E00BB2F4E /* ForumClient+Mock.swift */,
@@ -158,18 +162,8 @@
 			children = (
 				87F6E2AC26FBBA2C00BB2F4E /* ForumClientTests.swift */,
 				87F6E2E026FCC82500BB2F4E /* EndpointTests.swift */,
-				87F6E2E226FCC96700BB2F4E /* APIErrorTests.swift */,
 			);
 			path = ForumClientTests;
-			sourceTree = "<group>";
-		};
-		87F6E2DB26FCC2B300BB2F4E /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				87F6E2DC26FCC2BE00BB2F4E /* Posts+Mock.swift */,
-				87F6E2DE26FCC51700BB2F4E /* User+Mock.swift */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +188,7 @@
 				87F6E29926FBBA2B00BB2F4E /* Sources */,
 				87F6E29A26FBBA2B00BB2F4E /* Frameworks */,
 				87F6E29B26FBBA2B00BB2F4E /* Resources */,
+				8784FEFD26FD1BD4004BA2C2 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -284,11 +279,7 @@
 				87F6E2B926FBBB2400BB2F4E /* ForumClient.swift in Sources */,
 				87F6E2BB26FBBBF100BB2F4E /* Endpoint.swift in Sources */,
 				87F6E2C026FBBDFD00BB2F4E /* PreconditionFailure.swift in Sources */,
-				87F6E2C226FBBE1C00BB2F4E /* APIError.swift in Sources */,
-				87F6E2C926FBBEFC00BB2F4E /* Comment.swift in Sources */,
-				87F6E2C726FBBEBD00BB2F4E /* Post.swift in Sources */,
 				87F6E36026FD033A00BB2F4E /* ForumClient+Mock.swift in Sources */,
-				87F6E2CD26FBBF9F00BB2F4E /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,9 +288,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				87F6E2AD26FBBA2C00BB2F4E /* ForumClientTests.swift in Sources */,
-				87F6E2DD26FCC2BE00BB2F4E /* Posts+Mock.swift in Sources */,
-				87F6E2DF26FCC51700BB2F4E /* User+Mock.swift in Sources */,
-				87F6E2E326FCC96700BB2F4E /* APIErrorTests.swift in Sources */,
 				87F6E2D726FCC0E600BB2F4E /* URLProtocol+Mock.swift in Sources */,
 				87F6E2E126FCC82500BB2F4E /* EndpointTests.swift in Sources */,
 				87F6E2D926FCC10F00BB2F4E /* URLSession+Mock.swift in Sources */,
