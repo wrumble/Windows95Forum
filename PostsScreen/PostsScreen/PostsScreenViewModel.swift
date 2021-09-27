@@ -36,7 +36,6 @@ public final class PostsViewModel: PostsViewModelProtocol {
 
   private var currentViewType: ViewType = .posts
   private var forumData: [ForumData] = []
-
   private var publishers = [AnyCancellable]()
 
   public init(

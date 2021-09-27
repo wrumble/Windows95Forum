@@ -17,8 +17,14 @@
 		876A4030270244E2008780FC /* ForumCommentFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A402F270244E2008780FC /* ForumCommentFactory.swift */; };
 		876A403227024662008780FC /* ForumComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A403127024662008780FC /* ForumComment.swift */; };
 		876A4035270246B2008780FC /* ForumData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A4034270246B2008780FC /* ForumData.swift */; };
+		876A4037270249E3008780FC /* ForumPostFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A4036270249E3008780FC /* ForumPostFactoryTests.swift */; };
+		876A403927024CF5008780FC /* ForumCommentFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A403827024CF5008780FC /* ForumCommentFactoryTests.swift */; };
+		876A403D27024E1C008780FC /* ViewTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A403C27024E1C008780FC /* ViewTypeTests.swift */; };
+		876A4040270251D1008780FC /* PostsService+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A403F270251D1008780FC /* PostsService+Mock.swift */; };
+		876A404227025364008780FC /* UserService+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A404127025363008780FC /* UserService+Mock.swift */; };
+		876A4044270253A2008780FC /* CommentsService+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A4043270253A2008780FC /* CommentsService+Mock.swift */; };
 		87F6E3A126FD0D9E00BB2F4E /* PostsScreen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87F6E39826FD0D9E00BB2F4E /* PostsScreen.framework */; };
-		87F6E3A626FD0D9E00BB2F4E /* PostsScreenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E3A526FD0D9E00BB2F4E /* PostsScreenTests.swift */; };
+		87F6E3A626FD0D9E00BB2F4E /* PostsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E3A526FD0D9E00BB2F4E /* PostsViewModelTests.swift */; };
 		87F6E3A726FD0D9E00BB2F4E /* PostsScreen.h in Headers */ = {isa = PBXBuildFile; fileRef = 87F6E39B26FD0D9E00BB2F4E /* PostsScreen.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		87F6E3B226FD0DD100BB2F4E /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E3B126FD0DD100BB2F4E /* PostsViewController.swift */; };
 		87F6E3DB26FD17EC00BB2F4E /* PostsService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87F6E3DA26FD17EC00BB2F4E /* PostsService.framework */; };
@@ -63,10 +69,16 @@
 		876A402F270244E2008780FC /* ForumCommentFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumCommentFactory.swift; sourceTree = "<group>"; };
 		876A403127024662008780FC /* ForumComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumComment.swift; sourceTree = "<group>"; };
 		876A4034270246B2008780FC /* ForumData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumData.swift; sourceTree = "<group>"; };
+		876A4036270249E3008780FC /* ForumPostFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumPostFactoryTests.swift; sourceTree = "<group>"; };
+		876A403827024CF5008780FC /* ForumCommentFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumCommentFactoryTests.swift; sourceTree = "<group>"; };
+		876A403C27024E1C008780FC /* ViewTypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTypeTests.swift; sourceTree = "<group>"; };
+		876A403F270251D1008780FC /* PostsService+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PostsService+Mock.swift"; sourceTree = "<group>"; };
+		876A404127025363008780FC /* UserService+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserService+Mock.swift"; sourceTree = "<group>"; };
+		876A4043270253A2008780FC /* CommentsService+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CommentsService+Mock.swift"; sourceTree = "<group>"; };
 		87F6E39826FD0D9E00BB2F4E /* PostsScreen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PostsScreen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87F6E39B26FD0D9E00BB2F4E /* PostsScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostsScreen.h; sourceTree = "<group>"; };
 		87F6E3A026FD0D9E00BB2F4E /* PostsScreenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PostsScreenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		87F6E3A526FD0D9E00BB2F4E /* PostsScreenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsScreenTests.swift; sourceTree = "<group>"; };
+		87F6E3A526FD0D9E00BB2F4E /* PostsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewModelTests.swift; sourceTree = "<group>"; };
 		87F6E3B126FD0DD100BB2F4E /* PostsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
 		87F6E3DA26FD17EC00BB2F4E /* PostsService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PostsService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87F6E3DE26FD17FF00BB2F4E /* UsersService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UsersService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,6 +132,16 @@
 			path = ForumData;
 			sourceTree = "<group>";
 		};
+		876A403E270251C5008780FC /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				876A403F270251D1008780FC /* PostsService+Mock.swift */,
+				876A404127025363008780FC /* UserService+Mock.swift */,
+				876A4043270253A2008780FC /* CommentsService+Mock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		87F6E38E26FD0D9E00BB2F4E = {
 			isa = PBXGroup;
 			children = (
@@ -157,7 +179,11 @@
 		87F6E3A426FD0D9E00BB2F4E /* PostsScreenTests */ = {
 			isa = PBXGroup;
 			children = (
-				87F6E3A526FD0D9E00BB2F4E /* PostsScreenTests.swift */,
+				876A403E270251C5008780FC /* Mocks */,
+				87F6E3A526FD0D9E00BB2F4E /* PostsViewModelTests.swift */,
+				876A4036270249E3008780FC /* ForumPostFactoryTests.swift */,
+				876A403827024CF5008780FC /* ForumCommentFactoryTests.swift */,
+				876A403C27024E1C008780FC /* ViewTypeTests.swift */,
 			);
 			path = PostsScreenTests;
 			sourceTree = "<group>";
@@ -306,7 +332,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87F6E3A626FD0D9E00BB2F4E /* PostsScreenTests.swift in Sources */,
+				876A403927024CF5008780FC /* ForumCommentFactoryTests.swift in Sources */,
+				876A4037270249E3008780FC /* ForumPostFactoryTests.swift in Sources */,
+				876A403D27024E1C008780FC /* ViewTypeTests.swift in Sources */,
+				876A4040270251D1008780FC /* PostsService+Mock.swift in Sources */,
+				876A404227025364008780FC /* UserService+Mock.swift in Sources */,
+				87F6E3A626FD0D9E00BB2F4E /* PostsViewModelTests.swift in Sources */,
+				876A4044270253A2008780FC /* CommentsService+Mock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
