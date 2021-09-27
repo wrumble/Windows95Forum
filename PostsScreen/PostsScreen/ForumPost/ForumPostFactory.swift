@@ -10,7 +10,4 @@ struct ForumPostFactory {
     }
   }
 
-  static func forumComments(from comments: [Comment]) -> [ForumComment] {
-    return comments.map { ForumComment(text: $0.body) }
-  }
 }

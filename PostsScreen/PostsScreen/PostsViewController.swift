@@ -26,6 +26,7 @@ public class PostsViewController: UIViewController {
   public init(viewModel: PostsViewModelProtocol) {
 
     self.viewModel = viewModel
+
     let windowsViewModel = WindowsViewModel(
       xButtonTapped: viewModel.xButtonTapped,
       titleText: viewModel.titleText,
@@ -117,7 +118,7 @@ extension PostsViewController: UITableViewDelegate {
 
 // MARK: TableView Datasource
 
-extension PostsViewController: UITableViewDataSource{
+extension PostsViewController: UITableViewDataSource {
   public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     guard let cell = viewModel.cellForRow(at: indexPath, tableView: tableView) else {
       return UITableViewCell()

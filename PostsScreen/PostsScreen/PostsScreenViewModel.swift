@@ -35,8 +35,7 @@ public final class PostsViewModel: PostsViewModelProtocol {
   private let viewType = PassthroughSubject<ViewType, Never>()
 
   private var currentViewType: ViewType = .posts
-  private var forumPosts: [ForumPost] = []
-  private var forumComments: [ForumComment] = []
+  private var forumData: [ForumData] = []
 
   private var publishers = [AnyCancellable]()
 
@@ -55,14 +54,13 @@ public final class PostsViewModel: PostsViewModelProtocol {
   }
 
   public func numberOfRowsForData() -> Int {
-    return currentViewType == .posts ? forumPosts.count : forumComments.count
+    return forumData.count
   }
 
   public func cellForRow(at indexPath: IndexPath, tableView: UITableView) -> ReusableTableViewCell? {
-    let data: [ForumData] = currentViewType == .posts ? forumPosts : forumComments
     return forumCellFactory.cellForRow(
       at: indexPath,
-      data: data,
+      data: forumData,
       viewType: currentViewType,
       tableView: tableView)
   }
@@ -125,7 +123,7 @@ private extension PostsViewModel {
   }
 
   func onReceived(users: [User], posts: [Post]) {
-    forumPosts = ForumPostFactory.forumPosts(from: users, posts: posts)
+    forumData = ForumPostFactory.forumPosts(from: users, posts: posts)
     viewType.send(.posts)
   }
 
@@ -150,7 +148,7 @@ private extension PostsViewModel {
   func onDidTapRow(indexPath: IndexPath) {
     switch currentViewType {
     case .posts:
-      let postId = self.forumPosts[indexPath.row].id
+      let postId = self.forumData[indexPath.row].id
       self.getForumComments(with: postId)
     default:
       break
@@ -158,7 +156,7 @@ private extension PostsViewModel {
   }
 
   func onReceived(comments: [Comment]) {
-    forumComments = ForumPostFactory.forumComments(from: comments)
+    forumData = ForumCommentFactory.forumComments(from: comments)
     viewType.send(.comments)
   }
 
