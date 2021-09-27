@@ -8,17 +8,17 @@ private struct Constants {
   static let postCellUsername = "username"
   static let postCellTitle = "title"
 }
-class PostsViewModelTests: XCTestCase {
+class ForumScreenViewModelTests: XCTestCase {
 
   private let tableView = UITableView()
   private let postsService = PostsServiceMock()
   private let usersService = UsersServiceMock()
   private let commentsService = CommentsServiceMock()
 
-  private var postsViewModel: PostsViewModel!
+  private var postsViewModel: ForumScreenViewModel!
 
   override func setUp() {
-    postsViewModel = PostsViewModel(
+    postsViewModel = ForumScreenViewModel(
       postsService: postsService,
       usersService: usersService,
       commentsService: commentsService)

@@ -25,6 +25,9 @@
 		876A40512702676F008780FC /* UserService+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A404E2702676F008780FC /* UserService+Mock.swift */; };
 		876A40522702676F008780FC /* CommentsService+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A404F2702676F008780FC /* CommentsService+Mock.swift */; };
 		876A405727026A9E008780FC /* ForumCellFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A405627026A9E008780FC /* ForumCellFactoryTests.swift */; };
+		876A405927026C51008780FC /* ForumPost+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A405827026C51008780FC /* ForumPost+Mock.swift */; };
+		876A405B27026CD0008780FC /* ForumComment+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A405A27026CD0008780FC /* ForumComment+Mock.swift */; };
+		876A405D27026E16008780FC /* ForumScreenViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A405C27026E16008780FC /* ForumScreenViewModelTests.swift */; };
 		87F6E3A126FD0D9E00BB2F4E /* ForumScreen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87F6E39826FD0D9E00BB2F4E /* ForumScreen.framework */; };
 		87F6E3A726FD0D9E00BB2F4E /* ForumScreen.h in Headers */ = {isa = PBXBuildFile; fileRef = 87F6E39B26FD0D9E00BB2F4E /* ForumScreen.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		87F6E3B226FD0DD100BB2F4E /* ForumScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E3B126FD0DD100BB2F4E /* ForumScreenViewController.swift */; };
@@ -78,6 +81,9 @@
 		876A404E2702676F008780FC /* UserService+Mock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserService+Mock.swift"; sourceTree = "<group>"; };
 		876A404F2702676F008780FC /* CommentsService+Mock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CommentsService+Mock.swift"; sourceTree = "<group>"; };
 		876A405627026A9E008780FC /* ForumCellFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumCellFactoryTests.swift; sourceTree = "<group>"; };
+		876A405827026C51008780FC /* ForumPost+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ForumPost+Mock.swift"; sourceTree = "<group>"; };
+		876A405A27026CD0008780FC /* ForumComment+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ForumComment+Mock.swift"; sourceTree = "<group>"; };
+		876A405C27026E16008780FC /* ForumScreenViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForumScreenViewModelTests.swift; sourceTree = "<group>"; };
 		87F6E39826FD0D9E00BB2F4E /* ForumScreen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ForumScreen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87F6E39B26FD0D9E00BB2F4E /* ForumScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ForumScreen.h; sourceTree = "<group>"; };
 		87F6E3A026FD0D9E00BB2F4E /* ForumScreenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForumScreenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -140,6 +146,8 @@
 				876A404F2702676F008780FC /* CommentsService+Mock.swift */,
 				876A404D2702676F008780FC /* PostsService+Mock.swift */,
 				876A404E2702676F008780FC /* UserService+Mock.swift */,
+				876A405827026C51008780FC /* ForumPost+Mock.swift */,
+				876A405A27026CD0008780FC /* ForumComment+Mock.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -207,6 +215,7 @@
 			children = (
 				876A403E270251C5008780FC /* Mocks */,
 				876A405627026A9E008780FC /* ForumCellFactoryTests.swift */,
+				876A405C27026E16008780FC /* ForumScreenViewModelTests.swift */,
 				876A404A27026760008780FC /* ForumCommentFactoryTests.swift */,
 				876A404527026746008780FC /* ForumCommentFactoryTests.swift */,
 				876A404927026760008780FC /* ForumPostFactoryTests.swift */,
@@ -359,7 +368,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				876A405927026C51008780FC /* ForumPost+Mock.swift in Sources */,
+				876A405B27026CD0008780FC /* ForumComment+Mock.swift in Sources */,
 				876A404B27026760008780FC /* ForumPostFactoryTests.swift in Sources */,
+				876A405D27026E16008780FC /* ForumScreenViewModelTests.swift in Sources */,
 				876A40502702676F008780FC /* PostsService+Mock.swift in Sources */,
 				876A405727026A9E008780FC /* ForumCellFactoryTests.swift in Sources */,
 				876A404627026746008780FC /* ForumCommentFactoryTests.swift in Sources */,
