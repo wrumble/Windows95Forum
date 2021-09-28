@@ -73,7 +73,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "87F6E2A626FBBA2C00BB2F4E"
+               BlueprintIdentifier = "87EA3EF32703229200B6581A"
                BuildableName = "ForumClientTests.xctest"
                BlueprintName = "ForumClientTests"
                ReferencedContainer = "container:ForumClient/ForumClient.xcodeproj">
