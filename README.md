@@ -58,7 +58,13 @@ The other thing i didnt realise until late was that tableViews are setup to work
 
 ### The rest
 
+`WindowsViewModel`, probably isnt necessary as it stand but it maintains the architecture throughout the app so i decided to leave in as opposed to passing the Subjects directly to the view.
+
+The placement of Post, User and Comment models in model didnt feel right, maybe an entirely seperate module for DTO's is better, but keeping them in the services creates a cyclic dependency between the ForumClient and serv ices so this isnt possible
+
 The custom font caused the tests to fail so they had to default to a system font so a few tests around the cells would run completely
 
 There services being extracted into their own modules may have been too far but i feel it sets a good precedent going forward
+
+Subviewable is the worst name
 

@@ -162,6 +162,7 @@ private extension ForumScreenViewModel {
   func onComplete(result: Subscribers.Completion<APIError>) {
     switch result {
     case .failure(let error):
+      forumData = []
       viewType.send(.error)
       errorReceived.send(error)
     default:

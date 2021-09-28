@@ -17,7 +17,6 @@
 		876A4030270244E2008780FC /* ForumCommentFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A402F270244E2008780FC /* ForumCommentFactory.swift */; };
 		876A403227024662008780FC /* ForumComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A403127024662008780FC /* ForumComment.swift */; };
 		876A4035270246B2008780FC /* ForumData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A4034270246B2008780FC /* ForumData.swift */; };
-		876A404627026746008780FC /* ForumCommentFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A404527026746008780FC /* ForumCommentFactoryTests.swift */; };
 		876A404827026754008780FC /* ViewTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A404727026754008780FC /* ViewTypeTests.swift */; };
 		876A404B27026760008780FC /* ForumPostFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A404927026760008780FC /* ForumPostFactoryTests.swift */; };
 		876A404C27026760008780FC /* ForumCommentFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A404A27026760008780FC /* ForumCommentFactoryTests.swift */; };
@@ -73,7 +72,6 @@
 		876A402F270244E2008780FC /* ForumCommentFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumCommentFactory.swift; sourceTree = "<group>"; };
 		876A403127024662008780FC /* ForumComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumComment.swift; sourceTree = "<group>"; };
 		876A4034270246B2008780FC /* ForumData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumData.swift; sourceTree = "<group>"; };
-		876A404527026746008780FC /* ForumCommentFactoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForumCommentFactoryTests.swift; sourceTree = "<group>"; };
 		876A404727026754008780FC /* ViewTypeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewTypeTests.swift; sourceTree = "<group>"; };
 		876A404927026760008780FC /* ForumPostFactoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForumPostFactoryTests.swift; sourceTree = "<group>"; };
 		876A404A27026760008780FC /* ForumCommentFactoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForumCommentFactoryTests.swift; sourceTree = "<group>"; };
@@ -217,7 +215,6 @@
 				876A405627026A9E008780FC /* ForumCellFactoryTests.swift */,
 				876A405C27026E16008780FC /* ForumScreenViewModelTests.swift */,
 				876A404A27026760008780FC /* ForumCommentFactoryTests.swift */,
-				876A404527026746008780FC /* ForumCommentFactoryTests.swift */,
 				876A404927026760008780FC /* ForumPostFactoryTests.swift */,
 				876A404727026754008780FC /* ViewTypeTests.swift */,
 			);
@@ -374,7 +371,6 @@
 				876A405D27026E16008780FC /* ForumScreenViewModelTests.swift in Sources */,
 				876A40502702676F008780FC /* PostsService+Mock.swift in Sources */,
 				876A405727026A9E008780FC /* ForumCellFactoryTests.swift in Sources */,
-				876A404627026746008780FC /* ForumCommentFactoryTests.swift in Sources */,
 				876A404C27026760008780FC /* ForumCommentFactoryTests.swift in Sources */,
 				876A40512702676F008780FC /* UserService+Mock.swift in Sources */,
 				876A404827026754008780FC /* ViewTypeTests.swift in Sources */,

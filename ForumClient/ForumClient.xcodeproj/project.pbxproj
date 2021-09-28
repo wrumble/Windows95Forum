@@ -11,7 +11,6 @@
 		87EA3EFB2703229200B6581A /* ForumClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 87EA3EEF2703229200B6581A /* ForumClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		87EA3F0C270322BF00B6581A /* EndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EA3F06270322BF00B6581A /* EndpointTests.swift */; };
 		87EA3F0D270322BF00B6581A /* ForumClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EA3F07270322BF00B6581A /* ForumClientTests.swift */; };
-		87EA3F0E270322BF00B6581A /* ForumClient+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EA3F09270322BF00B6581A /* ForumClient+Mock.swift */; };
 		87EA3F0F270322BF00B6581A /* URLProtocol+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EA3F0A270322BF00B6581A /* URLProtocol+Mock.swift */; };
 		87EA3F10270322BF00B6581A /* URLSession+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EA3F0B270322BF00B6581A /* URLSession+Mock.swift */; };
 		87EA3F14270322DC00B6581A /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EA3F11270322DB00B6581A /* Endpoint.swift */; };
@@ -19,6 +18,7 @@
 		87EA3F16270322DC00B6581A /* ForumClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EA3F13270322DC00B6581A /* ForumClient.swift */; };
 		87EA3F222703238C00B6581A /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87EA3F212703238C00B6581A /* Common.framework */; };
 		87EA3F232703238C00B6581A /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 87EA3F212703238C00B6581A /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		87EA3F2F27033C7400B6581A /* ForumClient+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EA3F09270322BF00B6581A /* ForumClient+Mock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -267,6 +267,7 @@
 			files = (
 				87EA3F16270322DC00B6581A /* ForumClient.swift in Sources */,
 				87EA3F15270322DC00B6581A /* PreconditionFailure.swift in Sources */,
+				87EA3F2F27033C7400B6581A /* ForumClient+Mock.swift in Sources */,
 				87EA3F14270322DC00B6581A /* Endpoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,7 +277,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				87EA3F0D270322BF00B6581A /* ForumClientTests.swift in Sources */,
-				87EA3F0E270322BF00B6581A /* ForumClient+Mock.swift in Sources */,
 				87EA3F0C270322BF00B6581A /* EndpointTests.swift in Sources */,
 				87EA3F0F270322BF00B6581A /* URLProtocol+Mock.swift in Sources */,
 				87EA3F10270322BF00B6581A /* URLSession+Mock.swift in Sources */,
