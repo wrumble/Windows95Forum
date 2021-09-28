@@ -7,38 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8784FEFB26FD1BD4004BA2C2 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8784FEFA26FD1BD4004BA2C2 /* Common.framework */; };
-		8784FEFC26FD1BD4004BA2C2 /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8784FEFA26FD1BD4004BA2C2 /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		87F6E2A826FBBA2C00BB2F4E /* ForumClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87F6E29D26FBBA2B00BB2F4E /* ForumClient.framework */; };
-		87F6E2AD26FBBA2C00BB2F4E /* ForumClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E2AC26FBBA2C00BB2F4E /* ForumClientTests.swift */; };
-		87F6E2AE26FBBA2C00BB2F4E /* ForumClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 87F6E2A026FBBA2B00BB2F4E /* ForumClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		87F6E2B926FBBB2400BB2F4E /* ForumClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E2B826FBBB2400BB2F4E /* ForumClient.swift */; };
-		87F6E2BB26FBBBF100BB2F4E /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E2BA26FBBBF100BB2F4E /* Endpoint.swift */; };
-		87F6E2C026FBBDFD00BB2F4E /* PreconditionFailure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E2BF26FBBDFD00BB2F4E /* PreconditionFailure.swift */; };
-		87F6E2D726FCC0E600BB2F4E /* URLProtocol+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E2D626FCC0E600BB2F4E /* URLProtocol+Mock.swift */; };
-		87F6E2D926FCC10F00BB2F4E /* URLSession+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E2D826FCC10F00BB2F4E /* URLSession+Mock.swift */; };
-		87F6E2E126FCC82500BB2F4E /* EndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E2E026FCC82500BB2F4E /* EndpointTests.swift */; };
-		87F6E36026FD033A00BB2F4E /* ForumClient+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E35326FCD61E00BB2F4E /* ForumClient+Mock.swift */; };
+		87EA3EF52703229200B6581A /* ForumClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87EA3EEC2703229200B6581A /* ForumClient.framework */; };
+		87EA3EFB2703229200B6581A /* ForumClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 87EA3EEF2703229200B6581A /* ForumClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		87EA3F0C270322BF00B6581A /* EndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EA3F06270322BF00B6581A /* EndpointTests.swift */; };
+		87EA3F0D270322BF00B6581A /* ForumClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EA3F07270322BF00B6581A /* ForumClientTests.swift */; };
+		87EA3F0E270322BF00B6581A /* ForumClient+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EA3F09270322BF00B6581A /* ForumClient+Mock.swift */; };
+		87EA3F0F270322BF00B6581A /* URLProtocol+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EA3F0A270322BF00B6581A /* URLProtocol+Mock.swift */; };
+		87EA3F10270322BF00B6581A /* URLSession+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EA3F0B270322BF00B6581A /* URLSession+Mock.swift */; };
+		87EA3F14270322DC00B6581A /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EA3F11270322DB00B6581A /* Endpoint.swift */; };
+		87EA3F15270322DC00B6581A /* PreconditionFailure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EA3F12270322DB00B6581A /* PreconditionFailure.swift */; };
+		87EA3F16270322DC00B6581A /* ForumClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EA3F13270322DC00B6581A /* ForumClient.swift */; };
+		87EA3F222703238C00B6581A /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87EA3F212703238C00B6581A /* Common.framework */; };
+		87EA3F232703238C00B6581A /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 87EA3F212703238C00B6581A /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		87F6E2A926FBBA2C00BB2F4E /* PBXContainerItemProxy */ = {
+		87EA3EF62703229200B6581A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 87F6E29426FBBA2B00BB2F4E /* Project object */;
+			containerPortal = 87EA3EE32703229200B6581A /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 87F6E29C26FBBA2B00BB2F4E;
+			remoteGlobalIDString = 87EA3EEB2703229200B6581A;
 			remoteInfo = ForumClient;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		8784FEFD26FD1BD4004BA2C2 /* Embed Frameworks */ = {
+		87EA3F242703238C00B6581A /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				8784FEFC26FD1BD4004BA2C2 /* Common.framework in Embed Frameworks */,
+				87EA3F232703238C00B6581A /* Common.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,149 +46,137 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		8784FEFA26FD1BD4004BA2C2 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8784FEFE26FD1C47004BA2C2 /* PostsService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PostsService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8784FEFF26FD1C47004BA2C2 /* UsersService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UsersService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		87F6E29D26FBBA2B00BB2F4E /* ForumClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ForumClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		87F6E2A026FBBA2B00BB2F4E /* ForumClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ForumClient.h; sourceTree = "<group>"; };
-		87F6E2A726FBBA2C00BB2F4E /* ForumClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForumClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		87F6E2AC26FBBA2C00BB2F4E /* ForumClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumClientTests.swift; sourceTree = "<group>"; };
-		87F6E2B826FBBB2400BB2F4E /* ForumClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumClient.swift; sourceTree = "<group>"; };
-		87F6E2BA26FBBBF100BB2F4E /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
-		87F6E2BF26FBBDFD00BB2F4E /* PreconditionFailure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreconditionFailure.swift; sourceTree = "<group>"; };
-		87F6E2D626FCC0E600BB2F4E /* URLProtocol+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLProtocol+Mock.swift"; sourceTree = "<group>"; };
-		87F6E2D826FCC10F00BB2F4E /* URLSession+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Mock.swift"; sourceTree = "<group>"; };
-		87F6E2E026FCC82500BB2F4E /* EndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointTests.swift; sourceTree = "<group>"; };
-		87F6E35326FCD61E00BB2F4E /* ForumClient+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ForumClient+Mock.swift"; sourceTree = "<group>"; };
+		87EA3EEC2703229200B6581A /* ForumClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ForumClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87EA3EEF2703229200B6581A /* ForumClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ForumClient.h; sourceTree = "<group>"; };
+		87EA3EF42703229200B6581A /* ForumClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForumClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		87EA3F06270322BF00B6581A /* EndpointTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointTests.swift; sourceTree = "<group>"; };
+		87EA3F07270322BF00B6581A /* ForumClientTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForumClientTests.swift; sourceTree = "<group>"; };
+		87EA3F09270322BF00B6581A /* ForumClient+Mock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ForumClient+Mock.swift"; sourceTree = "<group>"; };
+		87EA3F0A270322BF00B6581A /* URLProtocol+Mock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLProtocol+Mock.swift"; sourceTree = "<group>"; };
+		87EA3F0B270322BF00B6581A /* URLSession+Mock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLSession+Mock.swift"; sourceTree = "<group>"; };
+		87EA3F11270322DB00B6581A /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		87EA3F12270322DB00B6581A /* PreconditionFailure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreconditionFailure.swift; sourceTree = "<group>"; };
+		87EA3F13270322DC00B6581A /* ForumClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForumClient.swift; sourceTree = "<group>"; };
+		87EA3F212703238C00B6581A /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		87F6E29A26FBBA2B00BB2F4E /* Frameworks */ = {
+		87EA3EE92703229200B6581A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8784FEFB26FD1BD4004BA2C2 /* Common.framework in Frameworks */,
+				87EA3F222703238C00B6581A /* Common.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		87F6E2A426FBBA2C00BB2F4E /* Frameworks */ = {
+		87EA3EF12703229200B6581A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87F6E2A826FBBA2C00BB2F4E /* ForumClient.framework in Frameworks */,
+				87EA3EF52703229200B6581A /* ForumClient.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8784FEF926FD1BD4004BA2C2 /* Frameworks */ = {
+		87EA3EE22703229200B6581A = {
 			isa = PBXGroup;
 			children = (
-				8784FEFE26FD1C47004BA2C2 /* PostsService.framework */,
-				8784FEFF26FD1C47004BA2C2 /* UsersService.framework */,
-				8784FEFA26FD1BD4004BA2C2 /* Common.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		87F6E29326FBBA2B00BB2F4E = {
-			isa = PBXGroup;
-			children = (
-				87F6E29F26FBBA2B00BB2F4E /* ForumClient */,
-				87F6E2AB26FBBA2C00BB2F4E /* ForumClientTests */,
-				87F6E29E26FBBA2B00BB2F4E /* Products */,
-				8784FEF926FD1BD4004BA2C2 /* Frameworks */,
+				87EA3EEE2703229200B6581A /* ForumClient */,
+				87EA3EF82703229200B6581A /* ForumClientTests */,
+				87EA3EED2703229200B6581A /* Products */,
+				87EA3F202703238C00B6581A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		87F6E29E26FBBA2B00BB2F4E /* Products */ = {
+		87EA3EED2703229200B6581A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				87F6E29D26FBBA2B00BB2F4E /* ForumClient.framework */,
-				87F6E2A726FBBA2C00BB2F4E /* ForumClientTests.xctest */,
+				87EA3EEC2703229200B6581A /* ForumClient.framework */,
+				87EA3EF42703229200B6581A /* ForumClientTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		87F6E29F26FBBA2B00BB2F4E /* ForumClient */ = {
+		87EA3EEE2703229200B6581A /* ForumClient */ = {
 			isa = PBXGroup;
 			children = (
-				87F6E2BC26FBBD8200BB2F4E /* ForumClient */,
-				87F6E2B726FBBA5F00BB2F4E /* SupportingFiles */,
+				87EA3F11270322DB00B6581A /* Endpoint.swift */,
+				87EA3F13270322DC00B6581A /* ForumClient.swift */,
+				87EA3F12270322DB00B6581A /* PreconditionFailure.swift */,
+				87EA3F042703229F00B6581A /* SupportingFiles */,
 			);
 			path = ForumClient;
 			sourceTree = "<group>";
 		};
-		87F6E2AB26FBBA2C00BB2F4E /* ForumClientTests */ = {
+		87EA3EF82703229200B6581A /* ForumClientTests */ = {
 			isa = PBXGroup;
 			children = (
-				87F6E2DA26FCC12700BB2F4E /* ForumClientTests */,
-				87F6E2D526FCC0D100BB2F4E /* Mocks */,
+				87EA3F05270322BF00B6581A /* ForumClientTests */,
+				87EA3F08270322BF00B6581A /* Mocks */,
 			);
 			path = ForumClientTests;
 			sourceTree = "<group>";
 		};
-		87F6E2B726FBBA5F00BB2F4E /* SupportingFiles */ = {
+		87EA3F042703229F00B6581A /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
-				87F6E2A026FBBA2B00BB2F4E /* ForumClient.h */,
+				87EA3EEF2703229200B6581A /* ForumClient.h */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
-		87F6E2BC26FBBD8200BB2F4E /* ForumClient */ = {
+		87EA3F05270322BF00B6581A /* ForumClientTests */ = {
 			isa = PBXGroup;
 			children = (
-				87F6E2B826FBBB2400BB2F4E /* ForumClient.swift */,
-				87F6E2BA26FBBBF100BB2F4E /* Endpoint.swift */,
-				87F6E2BF26FBBDFD00BB2F4E /* PreconditionFailure.swift */,
+				87EA3F06270322BF00B6581A /* EndpointTests.swift */,
+				87EA3F07270322BF00B6581A /* ForumClientTests.swift */,
 			);
-			path = ForumClient;
+			path = ForumClientTests;
 			sourceTree = "<group>";
 		};
-		87F6E2D526FCC0D100BB2F4E /* Mocks */ = {
+		87EA3F08270322BF00B6581A /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
-				87F6E2D626FCC0E600BB2F4E /* URLProtocol+Mock.swift */,
-				87F6E2D826FCC10F00BB2F4E /* URLSession+Mock.swift */,
-				87F6E35326FCD61E00BB2F4E /* ForumClient+Mock.swift */,
+				87EA3F09270322BF00B6581A /* ForumClient+Mock.swift */,
+				87EA3F0A270322BF00B6581A /* URLProtocol+Mock.swift */,
+				87EA3F0B270322BF00B6581A /* URLSession+Mock.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
 		};
-		87F6E2DA26FCC12700BB2F4E /* ForumClientTests */ = {
+		87EA3F202703238C00B6581A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				87F6E2AC26FBBA2C00BB2F4E /* ForumClientTests.swift */,
-				87F6E2E026FCC82500BB2F4E /* EndpointTests.swift */,
+				87EA3F212703238C00B6581A /* Common.framework */,
 			);
-			path = ForumClientTests;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		87F6E29826FBBA2B00BB2F4E /* Headers */ = {
+		87EA3EE72703229200B6581A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87F6E2AE26FBBA2C00BB2F4E /* ForumClient.h in Headers */,
+				87EA3EFB2703229200B6581A /* ForumClient.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		87F6E29C26FBBA2B00BB2F4E /* ForumClient */ = {
+		87EA3EEB2703229200B6581A /* ForumClient */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 87F6E2B126FBBA2C00BB2F4E /* Build configuration list for PBXNativeTarget "ForumClient" */;
+			buildConfigurationList = 87EA3EFE2703229200B6581A /* Build configuration list for PBXNativeTarget "ForumClient" */;
 			buildPhases = (
-				87F6E29826FBBA2B00BB2F4E /* Headers */,
-				87F6E29926FBBA2B00BB2F4E /* Sources */,
-				87F6E29A26FBBA2B00BB2F4E /* Frameworks */,
-				87F6E29B26FBBA2B00BB2F4E /* Resources */,
-				8784FEFD26FD1BD4004BA2C2 /* Embed Frameworks */,
+				87EA3EE72703229200B6581A /* Headers */,
+				87EA3EE82703229200B6581A /* Sources */,
+				87EA3EE92703229200B6581A /* Frameworks */,
+				87EA3EEA2703229200B6581A /* Resources */,
+				87EA3F242703238C00B6581A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -196,46 +184,47 @@
 			);
 			name = ForumClient;
 			productName = ForumClient;
-			productReference = 87F6E29D26FBBA2B00BB2F4E /* ForumClient.framework */;
+			productReference = 87EA3EEC2703229200B6581A /* ForumClient.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		87F6E2A626FBBA2C00BB2F4E /* ForumClientTests */ = {
+		87EA3EF32703229200B6581A /* ForumClientTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 87F6E2B426FBBA2C00BB2F4E /* Build configuration list for PBXNativeTarget "ForumClientTests" */;
+			buildConfigurationList = 87EA3F012703229200B6581A /* Build configuration list for PBXNativeTarget "ForumClientTests" */;
 			buildPhases = (
-				87F6E2A326FBBA2C00BB2F4E /* Sources */,
-				87F6E2A426FBBA2C00BB2F4E /* Frameworks */,
-				87F6E2A526FBBA2C00BB2F4E /* Resources */,
+				87EA3EF02703229200B6581A /* Sources */,
+				87EA3EF12703229200B6581A /* Frameworks */,
+				87EA3EF22703229200B6581A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				87F6E2AA26FBBA2C00BB2F4E /* PBXTargetDependency */,
+				87EA3EF72703229200B6581A /* PBXTargetDependency */,
 			);
 			name = ForumClientTests;
 			productName = ForumClientTests;
-			productReference = 87F6E2A726FBBA2C00BB2F4E /* ForumClientTests.xctest */;
+			productReference = 87EA3EF42703229200B6581A /* ForumClientTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		87F6E29426FBBA2B00BB2F4E /* Project object */ = {
+		87EA3EE32703229200B6581A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
-					87F6E29C26FBBA2B00BB2F4E = {
+					87EA3EEB2703229200B6581A = {
 						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1300;
 					};
-					87F6E2A626FBBA2C00BB2F4E = {
+					87EA3EF32703229200B6581A = {
 						CreatedOnToolsVersion = 13.0;
 					};
 				};
 			};
-			buildConfigurationList = 87F6E29726FBBA2B00BB2F4E /* Build configuration list for PBXProject "ForumClient" */;
+			buildConfigurationList = 87EA3EE62703229200B6581A /* Build configuration list for PBXProject "ForumClient" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -243,26 +232,26 @@
 				en,
 				Base,
 			);
-			mainGroup = 87F6E29326FBBA2B00BB2F4E;
-			productRefGroup = 87F6E29E26FBBA2B00BB2F4E /* Products */;
+			mainGroup = 87EA3EE22703229200B6581A;
+			productRefGroup = 87EA3EED2703229200B6581A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				87F6E29C26FBBA2B00BB2F4E /* ForumClient */,
-				87F6E2A626FBBA2C00BB2F4E /* ForumClientTests */,
+				87EA3EEB2703229200B6581A /* ForumClient */,
+				87EA3EF32703229200B6581A /* ForumClientTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		87F6E29B26FBBA2B00BB2F4E /* Resources */ = {
+		87EA3EEA2703229200B6581A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		87F6E2A526FBBA2C00BB2F4E /* Resources */ = {
+		87EA3EF22703229200B6581A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -272,40 +261,40 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		87F6E29926FBBA2B00BB2F4E /* Sources */ = {
+		87EA3EE82703229200B6581A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87F6E2B926FBBB2400BB2F4E /* ForumClient.swift in Sources */,
-				87F6E2BB26FBBBF100BB2F4E /* Endpoint.swift in Sources */,
-				87F6E2C026FBBDFD00BB2F4E /* PreconditionFailure.swift in Sources */,
-				87F6E36026FD033A00BB2F4E /* ForumClient+Mock.swift in Sources */,
+				87EA3F16270322DC00B6581A /* ForumClient.swift in Sources */,
+				87EA3F15270322DC00B6581A /* PreconditionFailure.swift in Sources */,
+				87EA3F14270322DC00B6581A /* Endpoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		87F6E2A326FBBA2C00BB2F4E /* Sources */ = {
+		87EA3EF02703229200B6581A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87F6E2AD26FBBA2C00BB2F4E /* ForumClientTests.swift in Sources */,
-				87F6E2D726FCC0E600BB2F4E /* URLProtocol+Mock.swift in Sources */,
-				87F6E2E126FCC82500BB2F4E /* EndpointTests.swift in Sources */,
-				87F6E2D926FCC10F00BB2F4E /* URLSession+Mock.swift in Sources */,
+				87EA3F0D270322BF00B6581A /* ForumClientTests.swift in Sources */,
+				87EA3F0E270322BF00B6581A /* ForumClient+Mock.swift in Sources */,
+				87EA3F0C270322BF00B6581A /* EndpointTests.swift in Sources */,
+				87EA3F0F270322BF00B6581A /* URLProtocol+Mock.swift in Sources */,
+				87EA3F10270322BF00B6581A /* URLSession+Mock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		87F6E2AA26FBBA2C00BB2F4E /* PBXTargetDependency */ = {
+		87EA3EF72703229200B6581A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 87F6E29C26FBBA2B00BB2F4E /* ForumClient */;
-			targetProxy = 87F6E2A926FBBA2C00BB2F4E /* PBXContainerItemProxy */;
+			target = 87EA3EEB2703229200B6581A /* ForumClient */;
+			targetProxy = 87EA3EF62703229200B6581A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		87F6E2AF26FBBA2C00BB2F4E /* Debug */ = {
+		87EA3EFC2703229200B6581A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -369,7 +358,7 @@
 			};
 			name = Debug;
 		};
-		87F6E2B026FBBA2C00BB2F4E /* Release */ = {
+		87EA3EFD2703229200B6581A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -427,9 +416,10 @@
 			};
 			name = Release;
 		};
-		87F6E2B226FBBA2C00BB2F4E /* Debug */ = {
+		87EA3EFF2703229200B6581A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -451,14 +441,16 @@
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
-		87F6E2B326FBBA2C00BB2F4E /* Release */ = {
+		87EA3F002703229200B6581A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -485,7 +477,7 @@
 			};
 			name = Release;
 		};
-		87F6E2B526FBBA2C00BB2F4E /* Debug */ = {
+		87EA3F022703229200B6581A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -507,7 +499,7 @@
 			};
 			name = Debug;
 		};
-		87F6E2B626FBBA2C00BB2F4E /* Release */ = {
+		87EA3F032703229200B6581A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -532,34 +524,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		87F6E29726FBBA2B00BB2F4E /* Build configuration list for PBXProject "ForumClient" */ = {
+		87EA3EE62703229200B6581A /* Build configuration list for PBXProject "ForumClient" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				87F6E2AF26FBBA2C00BB2F4E /* Debug */,
-				87F6E2B026FBBA2C00BB2F4E /* Release */,
+				87EA3EFC2703229200B6581A /* Debug */,
+				87EA3EFD2703229200B6581A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		87F6E2B126FBBA2C00BB2F4E /* Build configuration list for PBXNativeTarget "ForumClient" */ = {
+		87EA3EFE2703229200B6581A /* Build configuration list for PBXNativeTarget "ForumClient" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				87F6E2B226FBBA2C00BB2F4E /* Debug */,
-				87F6E2B326FBBA2C00BB2F4E /* Release */,
+				87EA3EFF2703229200B6581A /* Debug */,
+				87EA3F002703229200B6581A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		87F6E2B426FBBA2C00BB2F4E /* Build configuration list for PBXNativeTarget "ForumClientTests" */ = {
+		87EA3F012703229200B6581A /* Build configuration list for PBXNativeTarget "ForumClientTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				87F6E2B526FBBA2C00BB2F4E /* Debug */,
-				87F6E2B626FBBA2C00BB2F4E /* Release */,
+				87EA3F022703229200B6581A /* Debug */,
+				87EA3F032703229200B6581A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 87F6E29426FBBA2B00BB2F4E /* Project object */;
+	rootObject = 87EA3EE32703229200B6581A /* Project object */;
 }
