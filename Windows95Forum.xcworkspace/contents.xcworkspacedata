@@ -11,7 +11,7 @@
       location = "group:CommentsService/CommentsService.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:/Users/waynerumble/Desktop/Windows95Forum/ForumClient/ForumClient.xcodeproj">
+      location = "group:ForumClient/ForumClient.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:ForumScreen/ForumScreen.xcodeproj">

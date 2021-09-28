@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		876A3FDA26FD20F7008780FC /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 876A3FD926FD20F7008780FC /* Common.framework */; };
 		876A3FDB26FD20F7008780FC /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 876A3FD926FD20F7008780FC /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		876A3FF226FD2DF7008780FC /* ForumClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 876A3FF126FD2DF7008780FC /* ForumClient.framework */; };
-		876A3FF326FD2DF7008780FC /* ForumClient.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 876A3FF126FD2DF7008780FC /* ForumClient.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		87EA3F1B270322EB00B6581A /* ForumClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87EA3F1A270322EB00B6581A /* ForumClient.framework */; };
+		87EA3F1C270322EB00B6581A /* ForumClient.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 87EA3F1A270322EB00B6581A /* ForumClient.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		87F6E2F726FCD23F00BB2F4E /* PostsService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87F6E2EE26FCD23E00BB2F4E /* PostsService.framework */; };
 		87F6E2FC26FCD23F00BB2F4E /* PostsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6E2FB26FCD23F00BB2F4E /* PostsServiceTests.swift */; };
 		87F6E2FD26FCD23F00BB2F4E /* PostsService.h in Headers */ = {isa = PBXBuildFile; fileRef = 87F6E2F126FCD23E00BB2F4E /* PostsService.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -35,7 +35,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				876A3FDB26FD20F7008780FC /* Common.framework in Embed Frameworks */,
-				876A3FF326FD2DF7008780FC /* ForumClient.framework in Embed Frameworks */,
+				87EA3F1C270322EB00B6581A /* ForumClient.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -45,6 +45,7 @@
 /* Begin PBXFileReference section */
 		876A3FD926FD20F7008780FC /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		876A3FF126FD2DF7008780FC /* ForumClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ForumClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87EA3F1A270322EB00B6581A /* ForumClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ForumClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87F6E2EE26FCD23E00BB2F4E /* PostsService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PostsService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87F6E2F126FCD23E00BB2F4E /* PostsService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostsService.h; sourceTree = "<group>"; };
 		87F6E2F626FCD23F00BB2F4E /* PostsServiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PostsServiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,7 +59,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				876A3FDA26FD20F7008780FC /* Common.framework in Frameworks */,
-				876A3FF226FD2DF7008780FC /* ForumClient.framework in Frameworks */,
+				87EA3F1B270322EB00B6581A /* ForumClient.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +77,7 @@
 		876A3FD826FD20F7008780FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				87EA3F1A270322EB00B6581A /* ForumClient.framework */,
 				876A3FF126FD2DF7008780FC /* ForumClient.framework */,
 				876A3FD926FD20F7008780FC /* Common.framework */,
 			);
