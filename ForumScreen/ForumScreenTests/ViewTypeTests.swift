@@ -3,9 +3,9 @@ import XCTest
 @testable import ForumScreen
 
 private struct Constants {
-  static let postsTitle = "Posts"
-  static let commentsTitle = "Comments"
-  static let errorTitle = "Error"
+  static let postsTitle = "posts"
+  static let commentsTitle = "comments"
+  static let errorTitle = "error"
 }
 
 class ViewTypeTests: XCTestCase {
