@@ -6,11 +6,11 @@ public enum ViewType {
   var title: String {
     switch self {
     case .posts:
-      return "Posts"
+      return .posts
     case .comments:
-      return "Comments"
+      return .comments
     case .error:
-      return "Error"
+      return .error
     }
   }
 

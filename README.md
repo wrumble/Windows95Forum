@@ -66,5 +66,7 @@ The custom font caused the tests to fail so they had to default to a system font
 
 There services being extracted into their own modules may have been too far but i feel it sets a good precedent going forward
 
+Localized strings dont work in tests, so you can either add a new Localizable.strings file or just expect the string key, i chose the latter.
+
 Subviewable is the worst name
 

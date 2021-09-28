@@ -5,8 +5,8 @@ import XCTest
 
 private struct Constants {
   static let message = "It's broke ¯_(ツ)_¯"
-  static let serverErrorTitle = "Server error:"
-  static let parsingErrorTitle = "Parsing error:"
+  static let serverErrorTitle = "server_error:"
+  static let parsingErrorTitle = "parsing_error:"
 }
 
 class APIErrorTests: XCTestCase {

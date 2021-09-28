@@ -5,9 +5,9 @@ public enum APIError: Error, Equatable {
   public var title: String {
     switch self {
     case .server:
-      return "Server error:"
+      return .serverError + ":"
     case .parsing:
-      return "Parsing error:"
+      return .parsingError + ":"
     }
   }
 

@@ -79,7 +79,7 @@ private extension ForumScreenViewController {
 
   func showAlert(for error: APIError) {
     let alert = UIAlertController(title: error.title, message: error.message, preferredStyle: .alert)
-    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+    alert.addAction(UIAlertAction(title: .ok, style: .default, handler: nil))
     self.present(alert, animated: true, completion: nil)
   }
 }
