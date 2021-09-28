@@ -1,4 +1,4 @@
-public enum APIError: Error {
+public enum APIError: Error, Equatable {
   case server(String)
   case parsing(String)
 
